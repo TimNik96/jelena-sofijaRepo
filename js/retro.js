@@ -192,6 +192,26 @@
 
 // obim(10, 12)
 
+// let niz = [1, 2, 3, 4, 'ime', [1,2,3], {ime: 'Marko'}, 10]
+
+// for(let i = 0; i < niz.length; i++) {
+//     niz.push(10)
+//     break
+// }
+
+// niz.forEach((element) => {
+//     console.log(element)
+//     return
+// })
+
+// function imeFunkcije(parametar) {
+
+// }
+
+// const imeFunkcije = (parametar) => {
+
+// }
+
 // Napisati kod koji racuna cenu pice na osnovu unetog precnika, ako se zna da 1cm2 kosta 1 dinar.
 // Napisati funkciju koja ispisuje zbir prvih 100 brojeva.
 // Napisati kod koji za uneto slovo vraca njegovu poziciju u stringu.
@@ -269,3 +289,48 @@
 // let broj = 73
 
 // console.log(prostBroj(broj))
+
+
+// 1. Ispisati poslednji element u nizu.
+
+// let niz = [1, 2, 3, 4, 5]
+
+// console.log(niz[niz.length-1]);
+
+// for(let i = 0; i < niz.length; i++) {
+//     if(i === niz.length - 1){
+//         console.log(niz[i])
+//     }
+// // }
+
+// if(0 === niz.length - 1){
+//     console.log(niz[0])
+// }
+
+// if(1 === niz.length - 1){
+//     console.log(niz[1])
+// }
+
+// if(2 === niz.length - 1){
+//     console.log(niz[2])
+// }
+
+// if(3 === niz.length - 1){
+//     console.log(niz[3])
+// }
+
+// if(4 === niz.length - 1){
+//     console.log(niz[4])
+// }
+
+// 2. Proveriti da li niz ima paran ili neparan broj elemenata.
+
+let niz = [1, 2, 3]
+
+if(niz.length % 2 === 0) {
+    console.log('Niz ima paran broj elemenata')
+} else {
+    console.log('Niz ima neparan broj elemenata')
+}
+
+
