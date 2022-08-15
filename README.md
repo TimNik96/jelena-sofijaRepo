@@ -1,6 +1,32 @@
 SVASTA PAMETNO ZA PROCITATI:
 https://www.webprogramiranje.org/
 
+Komande u komandnoj liniji:
+ls
+ls -a
+touch imeFajla (kreira fajl u trenutnom folderu)
+mkdir imeFoldera (kreira folder u trenutnom folderu)
+rm imeFajla (brise naznaceni fajl)
+rm -r imeFoldera (brise navedeni folder)
+cd .. (vracanje u roditeljski folder)
+cd imeFajla
+code .
+
+GIT:
+git config --global user.name "korisnicko ime"
+git config --global user.email "korisnicki mail"
+git config user.name (provera username-a)
+git config user.email (provera email-a)
+git clone URL (URL - uniform resource locator)
+git pull (git fetch i git merge)
+git add imeFajla 
+git add .
+git commit -m "kratka poruka komita"
+git status
+git log
+git push
+
+
 #Domaci_1
 
 1. Napisati kod koji sabira svaki treci element u nizu. (pretpostavka da je niz brojeva u pitanju)
