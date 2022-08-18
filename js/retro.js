@@ -325,12 +325,12 @@
 
 // 2. Proveriti da li niz ima paran ili neparan broj elemenata.
 
-let niz = [1, 2, 3]
+// let niz = [1, 2, 3]
 
-if(niz.length % 2 === 0) {
-    console.log('Niz ima paran broj elemenata')
-} else {
-    console.log('Niz ima neparan broj elemenata')
-}
+// if(niz.length % 2 === 0) {
+//     console.log('Niz ima paran broj elemenata')
+// } else {
+//     console.log('Niz ima neparan broj elemenata')
+// }
 
 

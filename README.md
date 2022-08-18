@@ -3,6 +3,8 @@ https://www.webprogramiranje.org/
 
 TEORIJA HTML&CSS:
 
+https://www.w3schools.com/css/css_positioning.asp
+https://www.w3schools.com/cssref/css_selectors.asp
 
 TEORIJA JS:
 *= - dodela vrednosti
