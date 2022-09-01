@@ -79,3 +79,27 @@ git push
 5. Napisati funkciju koja vraca duzinu za prosledjeni string.
 6. Napisati funkciju koja racuna stepen broja. (stepenBroja(2, 3) ce vratiti rezultat 8, 2 na 3)
 7. Napisati kod koji kao rezultat ispisuje koliko se puta izabrani karakter pojavio u stringu.
+
+#Domaci_2
+
+1. Napisati kod koji ispisuje string otpozadi.
+2. Napisati funkciju koja vraca poziciju trazenog elementa u nizu.
+3. Napraviti niz objekata po izboru i ispisati ih u konzoli.
+4. Iz postojeceg niza uzeti elemente na parnim indeksima i napraviti novi niz od tih elemenata. (pomocu push() metode)
+5. Proveriti da li je prosledjena recenica u vidu stringa adekvatno interpunkcijski terminisana.
+
+6. Iscrtati sledecu figuru za n = 5
+
+* * * * * 
+  * * * *
+    * * * 
+      * * 
+        *
+
+7. Iscrtati sledecu figuru za n = 5
+
+* * * * *
+* * * *
+* * *
+* *
+*
