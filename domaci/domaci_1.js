@@ -266,16 +266,77 @@
 //   * * * *
 // * * * * *
 
-let n = 5
-let str = ''
+// let n = 5
+// let str = ''
 
-for(let i = 1; i <= n; i++) {
-    str = ''
-    for(let j = 1; j <= n; j++) {
-        if(j <= n - i)
-            str += '  '
-        else 
-            str += '* '
-    }
-    console.log(str)
-}
+// for(let i = 1; i <= n; i++) {
+//     str = ''
+//     for(let j = 1; j <= n; j++) {
+//         if(j <= n - i)
+//             str += '  '
+//         else 
+//             str += '* '
+//     }
+//     console.log(str)
+// }
+
+
+// 1
+// str = 'sofija'
+// function cifreUObrnutomRedosledu(str) {
+//     let prethodnoStanje = ''
+//     let novaCifra = ''
+    
+//     for(let i=0; i<str.lenght; i++){
+            
+//                 novaCifra = str % 10
+//                 prethodnoStanje= prethodnoStanje *100 + novaCifra
+                
+//             }
+        
+//             return prethodnoStanje
+//         }
+
+// console.log(cifreUObrnutomRedosledu(str))
+
+// function trazeniBroj(broj){
+//     if(niz===broj){
+//         return true
+//     }
+// // }
+// let niz=[1,2,3,4,5]
+// let broj=3
+// console.log(trazeniBroj(broj));
+
+
+
+// let niz=[2,3,10.17,22,25]
+// console.log(niz.push(niz/2))
+
+// let n = 5
+// let str = ''
+
+// for(let i = 0; i < n; i++) {
+//     str = ''
+//     for(let j = 0; j < n; j++) {
+//         if(j >= i)
+//             str += '* '
+//             else
+//             str += '  '
+//         }
+//     console.log(str)
+// }
+
+// let n = 5
+// let str = ''
+
+// for(let i = 0; i <= n; i++) {
+//     str = ''
+//     for(let j = 0; j <= n; j++) {
+//         if(j < n - i)
+//         str += '* '
+            
+//     }
+//     console.log(str)
+// }
+// 
