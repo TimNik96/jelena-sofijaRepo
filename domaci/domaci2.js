@@ -69,3 +69,31 @@
 // }else{
 //     console.log('proverite da li ste dobro zavrsili recenicu');
 // }
+
+
+// let n = 5
+// let str = ''
+
+// for(let i = 0; i < n; i++) {
+//     str = ''
+//     for(let j = 0; j < n; j++) {
+//         if(j >= i)
+//             str += '* '
+//             else
+//             str += '  '
+//         }
+//     console.log(str)
+// }
+
+// let n = 5
+// let str = ''
+
+// for(let i = 0; i <= n; i++) {
+//     str = ''
+//     for(let j = 0; j <= n; j++) {
+//         if(j < n - i)
+//         str += '* '
+            
+//     }
+//     console.log(str)
+// }
