@@ -1,6 +1,9 @@
 SVASTA PAMETNO ZA PROCITATI:
 https://www.webprogramiranje.org/
 
+KORISNI LINKOVI:
+https://flexboxfroggy.com/
+
 TEORIJA HTML&CSS:
 
 https://www.w3schools.com/css/css_positioning.asp
