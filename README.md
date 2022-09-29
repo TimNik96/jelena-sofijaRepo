@@ -4,6 +4,8 @@ https://www.webprogramiranje.org/
 KORISNI LINKOVI:
 https://flexboxfroggy.com/
 https://mastery.games/flexboxzombies/
+https://fontawesome.com/icons/
+https://www.svgviewer.dev/
 
 TEORIJA HTML&CSS:
 
