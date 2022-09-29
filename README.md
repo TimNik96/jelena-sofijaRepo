@@ -6,6 +6,7 @@ https://flexboxfroggy.com/
 https://mastery.games/flexboxzombies/
 https://fontawesome.com/icons/
 https://www.svgviewer.dev/
+https://bennettfeely.com/clippy/
 
 TEORIJA HTML&CSS:
 
@@ -109,3 +110,7 @@ git push
 * * *
 * *
 *
+
+#Domaci_3
+
+https://nicepage.com/website-design/preview/mountain-adventure-19154?device=desktop
