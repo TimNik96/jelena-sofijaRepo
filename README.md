@@ -4,6 +4,9 @@ https://www.webprogramiranje.org/
 KORISNI LINKOVI:
 https://flexboxfroggy.com/
 https://mastery.games/flexboxzombies/
+https://fontawesome.com/icons/
+https://www.svgviewer.dev/
+https://bennettfeely.com/clippy/
 
 TEORIJA HTML&CSS:
 
@@ -82,4 +85,36 @@ git push
 4. Napisati kod koji ispisuje string ukoliko mu je broj karaktera veci od 7, a ispisuje ga do pola ukoliko bilo gde u stringu postoji karakter '!'.
 5. Napisati funkciju koja vraca duzinu za prosledjeni string.
 6. Napisati funkciju koja racuna stepen broja. (stepenBroja(2, 3) ce vratiti rezultat 8, 2 na 3)
+<<<<<<< HEAD
 7. Napisati kod koji kao rezultat ispisuje koliko se puta izabrani karakter pojavio u stringu.
+=======
+7. Napisati kod koji kao rezultat ispisuje koliko se puta izabrani karakter pojavio u stringu.
+
+#Domaci_2
+
+1. Napisati kod koji ispisuje string otpozadi.
+2. Napisati funkciju koja vraca poziciju trazenog elementa u nizu.
+3. Napraviti niz objekata po izboru i ispisati ih u konzoli.
+4. Iz postojeceg niza uzeti elemente na parnim indeksima i napraviti novi niz od tih elemenata. (pomocu push() metode)
+5. Proveriti da li je prosledjena recenica u vidu stringa adekvatno interpunkcijski terminisana.
+
+6. Iscrtati sledecu figuru za n = 5
+
+* * * * * 
+  * * * *
+    * * * 
+      * * 
+        *
+
+7. Iscrtati sledecu figuru za n = 5
+
+* * * * *
+* * * *
+* * *
+* *
+*
+
+#Domaci_3
+
+https://nicepage.com/website-design/preview/mountain-adventure-19154?device=desktop
+>>>>>>> d168150d5c69f67d0f5f98e07174ae46e7be8c16

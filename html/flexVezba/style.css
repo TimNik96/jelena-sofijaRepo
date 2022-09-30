@@ -44,11 +44,120 @@ html {
     color: #fff;
 }
 
-.background_section a {
+.linkStd {
+    width: fit-content;
     color: #fff;
     padding: 1rem 2rem;
     background-color: #0a83f4;
     text-decoration: none;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    transition: all .3s ease;
+}
+
+.linkStd:hover {
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+.linkInvert {
+    color: #0a83f4 !important;
+    background-color: #fff !important; 
+}
+
+.myWidth {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.text_picture_section {
+    display: flex;
+    flex-direction: row;
+    /* margin: 5rem 0; */
+}
+
+.text_picture_section_inverted {
+    background-color: #0a83f4;
+    padding: 1rem 0;
+    color: #fff; 
+}
+
+.text_picture_section_inverted img {
+    border-color: #fff !important;
+}
+
+.text_picture_section img, .article_section img {
+    border-radius: 50%;
+    border: 1px solid #00000088;
+    padding: .2rem;
+    margin: 0 2rem;
+}
+
+.text_picture_section_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text_picture_section_text p {
+    padding: 1rem 0;
+}
+
+.final_section {
+    display: flex;
+    flex-direction: column;
+    background-color: #00000011;
+}
+
+.final_section h2, .final_section p {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.article_section {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+    column-gap: 1rem;
+}
+
+.article_section article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+article p {
+    padding: 2rem 0 !important;
+}
+
+footer {
+    padding: 2rem 0;
+}
+
+.svg_container {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.svg_container>div {
+    border: 10px solid #00000011;
+    border-radius: 50%;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.svg_container svg {
+    width: 20px;
+    height: 20px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 1rem;
 }
