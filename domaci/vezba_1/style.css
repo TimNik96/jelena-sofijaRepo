@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes ulevo{
+    0% {
+        transform: translate(0px);
+    }
+    100% {
+        transform: translate(-3000px);
+    }
+}
+
+@keyframes udesno{
+    0% {
+        transform: translate(0px);
+    }
+    100% {
+        transform: translate(3000px);
+    }
+}
+
+#nebo{
+    background-color: skyblue;
+    min-height: 30vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#trava{
+    background-color: green;
+    min-height: 25vh;
+}
+
+#levaTraka{
+    background-color: grey;
+    border-top: 10px solid lightgray;
+    border-bottom: 8px dashed white;
+    min-height: 10vh;
+    overflow: hidden;
+}
+
+#desnaTraka{
+    background-color: grey;
+    border-bottom: 10px solid lightgray;
+    min-height: 11vh;
+    overflow: hidden;
+}
+
+#veciOblak{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    right: -300px;
+    animation: ulevo 28s ease-out infinite;
+}
+
+#manjiOblak{
+    display: flex;
+    align-items: center;
+    width: 7%;
+    opacity: 70%;
+    position: absolute;
+    right: -300px;
+    animation: ulevo 30s ease-out infinite;
+}
+
+#mario{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: -300px;
+    animation: udesno 3s ease-in-out infinite;
+}
+
+#luigi{
+    display: flex;
+    justify-content: baseline;
+    position: relative;
+    left: -300px;
+    animation: udesno 4s ease-in-out infinite;
+}
