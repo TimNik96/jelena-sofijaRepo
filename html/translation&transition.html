@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: #000;
+            width: 60%;
+            margin: 0 auto;
+            height: 60vh;
+            overflow: hidden;
+            transition: transform .3s ease;
+        }
+
+        p {
+            color: #fff;
+            transform: (120px);
+            transition-property: all;
+            /* transition-delay: ; */
+            transition-timing-function: cubic-bezier(0, 0, 0.59, 1.54);
+            transition-duration: .5s;
+        }
+
+        div:hover p {
+            transform: translate(50px, 50px) rotateY(90deg);
+            color: red;
+        }
+
+        div:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsum laboriosam dolore libero labore quas atque fuga autem error nihil adipisci aspernatur, voluptatibus eaque commodi suscipit numquam voluptatem hic at!
+        </p>
+    </div>
+</body>
+</html>

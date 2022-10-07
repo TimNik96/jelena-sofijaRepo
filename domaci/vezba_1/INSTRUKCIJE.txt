@@ -1,0 +1,1 @@
+Preuzeti ceo folder, pokrenuti u browseru. Trudite se da ne gledate kod, vec samo pokrenite da biste znali sta treba da se uradi.

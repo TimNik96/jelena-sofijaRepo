@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #container {
+            position: relative;
+            height: 100vh;
+            z-index: 1;
+            background-color: #222222;
+        }
+
+        #blockContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        #title {
+            text-align: center;
+            color: #fff;
+            padding-top: 2%;
+        }
+
+        #mario {
+            width: 300px;
+            position: absolute;
+            bottom: 50px;
+            right: 500px;
+            z-index: 1;
+        }
+
+        #block {
+            width: 100px;
+            z-index: 2;
+            opacity: 1;
+            animation: jump .5s linear infinite alternate;
+        }
+
+        #coin {
+            width: 70px;
+            z-index: 1;
+            position: relative;
+            right: 85px;
+            bottom: 90px;
+            animation: coin 1s linear infinite forwards;
+        }
+
+        @keyframes jump {
+            0% {
+                transform: translateY(0px)
+            }
+
+            50% {
+                transform: translateY(-10px)
+            }
+
+            100% {
+                transform: translateY(0px)
+            }
+        }
+
+        @keyframes coin {
+            0% {
+                transform: translateY(0px) rotateY(0deg);
+                opacity: 1;
+            }
+
+            50% {
+                transform: translateY(-100px) rotateY(180deg);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-100px) rotateY(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <h1 id="title">Super Mario</h1>
+        <img id="mario" src="Super-Mario-06.png" alt="supermario">
+    </div>
+
+    <div id="blockContainer">
+        <img id="block" src="117-1174378_block-super-mario-question-block.png" alt="questionblock">
+        <img id="coin" src="1200px-CoinMK8.png" alt="coin">
+    </div>
+</body>
+</html>

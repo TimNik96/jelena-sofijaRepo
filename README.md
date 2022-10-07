@@ -7,6 +7,7 @@ https://mastery.games/flexboxzombies/
 https://fontawesome.com/icons/
 https://www.svgviewer.dev/
 https://bennettfeely.com/clippy/
+https://animista.net/play/basic/shadow-drop-2/shadow-drop-2-left
 
 TEORIJA HTML&CSS:
 
