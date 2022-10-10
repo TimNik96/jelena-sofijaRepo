@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(71, 168, 216);
+}
+header h1{
+    padding: 1.5rem;
+    padding-left: 3rem;
+    font-weight: bold;
+    border-bottom: solid  gray;
+}
+

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.social svg{
+    height: 60px;
+    width: 50px;
+}
+.social{
+    border-bottom: solid 1px black;
+    margin-bottom: 1rem;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    border: solid 3px black;
+    padding: 3rem;
+    
+}
+footer .social, footer.link{
+    
+}
+.link a{
+    text-decoration: none;
+    color: black;
+    border-bottom: solid 1px black;
+    margin-bottom: 1rem;
+    
+    
+}
+.link{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    border-bottom: solid 1px black;
+    margin-bottom: 1rem;
+}

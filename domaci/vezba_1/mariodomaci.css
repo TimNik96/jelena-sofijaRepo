@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.div1{
+    background-color: #2aafdc;
+}
+.div2{
+    background-color: #096709;
+    height: 20vh;
+}
+.div3{
+    background-color: grey;
+    height: 20vh;
+    border-top: solid 1rem  rgb(175, 158, 158);
+    border-bottom:  1rem dashed white;
+    
+}
+.div3 img, .div4 img{
+width: 100px;
+height: 100px;
+}
+.div4{
+    background-color: gray;
+    height: 20vh;
+    border-bottom: solid 1rem  rgb(175, 158, 158);
+}
+.div4 img{
+    position: absolute;
+    bottom: 50px;
+}
+.mario{
+    animation-name: mario;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.luigi{
+    animation-name: mario;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes mario{
+    from{transform: translate(-200px);}
+    to{transform: translate(1500px); }
+}
+.cloud1{
+    position: absolute;
+}
+
+.cloud1{
+height: 100px;
+top: 20px;
+opacity: 0.5;
+animation-name: wind;
+animation-duration: 13s;
+animation-iteration-count: infinite;
+animation-direction: reverse;
+}
+.cloud2{
+    height: 180px;
+    top: 70px;
+    animation-name: wind;
+animation-duration:10s;
+animation-iteration-count: infinite;
+animation-direction: reverse;
+}
+@keyframes wind{
+    from{transform: translate(-200px);}
+    to{transform: translate(1500px);}
+}
