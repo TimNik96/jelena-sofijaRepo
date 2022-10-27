@@ -119,3 +119,8 @@ https://nicepage.com/website-design/preview/mountain-adventure-19154?device=desk
 #Domaci_4
 
 https://nicepage.com/templates/preview/pilates-studio-and-sports-16816?device=desktop
+
+#Domaci_5
+
+https://cssgridgarden.com/
+https://grid.layoutit.com/
