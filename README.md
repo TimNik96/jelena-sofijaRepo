@@ -118,4 +118,11 @@ git push
 #Domaci_3
 
 https://nicepage.com/website-design/preview/mountain-adventure-19154?device=desktop
+<<<<<<< HEAD
 >>>>>>> d168150d5c69f67d0f5f98e07174ae46e7be8c16
+=======
+
+#Domaci_4
+
+https://nicepage.com/templates/preview/pilates-studio-and-sports-16816?device=desktop
+>>>>>>> 1ae096db9a6748fe4be4c5abbb2f6323821139a7

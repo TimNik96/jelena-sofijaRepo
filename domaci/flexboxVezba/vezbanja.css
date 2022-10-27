@@ -1,12 +1,263 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    background-color: rgb(71, 168, 216);
 }
-header h1{
+
+body {
+    background-color: rgb(150, 200, 225);
+}
+
+header h1 {
     padding: 1.5rem;
     padding-left: 3rem;
     font-weight: bold;
-    border-bottom: solid  gray;
+    border-bottom: solid rgb(87, 79, 79);
+}
+
+.joga1 {
+    display: flex;
+    padding: 2rem;
+}
+
+.joga1 img {
+    width: 700px;
+    height: 700px;
+}
+
+.pilates {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.pilates h1 {
+    font-size: 100px;
+    color: gray;
+    padding-top: 4rem;
+}
+
+.pilates p {
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 2rem;
+    font-size: 20px;
+}
+
+.italic {
+    padding-top: 2rem;
+    font-style: italic;
+}
+
+.pilates a {
+    background-color: rgb(83, 75, 75);
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    width: 13%;
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.lifestyle {
+    padding: 3rem;
+    color: gray;
+    
+}
+.lifestyle p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lifestyle h1 {
+    padding-top: 2rem;
+    font-size: 30px;
+    color: black;
+    border-bottom: solid rgb(137, 125, 125);
+    padding-bottom: 1rem;
+}
+.mind-body{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    
+}
+.slika2{
+    width: 500px;
+    height: 500px;  
+}
+.body2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 3rem;
+}
+.body2 h1{
+    font-size: 70px;
+    color: gray;
+    padding-bottom: 2rem;
+}
+.body2 h4{
+    color: gray;
+    padding-bottom: 2rem;
+}
+.body2 p{
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+}
+.body2 a{
+    background-color: rgb(83, 75, 75);
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    width: 20%;
+    margin-top: 2rem;
+    font-size: 20px;
+   
+}
+.artikl3{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 4rem;
+    color: gray;
+    font-size: 20px;
+}
+.artikl3 h1{
+    padding-top: 2rem;
+    font-size: 30px;
+    color: rgb(52, 45, 45);
+    border-bottom: solid rgb(156, 147, 147);
+    padding-bottom: 2rem;
+}
+.artikl5{
+    display: flex;
+    padding: 2rem;
+}
+.pasus5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    padding-top: 3rem;
+    text-align: right;
+}
+.pasus5 h1{
+    font-size: 43px;
+    color: gray;
+    padding-top: 4rem;
+}
+.pasus5 h3{
+    font-size: 30px;
+    color: gray;
+    padding-top: 2rem;
+}
+.pasus5 p{
+    color: gray;
+    padding-top: 2rem;
+    font-size: 20px;
+}
+.pasus5 a{
+    background-color: rgb(83, 75, 75);
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    width: 13%;
+    margin-top: 2rem;
+    font-size: 20px;
+}
+.slike{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    padding: 2rem;
+}
+.position{
+    display: flex;
+    padding: 2rem;
+    column-gap: 2rem;
+    background-color: white;
+}
+.pasus1{
+    position: relative;
+    /* width: 30%; */
+}
+.pasus1 h2{
+    font-size: 150px;
+    color: rgb(32, 41, 118);
+}
+.pasus1 h1{
+    position: absolute;
+    bottom: 10rem;
+    font-size: 30px;
+}
+.pasus1 img{
+width: 60px;
+height: 60px;
+}
+.strelica{
+    text-align: right;
+}
+#naslov6{
+    font-size:35px;
+}
+.pasus2{
+    position: relative;
+}
+.pasus2 h2{
+    font-size: 60px;
+    color: rgb(32, 41, 118);
+}
+.pasus2 h1{
+    position: absolute;
+    top: 2.5rem;
+    right: 5rem;
+    font-size: 30px;
+    text-align: center;
+    font-size: 35px;
+    
+}
+.pasus2 p{
+    padding-top: 3rem;
+}
+.pasus2 img{
+width: 60px;
+height: 60px;
+}
+.poslednjdeo{
+    padding: 2rem;
+    background-color: rgb(48, 42, 42);
+}
+.div1, .div2{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0 3rem;
+    color: white;
+    font-size: 20px;
+   
+}
+.div2{
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
+
+}
+.linkovi{
+    display: flex;
+    padding: 2rem;
+    color: white;
+
+    
+}
+
+.svg{
+    height: 30px;
+    width: 30px;
+}
+.border{
+    border-bottom: 2px solid gray;
+    width: 300px;
 }
 
