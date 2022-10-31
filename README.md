@@ -8,6 +8,8 @@ https://fontawesome.com/icons/
 https://www.svgviewer.dev/
 https://bennettfeely.com/clippy/
 https://animista.net/play/basic/shadow-drop-2/shadow-drop-2-left
+https://getbootstrap.com/docs/5.2/getting-started/introduction/
+https://grid.layoutit.com/
 
 TEORIJA HTML&CSS:
 
