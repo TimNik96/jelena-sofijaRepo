@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "text1 text2 text3"
+                "text4 text5 text6";
+                width: 90%;
+                margin: auto;
+                height: 80vh;
+        }
+
+        .text1 {
+            grid-area: text1;
+            position: relative;
+        }
+        .text1 span{
+            position: absolute;
+            top: 2rem;
+            left: 5rem;
+            font-size: 40px;
+            color: gray;
+        }
+        .text1 h1{
+            font-size: 60px;
+            margin: 0;
+            padding-left: 3rem;
+            color: rgb(59, 163, 194);
+        }
+        .text1 p{
+            text-align: justify;
+            width: 80%;
+        }
+        .text1 svg{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 6rem;
+            transform: rotate(45deg);
+        }
+
+        .text2 {
+            grid-area: text2;
+            position: relative;
+        }
+        .text2 span{
+            position: absolute;
+            top: 3rem;
+            left: 5rem;
+            font-size: 30px;
+            color: gray;
+        }
+        .text2 h1{
+            font-size: 60px;
+            margin: 0;
+            padding-left: 3rem;
+            color: rgb(59, 163, 194);
+        }
+        .text2 p{
+            text-align: justify;
+            width: 80%;
+        }
+        .text2 svg{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 6rem;
+            transform: rotate(45deg);
+        }
+
+        .text3 {
+            grid-area: text3;
+            position: relative;
+        }
+        .text3 span{
+            position: absolute;
+            top: 2.5rem;
+            left: 5rem;
+            font-size: 30px;
+            color: gray;
+        }
+        .text3 h1{
+            font-size: 60px;
+            margin: 0;
+            padding-left: 3rem;
+            color: rgb(59, 163, 194);
+        }
+        .text3 p{
+            text-align: justify;
+            width: 80%;
+        }
+        .text3 svg{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 6rem;
+            transform: rotate(45deg);
+        }
+
+        .text4 {
+            grid-area: text4;
+            position: relative;
+        }
+        .text4 span{
+            position: absolute;
+            top: 2.5rem;
+            left: 5rem;
+            font-size: 30px;
+            color: gray;
+        }
+        .text4 h1{
+            font-size: 60px;
+            margin: 0;
+            padding-left: 3rem;
+            color: rgb(59, 163, 194);
+        }
+        .text4 p{
+            text-align: justify;
+            width: 80%;
+        }
+        .text4 svg{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 6rem;
+            transform: rotate(45deg);
+        }
+
+        .text5 {
+            grid-area: text5;
+            position: relative;
+        }
+        .text5 span{
+            position: absolute;
+            top: 2.5rem;
+            left: 8rem;
+            font-size: 30px;
+            color: gray;
+        }
+        .text5 h1{
+            font-size: 60px;
+            margin: 0;
+            padding-left: 3rem;
+            color: rgb(59, 163, 194);
+        }
+        .text5 p{
+            text-align: justify;
+            width: 80%;
+        }
+        .text5 svg{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 6rem;
+            transform: rotate(45deg);
+        }
+
+        .text6 {
+            grid-area: text6;
+            position: relative;
+        }
+        .text6 span{
+            position: absolute;
+            top: 2.5rem;
+            left: 5rem;
+            font-size: 30px;
+            color: gray;
+        }
+        .text6 h1{
+            font-size: 60px;
+            margin: 0;
+            padding-left: 3rem;
+            color: rgb(59, 163, 194);
+        }
+        .text6 p{
+            text-align: justify;
+            width: 80%;
+        }
+        .text6 svg{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 6rem;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text1">
+            <h1>
+                Relaxing
+            </h1>
+            <span>
+                Position
+            </span>
+            <p>
+                Feeling stressed or anxious? You’ll probably drop onto your back and start doing your Pilates breathing.
+                Ideally not in public. But it’s a seriously great de-stressor.
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+        </div>
+        <div class="text2">
+            <h1>Its good</h1>
+            <span>FOR YOUR BACK</span>
+            <P>
+                It focuses on strengthening back muscles, and studies have shown that people with chronic lower back pain who do Pilates have more long-term relief from their pain than those who don’t.
+            </P>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+        </div>
+        <div class="text3">
+            <h1>Its like</h1>
+            <span>THERAPY</span>
+            <P>
+                Pilates forces you to get out of your head and focus on your body. Troublesome thoughts that were bothering you beforehand don’t seem so bad after a Pilates class. 
+            </P>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+        </div>
+        <div class="text4">
+            <h1>Core</h1>
+            <span>OFF STEEL</span>
+            <P>
+                Sometimes you make people prod your abs. They don’t particularly want to, but you don’t give them much choice. Pilates can do more damage than good. 
+            </P>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+        </div>
+        <div class="text5">
+            <h1>Balanced</h1>
+            <span>BODY</span>
+            <P>
+                You’ve heard those terms before but what are they? Well, they are much more than the latest fitness buzzwords – they are keys to a healthier lifestyle through mindful movement and Pilates. 
+            </P>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+        </div>
+        <div class="text6">
+            <h1>Mental</h1>
+            <span>FOCUS</span>
+            <P>
+                Mind-body exercise like Pilates is activity that keys on the mental focus of the physical movements being performed. With this type of exercise quality of movement.
+            </P>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas:
+                "text_ picture_1 picture_1"
+                "text_ text_2 text_2"
+                "picture_2 picture_2 text_1";
+        }
+
+        .text {
+            grid-area: text_;
+            background-color: coral;
+        }
+
+        .picture_1 {
+            grid-area: picture_1;
+            background-color: cornflowerblue;
+        }
+
+        .picture_2 {
+            grid-area: picture_2;
+            background-color: aqua;
+        }
+
+        .text_1 {
+            grid-area: text_1;
+            background-color: crimson;
+        }
+
+        .text_2 {
+            grid-area: text_2;
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">1</div>
+        <div class="picture_1">2</div>
+        <div class="picture_2">3</div>
+        <div class="text_1">4</div>
+        <div class="text_2">5</div>
+      </div>
+</body>
+
+</html>
