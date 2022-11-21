@@ -34,6 +34,11 @@ body {
 /* Ovaj deo koda mozemo iskoristiti ukoliko ne zelimo pozadinska slika da se prikazuje na
 uredjajima koji su manji od 991px */
 
+abbr[title] {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .background_section h1 {
     color: #fff;
     font-size: 3rem;
@@ -46,12 +51,17 @@ uredjajima koji su manji od 991px */
     font-size: 1.3rem;
 }
 
-.background_section a, .text_picture_section a {
+.background_section a, .text_picture_section a, .article-section article a {
     background-color: #6495ed;
     padding: 1rem 2rem;
     color: #fff;
     text-decoration: none;
     font-size: 1.3rem;
+    transition: all .3s ease;
+}
+
+.background_section a:hover, .text_picture_section a:hover, .article-section article a:hover {
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 991px) {
@@ -60,11 +70,11 @@ uredjajima koji su manji od 991px */
     }
 
     .background_section p {
-        font-size: initial;
+        font-size: 1rem;
     }
 
     .background_section a {
-        font-size: initial;
+        font-size: 1rem;
     }
 }
 
@@ -76,7 +86,7 @@ uredjajima koji su manji od 991px */
     font-size: 1.3rem;
 }
 
-.text_picture_section img {
+.text_picture_section img, .article-section article img {
     border: 1px solid #888;
     border-radius: 50%;
     padding: .5rem;
@@ -117,7 +127,22 @@ uredjajima koji su manji od 991px */
     }
 }
 
-/* FINAL SECTION CODE */
+.article-section article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.final-section h2 {
+    font-size: 2.5rem;
+}
+
+.final-section p {
+    text-align: center;
+    font-size: 1.3rem;
+}
 
 .svg_container div{
     width: 80px;
@@ -127,15 +152,33 @@ uredjajima koji su manji od 991px */
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s ease;
 }
 
 .svg_container div svg {
     width: 35px;
 }
 
+.svg_container div:hover {
+    background-color: #aaa;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
 footer p {
     margin-bottom: 0;
+    margin-top: 1rem;
     font-size: 1.3rem;
+}
+
+@media screen and (max-width: 991px) {
+    .final-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .final-section p {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -143,5 +186,3 @@ footer p {
         font-size: 1rem;
     }   
 }
-
-
