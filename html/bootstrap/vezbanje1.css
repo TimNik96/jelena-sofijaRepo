@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    background-image: url("slika6.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+}
+
+article h3 {
+    position: absolute;
+    bottom: 360px;
+    left: 10rem;
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+article h1 {
+    position: absolute;
+    left: 10rem;
+    bottom: 300px;
+    color: white;
+    font-size: 3rem;
+}
+
+article .linija {
+    position: absolute;
+    left: 10rem;
+    bottom: 295px;
+    border: 2px solid yellow;
+    width: 10%;
+}
+
+article p {
+    position: absolute;
+    left: 10rem;
+    bottom: 220px;
+    color: white;
+    font-size: 1rem;
+    width: 40%;
+}
+
+article .link1 {
+    position: absolute;
+    left: 10rem;
+    bottom: 150px;
+    padding: 0.7rem;
+    background-color: yellow;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    width: 13%;
+    border-radius: 7%;
+}
+
+.link1:hover {
+    background-color: rgb(196, 196, 74);
+}
+
+article .link2 {
+    position: absolute;
+    left: 23rem;
+    bottom: 150px;
+    padding: 0.7rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 7%;
+    border: 2px solid white;
+    width: 9%;
+    text-decoration: none;
+}
+
+.link2:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    article h3 {
+        top: 0px
+    }
+
+    article .link1 {
+        width: 25%;
+        font-size: 15px;
+    }
+
+    article .link2 {
+        width: 17%;
+        font-size: 15px;
+    }
+}
+
+.prvideo {
+    padding-top: 4rem;
+}
+
+.prvideo h3 {
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+.prvideo h1 {
+    font-size: 2.5rem;
+}
+
+.prvideo .linija {
+    width: 15%;
+    border: 2px solid yellow;
+}
+
+.prvideo p {
+    color: gray;
+    font-style: italic;
+    width: 90%;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.prvideodesno {
+    padding-top: 4rem;
+}
+
+.prvideodesno p {
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+
+.prvideodesno a {
+    background-color: yellow;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.7rem 1rem;
+    border-radius: 7%;
+}
+
+.prvideodesno a:hover {
+    background-color: rgb(196, 196, 74);
+}
+
+.flex {
+    display: flex;
+    height: 50vh;
+    margin-top: 5rem;
+}
+
+.flex1 {
+    background-image: url("slika7.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 0.7rem;
+}
+
+.flex1 h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.flex1 p {
+    color: black;
+    font-size: 1rem;
+}
+
+.flex1 .linija {
+    border: 2px solid yellow;
+    width: 15%;
+}
+
+.flex2 {
+    background-image: url("slika8.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 0.7rem;
+}
+
+.flex2 h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.flex2 p {
+    color: black;
+    font-size: 1rem;
+}
+
+.flex2 .linija {
+    border: 2px solid yellow;
+    width: 15%;
+}
+
+.flex3 {
+    background-image: url("slika9.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 0.7rem;
+}
+
+.flex3 h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.flex3 p {
+    color: black;
+    ;
+    font-size: 1rem;
+}
+
+.flex3 .linija {
+    border: 2px solid yellow;
+    width: 15%;
+}
+
+.deo4 {
+    text-align: center;
+    margin: 4rem;
+}
+
+.deo4 h3 {
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+.deo4 h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.deo4 .linija {
+    border: 2px solid yellow;
+    width: 10%;
+    margin-left: 33rem;
+    margin-top: 1.5rem;
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+    border: 2px solid yellow;
+    border-radius: 20%;
+    padding: 0.5rem;
+
+}
+
+.deo5 {
+    text-align: center;
+    /* margin: 4rem; */
+    background-color: rgb(21, 19, 19);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.deo5 h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.deo5 h3 {
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+.deo5 .linija {
+    border: 2px solid yellow;
+    width: 10%;
+    margin: auto;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "text1 text2 text3 text4"
+        "text5 text6 text7 text8";
+    height: 80vh;
+}
+
+.container1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.text1 {
+    grid-area: text1;
+}
+
+.text2 {
+    grid-area: text2;
+}
+
+.text3 {
+    grid-area: text3;
+}
+
+.text4 {
+    grid-area: text4;
+}
+
+.text5 {
+    grid-area: text5;
+}
+
+.text6 {
+    grid-area: text6;
+}
+
+.text7 {
+    grid-area: text7;
+}
+
+.text8 {
+    grid-area: text8;
+}
+
+.mapa {
+    margin-top: 2rem;
+}
+
+.mapatekst {
+    margin-top: 2rem;
+}
+
+.mapatekst h3 {
+    color: yellow;
+    padding-top: 7rem;
+}
+
+.mapatekst h1 {
+    font-size: 40px;
+    padding: 1rem 0;
+}
+
+.mapatekst .linija {
+    width: 30%;
+    border: 2px solid yellow;
+}
+
+.mapatekst p {
+    padding: 1rem 0;
+}
+
+.mapatekst a {
+    background-color: yellow;
+    padding: 0.7rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7%;
+}
+
+.mapatekst a:hover {
+    background-color: rgb(171, 185, 10);
+}
+
+.deo6 h3 {
+    color: yellow;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.deo6 h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.zutalinija {
+    width: 8%;
+    border: 2px solid yellow;
+    margin: auto;
+}
+
+.sekcijaflex {
+    display: flex;
+    padding-top: 2rem;
+    /* margin: auto; */
+    padding: 3rem 5rem;
+    column-gap: 2rem;
+    text-align: center;
+}
+
+.sekcijaflex svg {
+    border-radius: 50%;
+    background-color: yellow;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 2rem;
+}
+
+.sivapozadina {
+    background-color: rgb(31, 28, 28);
+    text-align: center;
+    padding: 4rem;
+}
+
+.sivapozadina h1 {
+    font-size: 40px;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.sivapozadina h3 {
+    color: yellow;
+}
+
+.radnici {
+    padding-top: 4rem;
+    background-color: rgb(31, 28, 28);
+    position: relative;
+}
+
+.radnici p {
+    border: 2px solid white;
+    color: white;
+    height: 30vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+.radnici .img1 {
+    position: absolute;
+    bottom: 5rem;
+    left: 9rem;
+}
+
+.radnici .img2 {
+    position: absolute;
+    bottom: 5rem;
+    left: 33rem;
+}
+
+.radnici .img3 {
+    position: absolute;
+    bottom: 5rem;
+    right: 8rem;
+}
+
+.radnici h1 {
+    color: white;
+    text-align: center;
+}
+
+.radnici h3 {
+    color: yellow;
+    text-align: center;
+}
+
+.zadnjeslike {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.zadnjeslike h1 {
+    font-size: 30px;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.zadnjeslike h4 {
+    color: gray;
+    padding-left: 2rem;
+    font-size: 17px;
+}
+
+.zadnjeslike p {
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.zadnjeslike a {
+    padding-left: 2rem;
+    color: black;
+    font-weight: bold;
+}
+
+.zutapozadina {
+    background-color: rgb(180, 180, 18);
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+}
+
+.zutapozadina h1 {
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.zutapozadina h4 {
+    color: white;
+    font-size: 20px;
+}
+
+.zutapozadina a {
+    border: 2px solid white;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.zutapozadina a:hover {
+    background-color: white;
+    color: black;
+}

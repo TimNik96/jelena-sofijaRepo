@@ -12,6 +12,7 @@ html {
     background-image: url("Nikola\ Timotic\ -\ banner.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     /* height: 30vh; */
     padding: 10rem 0;
     display: flex;
@@ -52,10 +53,25 @@ html {
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+@media screen and (max-width: 762px){
+   .background_section h1{
+    font-size: 45px;
+   }
+   .background_section p{
+    font-size: 20px;
+    text-align: center;
+   }
+   .background_section a{
+    font-size: 20px;
+   }
+   .background_section {
+    background-position: center;
+   }
+}
 .prvidiv{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding: 2rem;
 }
 .prvidiv img{
@@ -83,14 +99,14 @@ padding: 1rem 2rem;
     padding: 0.5rem;
 }
 .drugidiv{
-    display: flex;
-    flex-direction: row-reverse;
+    /* display: flex;
+    flex-direction: row-reverse; */
     background-color: #0a83f4;
 }
 .drugidiv{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding: 2rem;
 }
 .drugidiv img{
@@ -114,24 +130,36 @@ padding: 1rem 2rem;
     color: #0a83f4;
     padding: 0.5rem;
 }
+@media  screen and(max-width:991px){
+    .tekstdrugogdiva h1{
+        font-size: 1.8rem;
+    }
+    .tekstdrugogdiva p {
+        font-size: 1rem;
+        }
+        .tekstdrugogdiva a{
+            font-size: 1rem;
+        }
+}
 .trecidiv{
-    display: flex;
+    /* display: flex;
      flex-direction: column; 
     justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    background-color: rgb(176, 172, 172);
+    align-items: center; */
+    /* padding: 2rem; */
+    /* background-color: rgb(176, 172, 172); */
+    text-align: center;
 }
 .trecidiv p{
     color: rgb(115, 108, 108);
 }
 .trecidivslike{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
      padding: 2rem; 
-    background-color: rgb(176, 172, 172);
+    /* background-color: rgb(176, 172, 172); */
     text-align: center;
 }
 .trecidivslike img{
@@ -150,6 +178,7 @@ padding: 1rem 2rem;
     text-decoration: none;
     
 }
+
 footer{
     text-align: center;
     color: rgb(115, 108, 108);

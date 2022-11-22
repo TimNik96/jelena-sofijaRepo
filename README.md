@@ -135,4 +135,13 @@ https://nicepage.com/templates/preview/pilates-studio-and-sports-16816?device=de
 
 https://cssgridgarden.com/
 https://grid.layoutit.com/
+<<<<<<< HEAD
 >>>>>>> a61437b62d1e10e6c2ffdcf301b6dabfdf60fbdb
+=======
+
+#Domaci_6
+
+https://expertmovingservices.com/
+https://michalsnik.github.io/aos/
+https://swiperjs.com/demos
+>>>>>>> 3f8f8aa3c0632c8a6de8cb9265a0a1de887e96c2
