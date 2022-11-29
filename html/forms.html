@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme</title>
+</head>
+<body>
+    <form action="" method="get" enctype="application/x-www-form-urlencoded">
+        <div>
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username" required placeholder="username...">
+        </div>
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="number">Add number: </label>
+            <input type="number" name="number" id="number" step="5" max="2000">
+        </div>
+        <div>
+            <label for="phone">Phone: </label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="date">Date: </label>
+            <input type="date" name="date" id="date" min="2022-10-01">
+        </div>
+        <div>
+            <label for="time">Time: </label>
+            <input type="time" name="time" id="time" min="" max="">
+        </div>
+        <div>
+            <label for="color">Color: </label>
+            <input type="color" name="color" id="color">
+        </div>
+        <div>
+            <label for="banana">Banana</label>
+            <input type="checkbox" name="banana" value="banana" id="banana">
+            <label for="jabuka">Jabuka</label>
+            <input type="checkbox" name="jabuka" value="jabuka" id="">
+            <label for="sljiva">Sljiva</label>
+            <input type="checkbox" name="sljiva" value="sljiva" id="sljiva">
+        </div>
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+        <div>
+            <select name="eyeColor" id="eye">
+                <option value="choose" selected disabled>Choose...</option>
+                <optgroup label="lightColor">
+                    <option value="blue">Blue</option>
+                </optgroup>
+                <optgroup label="darkColor">
+                    <option value="brown">Brown</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="bio">Bio: </label>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Write a bio..."></textarea>
+        </div>
+        <div>
+            <label for="file">Add CV: </label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <input type="submit" value="Posalji">
+            <input type="reset" value="Reset">
+        </div>
+        <fieldset>
+            <legend style="border: 1px solid black;">Info</legend>
+            <div>
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username" required placeholder="username...">
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
