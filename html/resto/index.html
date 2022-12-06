@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Resto</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        header {
+            padding: 1.5rem 0;
+        }
+
+        header div:first-child {
+            margin-bottom: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            text-align: center;
+            color: #000;
+            width: 80%;
+            padding: .5rem;
+            margin: .5rem;
+            white-space: nowrap;
+        }
+        
+        @media screen and (width <= 767px) {
+            nav a {
+                background-color: #f00;   
+            }
+        }
+
+        .banner {
+            border-bottom: 3px solid #f00;
+        }
+
+        .banner img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <div class="row d-flex flex-column flex-md-row">
+            <div class="col-md-3 d-flex justify-content-center justify-content-md-start align-items-center">
+                <img src="slike/pic_2.png" alt="Resto logo">
+            </div>
+            <nav class="col-md-7 offset-md-2 d-flex flex-column flex-md-row justify-content-center align-items-center">
+                <a href="#">Our Story</a>
+                <a href="#">Menu</a>
+                <a href="#">Reservations</a>
+                <a href="#">News</a>
+                <a href="#">Reviews</a>
+            </nav>
+        </div>
+    </header>
+    <section class="banner">
+        <img src="slike/banner.jpg" alt="resto banner">
+    </section>
+</body>
+</html>
