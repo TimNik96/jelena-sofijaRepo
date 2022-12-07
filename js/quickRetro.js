@@ -1,5 +1,6 @@
 // Symbol 
 // Number 
+// String 
 // Null 
 // Undefined 
 // Boolean
