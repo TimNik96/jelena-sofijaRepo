@@ -333,4 +333,15 @@
 //     console.log('Niz ima neparan broj elemenata')
 // }
 
+function imeFunkcije(parametri) {
+    return value
+}
+
+const imeFunkcije = function () {
+    return value
+}
+
+const imeFunkcije = (parametri) => {
+    return value
+}
 

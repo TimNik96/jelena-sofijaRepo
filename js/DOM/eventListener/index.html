@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flipper {
+            display: inline-block;
+            position: relative;
+            height: 35px;
+        }
+
+        .bar {
+            width: 35px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 20px;
+            border: 1px solid #808080;
+            position: relative;
+            top: 6px;
+            left: 11px;
+            animation-name: unset;
+            animation-timing-function: ease;
+            animation-duration: .6s; 
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        .dot {    
+            width: 22px;
+            height: 22px;
+            background-color: #808080;
+            border-radius: 50%;
+            filter: drop-shadow(0 0 5px #808080);
+            position: absolute;
+            top: 1px;
+            left: 2px;
+            animation-name: unset;
+            animation-timing-function: ease;
+            animation-duration: .3s; 
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        .content {
+            position: relative;
+            height: 120px;
+            overflow: hidden;
+            border-bottom: 1px solid black;
+            transition: all .3s ease;
+        }
+
+        @keyframes flipperDotOff {
+            from {
+                left: 35px;
+                background-color: #fff;
+            }
+
+            to {
+                left: 2px;
+                background-color: #808080;
+            }
+        }
+
+        @keyframes flipperDotOn {
+            from {
+                left: 2px;
+                background-color: #808080;
+            }
+
+            to {
+                left: 35px;
+                background-color: #fff;
+            }
+        }
+
+        @keyframes flipperBarOff {
+            from {
+                background-color: #0f0;
+            }
+            
+            to {
+                background-color: #fff;
+            }
+        }
+
+        @keyframes flipperBarOn {
+            from {
+                background-color: #fff;
+            }
+            
+            to {
+                background-color: #0f0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flipper">
+        <div class="bar"></div>
+        <div class="dot"></div>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Tenis</li>
+            <li>Kosarka</li>
+            <li>Fudbal</li>
+            <li>Vaterpolo</li>
+            <li>Rukomet</li>
+        </ul>
+    </div>
+    <script>
+        const flipper = document.querySelector('.flipper')
+        const dot = document.querySelector('.dot')
+        const bar = document.querySelector('.bar')
+        const divContent = document.querySelector('.content')
+
+        flipper.addEventListener('click', () => {
+            if(dot.style.animationName == 'flipperDotOn'){
+                dot.style.animationName = 'flipperDotOff'
+                bar.style.animationName = 'flipperBarOff'
+                divContent.style.height = '120px'
+                return
+            }
+            
+            dot.style.animationName = 'flipperDotOn'
+            bar.style.animationName = 'flipperBarOn'
+            divContent.style.height = '0px'
+        })
+    </script>
+</body>
+</html>
