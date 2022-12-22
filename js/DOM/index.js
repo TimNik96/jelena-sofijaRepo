@@ -28,7 +28,7 @@ const body = document.body
 // console.log(p.innerText)
 
 // p.innerHTML = '<span>Moj<span> paragraf'
-// // p.innerText = 'Pozdrav'
+// p.innerText = 'Pozdrav'
 
 // const divRoditelj = document.querySelector('#mojDiv')
 

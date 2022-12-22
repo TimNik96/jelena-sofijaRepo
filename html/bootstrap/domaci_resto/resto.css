@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+header a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    padding-left: 1.5rem;
+}
+header .navigacija{
+    padding-right: 5rem;
+    margin: 2%;
+}
+header ul{
+    list-style: none;
+}
+header .logo{
+    padding-left: 5rem;
+}
+@media screen and (max-width: 991px){
+header{
+    display: flex;
+    flex-direction: column;
+}
+ header .logo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+header .navigacija{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 576px){
+    header .navigacija{
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        align-items:center;
+        width: 90%;
+        margin: auto;
+    }
+}
+section{
+    background-image: url("banner.jpg");
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: solid 4px red;
+}
+main{
+    padding-top: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+main img{
+    height: 260px;
+    width: 100%;
+}
+footer{
+    background-color: #3b3b3b;
+    color: white;
+    padding-top: 4rem;
+}

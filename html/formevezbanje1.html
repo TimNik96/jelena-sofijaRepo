@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+
+<style>
+    /* section img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        height: 60vh;
+    }
+    .slikatekst{
+        position: relative
+    }
+    .tekst h1, .tekst p{
+        color: black;
+        font-size: 20px;
+        padding-left: 1rem;
+    }
+    .tekst h1{
+        padding-top: 1rem;
+    }
+    .tekst p{
+        /* overflow-y: hidden; 
+    }
+    .tekst{
+        background-color: aqua;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-bottom: 0.5rem;
+        position: absolute;
+        bottom: 0;
+        width: 96%;
+    }
+    section a{
+        text-decoration: none;
+    
+    } */
+    .blog_post {
+			isolation: isolate;
+			margin: 0 auto;
+			max-width: 499px;
+			max-height: 387px;
+		}
+		
+		.blog_post a {
+			text-decoration: none;
+		}
+	
+		.blog_card {
+			color: #fff;
+			border-radius: 40px;
+			overflow: hidden;
+		}
+	
+		.blog_text {
+			background-color: #6056A5;
+			padding: 2rem 3rem;
+		}
+		
+		.blog_text h4 {
+			font-size: 1.8rem;
+			color: #fff;
+			padding: 2rem 0rem;
+			transform: translate(0, 15px);
+			transition: transform 0.3s ease;
+		}
+		
+		.animated {
+			font-size: 1.8rem;
+			color: #fff;
+			 transform: translate(0, 200px);
+			transition-property: transform;
+			transition-duration: 0.3s;
+			transition-timing-function: ease; 
+		}
+	
+		.blog_card_image {
+			border-top-left-radius: 40px;
+			border-top-right-radius: 40px;
+			overflow: hidden;
+			isolation: isolate;
+		}
+	
+		.blog_card_image img {
+			object-fit: cover;
+			object-position: center;
+			width: 100%;
+			height: 250px;
+		}
+		
+            @media (hover: hover) {
+                .blog_post:hover .animated {
+                    transform: translate(0, 0);
+                    visibility: visible;
+                }
+            
+                .blog_post:hover h4 {
+                    transform: translate(0, -5px);
+                }
+
+            } 
+</style>
+
+
+
+
+    <!-- <style>
+        body {
+            background-color: gray;
+        }
+
+        legend {
+            background-color: #ffffff;
+        }
+
+        .username,
+        .password,
+        .email,
+        .gender {
+            padding-bottom: 0.5rem;
+            padding-top: 0.5rem;
+        }
+
+        fieldset {
+            margin: auto;
+            width: 40%;
+            background-color: #ffffff;
+        }
+
+        .deo2, .deo3 {
+            margin-top: 1rem;
+        }
+        .deo2 div, .deo3 div{
+            padding: 0.4rem 0;
+        }
+        .linija{
+            border-bottom: solid 2px gray;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- <form action="" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend style="border: 1px solid black">Personal Information</legend>
+            <div>
+                <div class="username">
+                    <label for="username">Username</label>
+                </div>
+                <input type="text" name="username" id="username" placeholder="Your name">
+            </div>
+            <div>
+                <div class="password">
+                    <label for="password">Password</label>
+                </div>
+                <input type="password" name="password" id="password">
+            </div>
+            <div>
+                <div class="email">
+                    <label for="email">Email</label>
+                </div>
+                <input type="email" name="email" id="email" placeholder="ex:john@example.com">
+            </div>
+            <div>
+                <div class="gender">
+                    <label for="gender">Gender</label>
+                </div>
+                <select name="Gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="deo2">
+            <legend style="border:1px solid black">Your Favourites</legend>
+            <div>
+                <label for="editor">Choose Your Editor</label>
+            </div>
+            <div>
+                <input type="radio" name="vsc" id="vsc" value="vsc">
+                <label for="vsc">VSC</label>
+            </div>
+            <div>
+                <input type="radio" name="sublime text" id="sublime text" value="sublime text">
+                <label for="Sublime text">Sublime text</label>
+            </div>
+            <div>
+                <input type="radio" name="note++" id="note++" value="note++">
+                <label for="note++">Note++</label>
+            </div>
+            <div class="linija"></div>
+<section>
+    <div>
+        <label for="browser">Choose Your browser</label>
+    </div>
+    <div>
+        <input type="radio" name="chrome" id="chrome" value="chrome">
+        <label for="Chrome">Google ChromeVRC</label>
+    </div>
+    <div>
+        <input type="radio" name="opera" id="opera" value="opera">
+        <label for="opera">Opera</label>
+    </div>
+    <div>
+        <input type="radio" name="firefox" id="firefox" value="firefox">
+        <label for="firefox">Firefox</label>
+    </div>
+    <div class="linija"></div>
+</section>
+<section>
+    <div>
+        <label for="operation system">Choose Your Operating System</label>
+    </div>
+    <div>
+        <input type="checkbox" name="windows" id="windows" value="windows">
+        <label for="windows">Windows</label>
+    </div>
+    <div>
+        <input type="checkbox" name="macintosc" id="macintosc" value="macintosc">
+        <label for="macintosc">Macintosc</label>
+    </div>
+    <div>
+        <input type="checkbox" name="linux" id="linux" value="linux">
+        <label for="Linux">Linux</label>
+    </div>
+</section>
+        </fieldset>
+        <fieldset class="deo3">
+            <legend style="border:1px solid black"> Your Message</legend>
+            <div>
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="30" rows="20"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Send Your Data">
+            </div>
+        </fieldset>
+    </form> -->
+
+
+    <section class="blogs_section container mt-8 mb-5">
+        <h2 data-aos="fade-down" data-aos-delay="300">Latest blogs</h2>
+        <div data-aos="fade-up" data-aos-delay="300" class="live-shortcode">
+
+            <div class="row d-flex justify-content-center align-items-center justify-content-lg-around">
+		
+                <div class="col-12 col-lg-6 blog_post mb-5 mt-5">
+                <a href="https://expertmovingservices.com/the-ultimate-moving-checklist/">
+                    <article class="blog_card">
+                        <div class="blog_card_image">
+                            <img data-lazyloaded="1" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="https://expertmovingservices.com/wp-content/uploads/2021/03/26.webp" alt="" /><noscript><img src="https://expertmovingservices.com/wp-content/uploads/2021/03/26.webp" alt="" /></noscript>
+                        </div>
+                        <div class="blog_text">
+                            <h4 class="">The Ultimate Moving Checklist!</h4>
+                            <p class="animated">Read More...</p>
+                        </div>
+                    </article>
+                </a>
+            </div>
+                        <div class="col-12 col-lg-6 blog_post mb-5 mt-5">
+                <a href="https://expertmovingservices.com/5-tips-on-how-to-book-moving-services/">
+                    <article class="blog_card">
+                        <div class="blog_card_image">
+                            <img data-lazyloaded="1" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="https://expertmovingservices.com/wp-content/uploads/2018/04/5-Be-ready-for-the-moving-day-280x180.jpg" alt="" /><noscript><img src="https://expertmovingservices.com/wp-content/uploads/2018/04/5-Be-ready-for-the-moving-day-280x180.jpg" alt="" /></noscript>
+                        </div>
+                        <div class="blog_text">
+                            <h4 class="">5 Tips On How to Book Moving Services</h4>
+                            <p class="animated">Read More...</p>
+                        </div>
+                    </article>
+                </a>
+            </div>
+                
+</div>
+
+</div>
+</section>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+</body>
+
+</html>
