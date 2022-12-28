@@ -13,7 +13,7 @@
 
 // console.log(forme[0])
 
-const body = document.body
+// const body = document.body
 
 // const p = document.querySelector('.mojaKlasa')
 // p.textContent = `
@@ -45,15 +45,31 @@ const body = document.body
 // divRoditelj.append(naslovH1)
 // divRoditelj.appendChild(node)
 
-const divContainer = document.createElement('div')
-divContainer.style.display = 'flex'
-divContainer.style.justifyContent = 'center'
+// const divContainer = document.createElement('div')
+// divContainer.style.display = 'flex'
+// divContainer.style.justifyContent = 'center'
 
-body.appendChild(divContainer)
+// body.appendChild(divContainer)
 
-const imgMojaSlika = document.createElement('img')
-imgMojaSlika.src = '../../domaci/vezba_2/Super-Mario-06.png'
-imgMojaSlika.alt = 'Super Mario'
-imgMojaSlika.style.width = '300px'
+// const imgMojaSlika = document.createElement('img')
+// imgMojaSlika.src = '../../domaci/vezba_2/Super-Mario-06.png'
+// imgMojaSlika.alt = 'Super Mario'
+// imgMojaSlika.style.width = '300px'
 
-divContainer.appendChild(imgMojaSlika)
+// divContainer.appendChild(imgMojaSlika)
+
+// const body = document.body
+
+// const p = document.querySelectorAll('p')
+// p.textContent = 'Ovo je neki tekst dodat u p'
+// p.innerText
+// p.innerHTML = '<p> Moj P </p>'
+
+// const mojP = document.createElement('p')
+// mojP.style.backgroundColor = 'red'
+// mojP.classList.add('')
+// mojP.classList.remove()
+// mojP.classList.contains()
+
+// body.appendChild(mojP)
+

@@ -353,4 +353,15 @@ console.log(zbir(broj,broj1));
 
 
 
+function imeFunkcije(parametri) {
+    return value
+}
+
+const imeFunkcije = function () {
+    return value
+}
+
+const imeFunkcije = (parametri) => {
+    return value
+}
 
