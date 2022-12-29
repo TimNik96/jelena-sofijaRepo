@@ -333,15 +333,74 @@
 //     console.log('Niz ima neparan broj elemenata')
 // }
 
-function imeFunkcije(parametri) {
-    return value
-}
+// function imeFunkcije(parametri) {
+//     return value
+// }
 
-const imeFunkcije = function () {
-    return value
-}
+// const imeFunkcije = function () {
+//     return value
+// }
 
-const imeFunkcije = (parametri) => {
-    return value
-}
+// const imeFunkcije = (parametri) => {
+//     return value
+// }
+
+// let niz = [1, 2, 3, 4, 5]
+
+// console.log(niz)
+
+// console.log(niz[0])
+// console.log(niz[1])
+// console.log(niz[2])
+// console.log(niz[3])
+// console.log(niz[4])
+
+// for(let i = 0; i < niz.length; i++) {
+//     console.log(niz[i])
+// }
+
+// niz.push()
+
+// let noviNiz = [...niz, 10, 11]
+// console.log(noviNiz, niz.push(7))
+
+// const pozdrav = (ime) => {
+//     console.log(`Pozdrav, ${ime}!`)
+//     // return `Pozdrav, ${ime}!`
+// }
+
+// let str = 'Marko'
+// pozdrav(str)
+// console.log(pozdrav(str))
+
+// let broj = 15
+// if(broj > 10) {
+//   console.log(true) 
+// } else {
+//   console.log(false)
+// }
+
+// let broj = 4
+// let niz = [1, 2, 3, 4]
+// for(let i = 0; i < niz.length; i++) {
+//   if(niz[i] == broj) {
+//     console.log(true)
+//     break
+//   }
+// }
+
+// for(let i = 0; i < 100; i++) {
+//   if(i % 3 == 0)
+// 	continue
+//   console.log(i)
+// }
+
+// let osoba = {
+//   firstName: 'Marko',
+//   lastName: 'Markovic',
+//   age: 30,
+//   hobi: ['Kosarka']
+// }
+
+// console.log(osoba.firstName, osoba.lastName, osoba.age, osoba.hobi[0])
 
