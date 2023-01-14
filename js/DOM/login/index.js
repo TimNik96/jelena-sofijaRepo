@@ -24,8 +24,15 @@ const inputPass = document.querySelector('#password')
 forma.addEventListener('submit', (event) => {
     event.preventDefault()
     // console.log(inputUser.value, inputPass.value)
-    if(inputUser.value.trim() === '' || inputPass.value.trim() === '') {
-        alert('Polja ne smeju biti prazna')
+    if(inputUser.value.trim() === '') {
+        console.log('Polje ne sme biti prazno')
+        inputUser.style.border = '1px solid #f00'
+        return
+    }
+
+    if(inputPass.value.trim() === '') {
+        console.log('Polje ne sme biti prazno')
+        inputPass.style.border = '1px solid #f00'
         return
     }
     // let ulogovaoSe = false
@@ -57,6 +64,12 @@ forma.addEventListener('submit', (event) => {
 
     if(korisnik[0].pass === inputPass.value.trim()) {
         console.log('Ulogovali ste se!')
+        inputUser.style.border = '1px solid #0f0'
+        inputPass.style.border = '1px solid #0f0'
+        setTimeout(() => {
+            inputUser.style.border = '1px solid #000'
+            inputPass.style.border = '1px solid #000'
+        }, 5000)
         return
     }
 
