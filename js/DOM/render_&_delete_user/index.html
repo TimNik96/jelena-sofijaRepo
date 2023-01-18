@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .renderUsers {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 1rem;
+        }
+
+        .user {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 2rem;
+            padding: 1rem 0;
+            font-size: 1.5rem;
+        }
+
+        button { 
+            padding: .5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="password" name="name" id="name">
+        <label for="surname">Surname:</label>
+        <input type="text" name="surname" id="surname">
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <input type="submit" value="Registruj se">
+        <input type="reset" value="Reset">
+    </form>
+
+    <div class="renderUsers">
+
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 2rem;">
+        <button class="allUsers">All users</button>
+    </div>
+</body>
+</html>

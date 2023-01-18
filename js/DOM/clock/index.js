@@ -13,7 +13,6 @@ function generateTime(htmlElement) {
         sekunde = '0' + sekunde
     
     let vreme = `${sati}:${minuti}:${sekunde}`
-
     htmlElement.textContent = vreme
 
     return setTimeout(() => {

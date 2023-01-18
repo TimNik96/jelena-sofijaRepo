@@ -10,6 +10,7 @@ https://bennettfeely.com/clippy/
 https://animista.net/play/basic/shadow-drop-2/shadow-drop-2-left
 https://getbootstrap.com/docs/5.2/getting-started/introduction/
 https://grid.layoutit.com/
+https://www.youtube.com/watch?v=A7fF6czIxEo
 
 TEORIJA HTML&CSS:
 
