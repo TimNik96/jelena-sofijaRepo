@@ -35,19 +35,19 @@ forma.addEventListener('submit', (event) => {
         inputPass.style.border = '1px solid #f00'
         return
     }
-    // let ulogovaoSe = false
-    // for (let i = 0; i < korisnici.length; i++) {
-    //     if (inputUser.value === korisnici[i].user) {
-    //         if (inputPass.value === korisnici[i].pass) {
-    //             console.log('Ulogovali ste se')
-    //             ulogovaoSe = true
-    //             break
-    //         }
-    //         break
-    //     }
-    // }
-    // if (!ulogovaoSe)
-    //     console.log('Proverite unos za vas user i password')
+    let ulogovaoSe = false
+    for (let i = 0; i < korisnici.length; i++) {
+        if (inputUser.value === korisnici[i].user) {
+            if (inputPass.value === korisnici[i].pass) {
+                console.log('Ulogovali ste se')
+                ulogovaoSe = true
+                break
+            }
+            break
+        }
+    }
+    if (!ulogovaoSe)
+        console.log('Proverite unos za vas user i password')
 
     // drugi nacin
 
@@ -55,25 +55,25 @@ forma.addEventListener('submit', (event) => {
     // let str = '    123     abc     '
     // str.trim()
 
-    let korisnik = korisnici.filter(el => inputUser.value.trim() === el.user)
-    console.log(korisnik)
-    if(korisnik.length == 0) {
-        console.log('Proverite Vas unos!')
-        return
-    }
+    // let korisnik = korisnici.filter(el => inputUser.value.trim() === el.user)
+    // console.log(korisnik)
+    // if(korisnik.length == 0) {
+    //     console.log('Proverite Vas unos!')
+    //     return
+    // }
 
-    if(korisnik[0].pass === inputPass.value.trim()) {
-        console.log('Ulogovali ste se!')
-        inputUser.style.border = '1px solid #0f0'
-        inputPass.style.border = '1px solid #0f0'
-        setTimeout(() => {
-            inputUser.style.border = '1px solid #000'
-            inputPass.style.border = '1px solid #000'
-        }, 5000)
-        return
-    }
+    // if(korisnik[0].pass === inputPass.value.trim()) {
+    //     console.log('Ulogovali ste se!')
+    //     inputUser.style.border = '1px solid #0f0'
+    //     inputPass.style.border = '1px solid #0f0'
+    //     setTimeout(() => {
+    //         inputUser.style.border = '1px solid #000'
+    //         inputPass.style.border = '1px solid #000'
+    //     }, 5000)
+    //     return
+    // }
 
-    console.log('Proverite Vas unos!')
+    // console.log('Proverite Vas unos!')
 })
 
 // let ime = prompt('Unesite vase ime: ')
