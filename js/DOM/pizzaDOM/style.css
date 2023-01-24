@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.poruciPizzu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .5rem;
+    padding: 1rem;
+}
+
+.poruciPizzu input {
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.poruciPizzu label {
+    font-size: 1.5rem;
+}
+
+.komande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 1rem;
+}
+
+.poruka {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+button {
+    padding: .5rem;
+}
