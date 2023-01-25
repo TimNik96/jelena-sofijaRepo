@@ -7,9 +7,9 @@
 
 // PUSH
 
-// let niz = [1, 2, 3]
-// console.log(niz.push(4))
-// console.log(niz)
+let niz = [1, 2, 3]
+console.log(niz.push(4))
+console.log(niz)
 
 // POP
 

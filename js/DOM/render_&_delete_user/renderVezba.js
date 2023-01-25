@@ -35,36 +35,33 @@ const renderUsers = (users) => {
     users.forEach(user => {
         const divUser = document.createElement('div')
         divUser.className = 'user'
-        // divUser.classList.add('user')
-        // divUser.classList.remove()
-        // divUser.classList.contains()
 
-        const pUserName = document.createElement('p')
-        pUserName.textContent = user.name
+    const pUserName = document.createElement('p')
+    pUserName.textContent = user.name
 
-        const pUserSurname = document.createElement('p')
-        pUserSurname.textContent = user.surname
+    const pUserSurname = document.createElement('p')
+    pUserSurname.textContent = user.surname
 
-        const pUserAge = document.createElement('p')
-        pUserAge.textContent = user.age
+    const pUserAge = document.createElement('p')
+    pUserAge.textContent = user.age
 
-        const pUserEmail = document.createElement('p')
-        pUserEmail.textContent = user.mail
+    const pUserEmail = document.createElement('p')
+    pUserEmail.textContent = user.mail
 
-        const buttonDelete = document.createElement('button')
-        buttonDelete.textContent = 'obrisi'
+    const buttonDelete = document.createElement('button')
+    buttonDelete.textContent = 'obrisi'
 
-        buttonDelete.addEventListener('click', () => {
-            // divUser.style.display = 'none'
-            users.splice(users.findIndex(element => element.mail === user.mail), 1)
-            divRenderUsers.textContent = ''
-            renderUsers(users)
-        })
-
-        divUser.append(pUserName, pUserSurname, pUserAge, pUserEmail, buttonDelete)
-        divRenderUsers.appendChild(divUser)
-        // return divUser
+    buttonDelete.addEventListener('click', () => {
+        // divUser.style.display = 'none'
+        users.splice(users.findIndex(element => element.mail === user.mail), 1)
+        divRenderUsers.textContent = ''
+        renderUsers(users)
     })
+
+    divUser.append(pUserName, pUserSurname, pUserAge, pUserEmail, buttonDelete)
+    divRenderUsers.appendChild(divUser)
+    // return divUser
+})
 }
 
 const forma = document.querySelector('form')
@@ -110,15 +107,8 @@ forma.addEventListener('submit', (e) => {
     divRenderUsers.textContent = ''
     renderUsers(users)
 })
-
-// users.forEach(element => {
-//     const newUser = renderUser(element)
-//     divRenderUsers.appendChild(newUser)
-// })
-
 renderUsers(users)
 
 btnAllUsers.addEventListener('click', () => {
     console.log('users')
 })
-
