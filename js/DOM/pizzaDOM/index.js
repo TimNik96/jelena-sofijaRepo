@@ -3,6 +3,7 @@ const btnPoruciPizzu = document.querySelector('#poruci')
 const btnIspisiSvePorudzbine = document.querySelector('#ispisiSvePorudzbine')
 const btnIzracunajDnevniPazar = document.querySelector('#izracunajDnevniPazar')
 const pPoruka = document.querySelector('.poruka')
+const divIspisPorudzbina = document.querySelector('.ispisPorudzbina')
 
 function cenaPizze(precnik) {
     // let cm2Pizze = .5 din
@@ -27,9 +28,14 @@ function vratiVreme() {
 }
 
 function dnevniPazar(nizPorudzbina) {
+    if(nizPorudzbina.length == 0) {
+        alert('Kasa je prazna, jer nije bilo porudzbina')
+        return
+    }
+        
     let pazar = 0
-    
-    for(let i = 0; i < nizPorudzbina.length; i++) {
+
+    for (let i = 0; i < nizPorudzbina.length; i++) {
         pazar += nizPorudzbina[i].cena
     }
 
@@ -40,9 +46,60 @@ function dnevniPazar(nizPorudzbina) {
     return `Dnevni pazar je ${pazar.toFixed(2)} dinara.`
 }
 
-// ostale funkcije
+const renderPorudzbina = (niz, container) => {
+    container.textContent = ''
 
+    //prikaz naslovnih celija
+    const divHeaderTabelePrikaza = document.createElement('div')
+    divHeaderTabelePrikaza.classList.add('headerTabele')
 
+    const pRedniBrojPorudzbine = document.createElement('p')
+    pRedniBrojPorudzbine.textContent = 'Broj porudzbine'
+
+    const pVelicinaPizze = document.createElement('p')
+    pVelicinaPizze.textContent = 'Velicina'
+
+    const pCenaPizze = document.createElement('p')
+    pCenaPizze.textContent = 'Cena'
+
+    const pVremePorucivanja = document.createElement('p')
+    pVremePorucivanja.textContent = 'Vreme porucivanja'
+
+    const pObrisi = document.createElement('p')
+    pObrisi.textContent = 'Brisanje'
+    pObrisi.style.color = '#fff'
+
+    divHeaderTabelePrikaza.append(pRedniBrojPorudzbine, pVelicinaPizze, pCenaPizze, pVremePorucivanja, pObrisi)
+    container.appendChild(divHeaderTabelePrikaza)
+
+    niz.forEach((porudzbina, index) => {
+        const divPrikazPorudzbine = document.createElement('div')
+        divPrikazPorudzbine.classList.add('prikazPorudzbine')
+
+        const pRedniBrojPorudzbine = document.createElement('p')
+        pRedniBrojPorudzbine.textContent = `${index + 1}.`
+
+        const pVelicinaPizze = document.createElement('p')
+        pVelicinaPizze.textContent = `${porudzbina.precnik} cm`
+
+        const pCenaPizze = document.createElement('p')
+        pCenaPizze.textContent = `${porudzbina.cena} dinara`   // porudzbina.cena + ' dinara'
+
+        const pVremePorucivanja = document.createElement('p')
+        pVremePorucivanja.textContent = porudzbina.vreme
+
+        const btnObrisiPorudzbinu = document.createElement('button')
+        btnObrisiPorudzbinu.textContent = 'Obrisi'
+
+        btnObrisiPorudzbinu.addEventListener('click', () => {
+            niz.splice(index, 1)
+            renderPorudzbina(niz, container)
+        })
+
+        divPrikazPorudzbine.append(pRedniBrojPorudzbine, pVelicinaPizze, pCenaPizze, pVremePorucivanja, btnObrisiPorudzbinu)
+        container.appendChild(divPrikazPorudzbine)
+    })
+}
 
 let nizPorudzbina = [
     {
@@ -69,12 +126,12 @@ let nizPorudzbina = [
 
 btnPoruciPizzu.addEventListener('click', () => {
     // console.log(typeof +inputPrecnikPizze.value, +inputPrecnikPizze.value);
-    
-    if(+inputPrecnikPizze.value === NaN) {
+
+    if (+inputPrecnikPizze.value === NaN || inputPrecnikPizze.value.trim() === '') {
         alert('Nepravilan unos za velicinu!')
         return
     }
-        
+
     let precnikPizze = +inputPrecnikPizze.value
     // cenaPizze(precnikPizze)
     let porudzbina = {
@@ -92,10 +149,13 @@ btnPoruciPizzu.addEventListener('click', () => {
 })
 
 btnIspisiSvePorudzbine.addEventListener('click', () => {
-    nizPorudzbina.forEach(pizza => {
-        console.log(pizza)
-    })
+    //ispis u konzolu
+    // nizPorudzbina.forEach(pizza => {
+    //     console.log(pizza)
+    // })
+
     // prikaz na stranici
+    renderPorudzbina(nizPorudzbina, divIspisPorudzbina)
 })
 
 btnIzracunajDnevniPazar.addEventListener('click', () => {

@@ -403,4 +403,3 @@
 // }
 
 // console.log(osoba.firstName, osoba.lastName, osoba.age, osoba.hobi[0])
-
