@@ -60,7 +60,7 @@ const render = (nizPorudzbina) => {
         buttonDelete.textContent = 'obrisi'
 
         buttonDelete.addEventListener('click' , () => {
-            nizPorudzbina.splice(nizPorudzbina.findIndex(element => element.vreme === pizza.vreme),1)
+            nizPorudzbina.splice(nizPorudzbina.findIndex(element => element.cena === pizza.cena),1)
             divRender.textContent = ''
             render(nizPorudzbina)
         })
@@ -125,7 +125,6 @@ btnIspisiSvePorudzbine.addEventListener('click', () => {
     })
     // prikaz na stranici
 })
-render(nizPorudzbina)
 
 btnIzracunajDnevniPazar.addEventListener('click', () => {
     console.log(dnevniPazar(nizPorudzbina))
