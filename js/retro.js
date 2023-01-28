@@ -423,4 +423,3 @@ console.log(zbir(broj,broj1));
 // }
 
 // console.log(osoba.firstName, osoba.lastName, osoba.age, osoba.hobi[0])
-

@@ -3,7 +3,6 @@ const btnPoruciPizzu = document.querySelector('#poruci')
 const btnIspisiSvePorudzbine = document.querySelector('#ispisiSvePorudzbine')
 const btnIzracunajDnevniPazar = document.querySelector('#izracunajDnevniPazar')
 const pPoruka = document.querySelector('.poruka')
-const divRender = document.querySelector('.divRender')
 
 function cenaPizze(precnik) {
     // let cm2Pizze = .5 din
@@ -28,9 +27,14 @@ function vratiVreme() {
 }
 
 function dnevniPazar(nizPorudzbina) {
+    if(nizPorudzbina.length == 0) {
+        alert('Kasa je prazna, jer nije bilo porudzbina')
+        return
+    }
+        
     let pazar = 0
-    
-    for(let i = 0; i < nizPorudzbina.length; i++) {
+
+    for (let i = 0; i < nizPorudzbina.length; i++) {
         pazar += nizPorudzbina[i].cena
     }
 
@@ -42,35 +46,16 @@ function dnevniPazar(nizPorudzbina) {
 }
 
 // ostale funkcije
-const render = (nizPorudzbina) => {
-    nizPorudzbina.forEach(pizza => {
-        const newDiv = document.createElement('div')
-        newDiv.className = 'pizza'
 
-        const pPrecnik = document.createElement ('p')
-        pPrecnik.textContent = pizza.precnik
-
-        const pCena = document.createElement('p')
-        pCena.textContent = pizza.cena
-
-        const pVrema = document.createElement('p')
-        pVrema.textContent = pizza.vreme
-
-        const buttonDelete = document.createElement('button')
-        buttonDelete.textContent = 'obrisi'
-
-        buttonDelete.addEventListener('click' , () => {
-            nizPorudzbina.splice(nizPorudzbina.findIndex(element => element.vreme === pizza.vreme),1)
-            divRender.textContent = ''
-            render(nizPorudzbina)
+        btnObrisiPorudzbinu.addEventListener('click', () => {
+            niz.splice(index, 1)
+            renderPorudzbina(niz, container)
         })
-        newDiv.append(pPrecnik, pCena, pVrema, buttonDelete)
-        divRender.appendChild(newDiv)
 
+        divPrikazPorudzbine.append(pRedniBrojPorudzbine, pVelicinaPizze, pCenaPizze, pVremePorucivanja, btnObrisiPorudzbinu)
+        container.appendChild(divPrikazPorudzbine)
     })
 }
-
-
 
 let nizPorudzbina = [
     {
@@ -97,12 +82,12 @@ let nizPorudzbina = [
 
 btnPoruciPizzu.addEventListener('click', () => {
     // console.log(typeof +inputPrecnikPizze.value, +inputPrecnikPizze.value);
-    
-    if(+inputPrecnikPizze.value === NaN) {
+
+    if (+inputPrecnikPizze.value === NaN || inputPrecnikPizze.value.trim() === '') {
         alert('Nepravilan unos za velicinu!')
         return
     }
-        
+
     let precnikPizze = +inputPrecnikPizze.value
     // cenaPizze(precnikPizze)
     let porudzbina = {
@@ -120,10 +105,13 @@ btnPoruciPizzu.addEventListener('click', () => {
 })
 
 btnIspisiSvePorudzbine.addEventListener('click', () => {
-    nizPorudzbina.forEach(pizza => {
-        console.log(pizza)
-    })
+    //ispis u konzolu
+    // nizPorudzbina.forEach(pizza => {
+    //     console.log(pizza)
+    // })
+
     // prikaz na stranici
+    renderPorudzbina(nizPorudzbina, divIspisPorudzbina)
 })
 render(nizPorudzbina)
 
