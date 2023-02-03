@@ -112,3 +112,11 @@ renderUsers(users)
 btnAllUsers.addEventListener('click', () => {
     console.log('users')
 })
+
+
+
+
+
+
+
+

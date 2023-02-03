@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="pizza.js" defer></script>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(95, 128, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.poruciPizzu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .5rem;
+    padding: 1rem;
+}
+main{
+    border-radius: 20px;
+    background-color: white;
+    width: 40%;
+    height: 250px;
+    margin-top: 4rem;
+}
+
+.poruciPizzu input {
+    padding: .5rem;
+    font-size: 1.2rem;
+    border: 1px solid  rgb(31, 96, 225);
+    border-radius: 10px;
+}
+
+.poruciPizzu label {
+    font-size: 1.5rem;
+    color:  rgb(31, 96, 225);
+}
+
+.komande {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 1rem;
+}
+
+.poruka {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+button {
+    padding: .5rem;
+    background-color: rgb(31, 96, 225);
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+}
+button:hover{
+    background-color: rgb(95, 128, 194);
+}
+
+.ispisPorudzbina {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    padding-top: 2rem;
+    width: 60%;
+    margin: auto;
+}
+
+.ispisPorudzbina p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 10%;
+}
+
+.headerTabele {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #000;
+}
+
+.prikazPorudzbine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+}
+    </style>
+</head>
+<body>
+    <div class="poruciPizzu">
+        <label for="precnikPizze">Unesite velicinu pizze u cm:</label>
+        <input type="text" id="precnikPizze">
+        <p class="poruka"></p>
+    </div>
+    <div class="komande">
+        <button id="poruci">Poruci</button>
+        <button id="ispisiSvePorudzbine">Sve porudzbine</button>
+        <button id="izracunajDnevniPazar">Dnevni pazar</button>
+    </div>
+    <div class="ispisPorudzbina">
+        <!-- <div class="prikazPorudzbine">
+            <p>1.</p>
+            <p>50cm</p>
+            <p>981.50 dinara</p>
+            <p>18:50:09</p>
+            <button>Obrisi</button>
+        </div> -->
+    </div>
+</body>
+</html>

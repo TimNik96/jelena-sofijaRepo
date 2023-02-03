@@ -3,6 +3,7 @@ const btnPoruciPizzu = document.querySelector('#poruci')
 const btnIspisiSvePorudzbine = document.querySelector('#ispisiSvePorudzbine')
 const btnIzracunajDnevniPazar = document.querySelector('#izracunajDnevniPazar')
 const pPoruka = document.querySelector('.poruka')
+const divIspisPorudzbina = document.querySelector('.ispisPorudzbina')
 
 function cenaPizze(precnik) {
     // let cm2Pizze = .5 din
@@ -44,8 +45,6 @@ function dnevniPazar(nizPorudzbina) {
 
     return `Dnevni pazar je ${pazar.toFixed(2)} dinara.`
 }
-
-// ostale funkcije
 
 const renderPorudzbina = (niz, container) => {
     container.textContent = ''
@@ -96,7 +95,6 @@ const renderPorudzbina = (niz, container) => {
             niz.splice(index, 1)
             renderPorudzbina(niz, container)
         })
-       
 
         divPrikazPorudzbine.append(pRedniBrojPorudzbine, pVelicinaPizze, pCenaPizze, pVremePorucivanja, btnObrisiPorudzbinu)
         container.appendChild(divPrikazPorudzbine)
@@ -160,7 +158,12 @@ btnIspisiSvePorudzbine.addEventListener('click', () => {
     renderPorudzbina(nizPorudzbina, divIspisPorudzbina)
 })
 
-
 btnIzracunajDnevniPazar.addEventListener('click', () => {
     console.log(dnevniPazar(nizPorudzbina))
 })
+
+
+
+
+
+
