@@ -137,3 +137,7 @@ https://swiperjs.com/demos
 #Domaci_7
 
 https://cssbattle.dev/play/2
+
+#Domaci_8
+
+https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX
