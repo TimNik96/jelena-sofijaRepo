@@ -145,3 +145,7 @@ https://grid.layoutit.com/
 https://expertmovingservices.com/
 https://michalsnik.github.io/aos/
 https://swiperjs.com/demos
+
+#Domaci_7
+
+https://cssbattle.dev/play/2
