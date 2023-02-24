@@ -1,6 +1,3 @@
-let prihodi = []
-let rashodi = []
-
 const h1Odnos = document.querySelector('.odnosPrihodRashod')
 const pPrihod = document.querySelector('.prihod').children[1]
 const pRashod = document.querySelector('.rashod').children[1]
@@ -11,10 +8,23 @@ const btnUnesi = document.querySelector('#unesi')
 const divIspisPrihod = document.querySelector('.ispisi_prihodi')
 const divIspisRashod = document.querySelector('.ispisi_rashodi')
 
-console.log(pRashod.innerText.substring(1, pRashod.innerText.indexOf(' ')))
+let prihodi 
+let rashodi
+
+if(localStorage.getItem('prihodi') === null) {
+    prihodi = []
+} else {
+    prihodi = JSON.parse(localStorage.getItem('prihodi'))
+}
+if(localStorage.getItem('rashodi') === null) {
+    rashodi = []
+} else {
+    rashodi = JSON.parse(localStorage.getItem('rashodi'))
+}
+
+// console.log(pRashod.innerText.substring(1, pRashod.innerText.indexOf(' ')))
 
 function bilans(niz) {
-
     let zbir = 0
     niz.forEach(element => {
         zbir += element.iznos
@@ -58,9 +68,11 @@ const renderTransakcija = (niz1, niz2, container) => {
             niz1.splice(index, 1)
             renderTransakcija(niz1, niz2, container)
             let trenutniNovac
+
             if (container.classList.contains('ispisi_prihodi')) {
                 let rashodiUProcentima = procenatRashoda(niz1,niz2)
                 trenutniNovac = preostaliNovac(niz1, niz2)
+                renderTransakcija(niz2, niz1, divIspisRashod)
 
                 if (bilans(niz1) > 0)
                     pPrihod.textContent = '+' + bilans(niz1)
@@ -99,6 +111,9 @@ const renderTransakcija = (niz1, niz2, container) => {
     })
 }
 
+renderTransakcija(prihodi, rashodi, divIspisPrihod)
+renderTransakcija(rashodi, prihodi, divIspisRashod)
+
 btnUnesi.addEventListener('click', () => {
     if (select.value === 'default') {
         alert('mora se izabrati iz padajuceg menija')
@@ -121,6 +136,7 @@ btnUnesi.addEventListener('click', () => {
 
     if (select.value === 'plus') {
         prihodi.push(transakcija)
+        localStorage.setItem('prihodi', JSON.stringify(prihodi))
         divIspisPrihod.textContent = ''
         renderTransakcija(prihodi, rashodi, divIspisPrihod)
         renderTransakcija(rashodi, prihodi, divIspisRashod)
@@ -144,9 +160,9 @@ btnUnesi.addEventListener('click', () => {
 
     if (select.value === 'minus') {
         rashodi.push(transakcija)
+        localStorage.setItem('rashodi', JSON.stringify(rashodi))
         divIspisRashod.textContent = ''
         renderTransakcija(rashodi, prihodi, divIspisRashod)
-
         let bilansRashoda = bilans(rashodi)
         let rashodiUProcentima = procenatRashoda(prihodi,rashodi)
 

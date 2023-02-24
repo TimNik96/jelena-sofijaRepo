@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/register.js" defer></script>
+</head>
+<body>
+    <form action="">
+        <h1>
+            REGISTER
+        </h1>
+
+        <label for="firstName">FIRST NAME</label>
+        <input type="text" name="first-name" id="firstName" required>
+
+        <label for="lastName">LAST NAME</label>
+        <input type="text" name="last-name" id="lastName" required>
+        
+        <label for="dateOfBirth">DATE OF BIRTH</label>
+        <input type="date" name="date-of-birth" id="dateOfBirth" required>
+        
+        <label for="phoneNumber">PHONE NUMBER</label>
+        <input type="number" name="phone-number" id="phoneNumber" placeholder="06XXXXXXXX" required> <!-- podsetiti se kako ide provera preko isNaN() -->
+
+        <label for="username">USERNAME</label>
+        <input type="text" name="username" id="username" required>
+        
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="password">PASSWORD</label>
+        <input type="password" name="password" id="password" required>
+        
+        <label for="confPassword">CONFIRM PASSWORD</label>
+        <input type="password" id="confPassword" required>
+
+        <input type="submit" value="REGISTER" id="submit">
+    </form>
+</body>
+</html>
