@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: white;
+            background-color: red;
+            /* transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            transition-delay: .5s; */
+        }
+
+        div:hover {
+            background-color: black;
+            color: aqua;
+            transition: all 1s .5s ease;
+        }
+
+        input {
+            transition: all .3s ease;
+        }
+
+        input:focus {
+            border: 2px solid red;
+            outline: none;
+        }
+
+        [type='text']:first-of-type::placeholder {
+            color: red;
+        }
+
+        [type='password']::placeholder {
+            color: blue;
+        }
+
+
+
+    </style>
+    <!-- <script>
+        window.location.href('pathToFile')
+    </script> -->
+</head>
+<body>
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate nisi tempora et, cupiditate animi consectetur minima reprehenderit eligendi doloremque illum officiis explicabo quasi commodi provident perferendis! Dicta doloribus nisi architecto.
+    </div>
+
+    <input type="text" placeholder="Enter sth...">
+    <input type="text" placeholder="Enter sth else...">
+    <input type="password" placeholder="Enter pass...">
+</body>
+</html>

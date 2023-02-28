@@ -10,6 +10,7 @@ https://bennettfeely.com/clippy/
 https://animista.net/play/basic/shadow-drop-2/shadow-drop-2-left
 https://getbootstrap.com/docs/5.2/getting-started/introduction/
 https://grid.layoutit.com/
+https://cssgradient.io/
 https://www.youtube.com/watch?v=A7fF6czIxEo
 
 TEORIJA HTML&CSS:
@@ -149,3 +150,8 @@ https://swiperjs.com/demos
 #Domaci_7
 
 https://cssbattle.dev/play/2
+
+#Domaci_8
+
+https://cssbattle.dev/play/140
+https://flukeout.github.io/
