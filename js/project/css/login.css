@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 74, 121, 1) 51%, rgba(164, 0, 255, 1) 100%);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 5rem auto;
+    border: 2px solid rgb(92, 13, 170);
+    border-radius: 20px;
+    height: 40vh;
+    padding-top: 2rem;
+    background-color: rgb(149, 95, 207);
+    animation-name: forma;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes forma {
+    0% {
+        border: 5px solid rgb(92, 13, 170);
+        transform: scale(1,1);
+    }
+
+    50% {
+        border: 5px solid rgb(28, 27, 27);
+        transform: scale(1,1);
+    }
+
+    100% {
+        border: 5px solidrgb(92, 13, 170);
+        transform: scale(1,1);
+
+    }
+}
+
+
+form label {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(92, 13, 170);
+    padding: 1rem;
+}
+
+form input {
+    width: 60%;
+    height: 8%;
+    border-radius: 20px;
+    margin: 0.5rem auto;
+}
+[type="text"]::placeholder{
+    color:  rgb(92, 13, 170);
+    padding-left: 1rem;
+}
+[type="password"]::placeholder{
+    color:  rgb(92, 13, 170);
+    padding-left: 1rem;
+}
+input:focus{
+    outline: none;
+    border: 2px solid  rgb(60, 13, 170);
+}
+
+a {
+    margin: auto;
+    color: rgb(92, 13, 170);
+    text-decoration: none;
+    margin: .5rem auto;
+    width: 22%;
+    transition: all 1.5s ease;
+    text-align: center;
+}
+
+a:hover {
+    border-bottom: 1px solid rgb(92, 13, 170);
+}
+
+#login {
+    transition: all .5s ease;
+}
+
+#login:hover {
+    border: 1px solid rgb(92, 13, 170);
+    color: white;
+    background-color: rgb(86, 54, 120);
+}

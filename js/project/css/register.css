@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(147, 111, 182);
+}
+h1{
+    text-align: center;
+    margin: 2rem 0;
+    color: rgb(92, 13, 170);
+}
+main{
+    border: 2px solid rgb(92, 13, 170);
+    border-radius: 20px;
+    width: 70%;
+    height: 57vh;
+    margin: auto;
+    padding-top: 2rem;
+    background-color:  rgb(149, 95, 207);
+
+}
+section{
+    display: flex;
+}
+
+.divNames, .divPass{
+    /* border: 1px solid rgb(92, 13, 170);
+    border-radius: 20px; */
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 50vh;
+    /* background-color: rgb(102, 63, 138); */
+}
+.divNames input, .divPass input{
+    width: 60%;
+    height: 6%;
+    border-radius: 20px;
+    margin: auto;
+}
+.divNames label, .divPass label{
+    text-align: center;
+    color:rgb(92, 13, 170) ;
+}
+
+.submit input{
+    border-radius: 10px;
+    width:20%;
+    padding: .3rem;
+    margin-left: 22rem;
+}
+
+
