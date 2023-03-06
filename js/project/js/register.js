@@ -3,14 +3,14 @@ function parsirajBrojTelefona(brojTelefona) {
 }
 
 function checkUser(nizKorisnika, inputUsername, zauzetUser) {
-    for(let i = 0; i < nizKorisnika.length; i++) {
-        if(inputUsername.value === nizKorisnika[i].username) {
+    for (let i = 0; i < nizKorisnika.length; i++) {
+        if (inputUsername.value === nizKorisnika[i].username) {
             zauzetUser = true
             break
         }
     }
 
-    if(inputUsername.value.trim() === '' || zauzetUser) {
+    if (inputUsername.value.trim() === '' || zauzetUser) {
         inputUsername.style.border = '2px solid #f00'
     } else {
         inputUsername.style.border = '2px solid #0f0'
@@ -27,68 +27,57 @@ const inputEmail = document.querySelector('#email')
 const inputPassword = document.querySelector('#password')
 const inputConfirmPassword = document.querySelector('#confPassword')
 
-let nizKorisnika = []
+let nizKorisnika = JSON.parse(localStorage.getItem('korisnici_projekat'))
 let zauzetUser = false
 
-console.log(localStorage.getItem('korisnici_projekat'))
+let dan = (new Date().getDate()) < 10 ? "0" + new Date().getDate() : new Date().getDate()
+let mesec = (new Date().getMonth() + 1) < 10 ? "0" + new Date().getMonth() : new Date().getMonth()
+let godina = new Date().getFullYear()
 
-if(localStorage.getItem('korisnici_projekat') == null) {
-    nizKorisnika = [
-        {
-            isAdmin: true,
-            username: 'admin',
-            password: 'admin'
-        }
-    ]
-    localStorage.setItem('korisnici_projekat', JSON.stringify(nizKorisnika))
-} else {
-    nizKorisnika = JSON.parse(localStorage.getItem('korisnici_projekat'))
-}
+inputDateOfBirth.setAttribute("max", `${godina}-${mesec}-${dan}`)
+
 
 inputUsername.addEventListener('focusout', checkUser.bind(null, nizKorisnika, inputUsername, zauzetUser))
 
 forma.addEventListener('submit', (event) => {
     event.preventDefault()
 
-    if(inputFirstName.value.trim() === '') {
+    if (inputFirstName.value.trim() === '') {
         alert('Unesite ime!')
         return
     }
 
-    if(inputLastName.value.trim() === '') {
+    if (inputLastName.value.trim() === '') {
         alert('Unesite prezime!')
         return
     }
 
-    // provera datuma (max mora biti danasnji dan)
-    // inputDateOfBirth.setAttribute()
-
-    if(inputPhoneNumber.value.length !== 9 && inputPhoneNumber.value.length !== 10) {
+    if (inputPhoneNumber.value.length !== 9 && inputPhoneNumber.value.length !== 10) {
         alert('Neodgovarajuci broj telefona!')
         return
     }
 
-    if(inputUsername.value.trim() === '') {
+    if (inputUsername.value.trim() === '') {
         alert('Unesite username!')
         return
     }
 
-    if(zauzetUser) {
+    if (zauzetUser) {
         alert('Izaberite jedinstven username!')
         return
     }
 
-    if(inputEmail.value.trim() === '') {
+    if (inputEmail.value.trim() === '') {
         alert('Unesite email!')
         return
     }
 
-    if(inputPassword.value.trim() === '') {
+    if (inputPassword.value.trim() === '') {
         alert('Unesite password!')
         return
     }
 
-    if(inputPassword.value !== inputConfirmPassword.value) {
+    if (inputPassword.value !== inputConfirmPassword.value) {
         alert('Proverite unos za sifre!')
         return
     }
