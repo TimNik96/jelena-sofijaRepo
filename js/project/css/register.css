@@ -58,6 +58,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 60%;
     height: 50vh;
     row-gap: 1rem;
@@ -65,23 +66,37 @@ section {
 
 .divNames input,
 .divPass input {
+    width: 70%;
+    height: 20px;
     border-radius: 20px;
     border: 2px solid #4f43bc;
     padding: .5rem 2rem;
     background-color: #0e0c1f;
     text-align: center;
     color: #68e0cc;
+    transition: all .3s ease;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 [type="date"] {
-    width: 10px;
-    height: 10px;
+    
+}
+
+::-webkit-calendar-picker-indicator {
+    background: #68e0cc;
+    border-radius: 20px;
+    width: 5px;
+    height: 5px;
 }
 
 .divNames input:focus,
 .divPass input:focus {
     outline: none;
-    filter: drop-shadow(0 0 10px #68e0cc);
+    filter: drop-shadow(0 0 10px #4f43bc);
 }
 
 .divNames label,
@@ -94,10 +109,11 @@ section {
     border-radius: 20px;
     border: 2px solid #4f43bc;
     color: #68e0cc;
-    padding: .3rem 1rem;
+    padding: .7rem 2rem;
     background-color: #0e0c1f;
     cursor: pointer;
     margin: 1rem auto;
+    transition: all .3s ease;
 }
 
 .submit:hover {

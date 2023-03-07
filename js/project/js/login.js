@@ -39,6 +39,8 @@ forma.addEventListener('submit', (event)=>{
        if(inputUsername.value === nizKorisnika[i].username){
         if(inputPassword.value === nizKorisnika[i].password){
             window.location.href="../html/site.html"
+            inputPassword.value = ''
+            inputUsername.value = ''
             ulogovani = true
             break
         }
@@ -49,3 +51,14 @@ forma.addEventListener('submit', (event)=>{
         alert('proverite unos za vas username i pasword')
     }
 })
+
+// const mojUser = nizKorisnika.find(user => user.username === inputUsername.value)
+// nizKorisnika.find()
+
+// if(mojUser === undefined)
+
+// if(mojUser.password !== inputPassword.value)
+//     alert()
+
+// push na localstorage
+// povlacenje sa localstorage na stranici na kojoj su podaci potrebni
