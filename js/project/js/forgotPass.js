@@ -32,6 +32,7 @@ forma.addEventListener('submit', (event) => {
 
     user.password = inputNewPassword.value
     nizKorisnika.splice(nizKorisnika.findIndex(el => el.email === inputEmail.value), 1, user)
+    window.location.href='../html/login.html'
     localStorage.setItem('korisnici_projekat', JSON.stringify(nizKorisnika))
 })
 
