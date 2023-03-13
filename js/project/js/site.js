@@ -1,3 +1,4 @@
 const pPoruka = document.querySelector('p')
 
-const nizKorisnika = JSON.parse(localStorage.getItem('korisnici_projekat'))
+const user = JSON.parse(localStorage.getItem('ulogovaniKorisnik'))
+pPoruka.textContent = `Pozdrav ${user.username}`

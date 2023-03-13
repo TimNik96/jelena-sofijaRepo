@@ -2,7 +2,7 @@ function parsirajBrojTelefona(brojTelefona) {
     return '+381' + brojTelefona.substring(1)
 }
 
-function checkUser(nizKorisnika, inputUsername, zauzetUser) {
+function checkUser(nizKorisnika, inputUsername) {
     for (let i = 0; i < nizKorisnika.length; i++) {
         if (inputUsername.value === nizKorisnika[i].username) {
             zauzetUser = true
@@ -10,7 +10,7 @@ function checkUser(nizKorisnika, inputUsername, zauzetUser) {
         }
     }
 
-    if (inputUsername.value.trim() === '' || zauzetUser) {
+    if (inputUsername.value === '' || zauzetUser) {
         inputUsername.style.border = '2px solid #f00'
     } else {
         inputUsername.style.border = '2px solid #0f0'
@@ -37,7 +37,7 @@ let godina = new Date().getFullYear()
 inputDateOfBirth.setAttribute("max", `${godina}-${mesec}-${dan}`)
 
 
-inputUsername.addEventListener('focusout', checkUser.bind(null, nizKorisnika, inputUsername, zauzetUser))
+inputUsername.addEventListener('focusout', checkUser.bind(null, nizKorisnika, inputUsername))
 
 forma.addEventListener('submit', (event) => {
     event.preventDefault()
@@ -84,6 +84,7 @@ forma.addEventListener('submit', (event) => {
 
     let noviKorisnik = {
         isAdmin: false,
+        marked:false,
         firstName: inputFirstName.value,
         lastName: inputLastName.value,
         dateOfBirth: inputDateOfBirth.value,

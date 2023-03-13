@@ -39,6 +39,8 @@ forma.addEventListener('submit', (event)=>{
        if(inputUsername.value === nizKorisnika[i].username){
         if(inputPassword.value === nizKorisnika[i].password){
             window.location.href="../html/site.html"
+            let user = nizKorisnika.find(el => el.username === inputUsername.value)
+            localStorage.setItem('ulogovaniKorisnik',JSON.stringify(user))
             inputPassword.value = ''
             inputUsername.value = ''
             ulogovani = true
