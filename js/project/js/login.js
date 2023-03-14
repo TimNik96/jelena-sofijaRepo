@@ -8,6 +8,28 @@ if(localStorage.getItem('korisnici_projekat') == null) {
             isAdmin: true,
             username: 'admin',
             password: 'admin'
+        },
+        {
+            isAdmin: false,
+            marked:false,
+            firstName: 'Marko',
+            lastName: 'A',
+            dateOfBirth: '2020',
+            phoneNumber: '12345',
+            username: 'mojMare',
+            email: 'mail@g.com',
+            password: 'pass123'
+        },
+        {
+            isAdmin: false,
+            marked:false,
+            firstName: 'Janko',
+            lastName: 'A',
+            dateOfBirth: '2020',
+            phoneNumber: '12345',
+            username: 'mojMareCare',
+            email: 'mail2@g.com',
+            password: 'pass123'
         }
     ]
     localStorage.setItem('korisnici_projekat', JSON.stringify(nizKorisnika))
@@ -38,12 +60,18 @@ forma.addEventListener('submit', (event)=>{
     for(let i = 0; i <nizKorisnika.length; i++){
        if(inputUsername.value === nizKorisnika[i].username){
         if(inputPassword.value === nizKorisnika[i].password){
-            window.location.href="../html/site.html"
             let user = nizKorisnika.find(el => el.username === inputUsername.value)
             localStorage.setItem('ulogovaniKorisnik',JSON.stringify(user))
             inputPassword.value = ''
             inputUsername.value = ''
             ulogovani = true
+            
+            if(user.username === 'admin') {
+                window.location.href="../html/admin.html"
+            } else {
+                window.location.href="../html/site.html"
+            }
+
             break
         }
         break
