@@ -91,7 +91,8 @@
 //     paragraf.style.color = 'blue'
 // }
 
-// 10. U odnosu na pol koji je korisnik uneo u promenljivu  (“m” za muški pol ili “z” za ženski pol)  na ekranu prikazati odgovarajući avatar (odgovarajuću sličicu). 
+// 10. U odnosu na pol koji je korisnik uneo u promenljivu  (“m” za muški pol ili “z” za ženski pol)  na ekranu prikazati odgovarajući avatar (odgovarajuću sličicu).
+
 // const forma = document.querySelector('form')
 // const input = document.querySelector('#pol')
 // const div = document.querySelector('div')
@@ -100,8 +101,8 @@
 // let avatarM = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M96 64a64 64 0 1 1 128 0A64 64 0 1 1 96 64zm48 320v96c0 17.7-14.3 32-32 32s-32-14.3-32-32V287.8L59.1 321c-9.4 15-29.2 19.4-44.1 10S-4.5 301.9 4.9 287l39.9-63.3C69.7 184 113.2 160 160 160s90.3 24 115.2 63.6L315.1 287c9.4 15 4.9 34.7-10 44.1s-34.7 4.9-44.1-10L240 287.8V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V384H144z"/></svg>'
 // let avatarZ = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M224 64A64 64 0 1 0 96 64a64 64 0 1 0 128 0zM88 400v80c0 17.7 14.3 32 32 32s32-14.3 32-32V400h16v80c0 17.7 14.3 32 32 32s32-14.3 32-32V400h17.8c10.9 0 18.6-10.7 15.2-21.1l-31.1-93.4 28.6 37.8c10.7 14.1 30.8 16.8 44.8 6.2s16.8-30.7 6.2-44.8L254.6 207c-22.4-29.6-57.5-47-94.6-47s-72.2 17.4-94.6 47L6.5 284.7c-10.7 14.1-7.9 34.2 6.2 44.8s34.2 7.9 44.8-6.2l28.7-37.8L55 378.9C51.6 389.3 59.3 400 70.2 400H88z"/></svg>'
 
-// forma.addEventListener('enter',(event)=>{
-// event.preventDefault()
+// forma.addEventListener('submit', (event) => {
+//     event.preventDefault()
 
 //     if(input.value.trim() === 'm' ){
 //         div.innerHTML = avatarM
@@ -109,6 +110,12 @@
 //         div.innerHTML = avatarZ
 //     }else{
 //         alert('proverite unos za vas avatar')
+//     }
+// })
+
+// input.addEventListener('keypress', (event) => {
+//     if (event.key === 'Enter') {
+//         // logika
 //     }
 // })
 
@@ -139,6 +146,9 @@
 // body.append(paragraf)
 
 // let trenutnaGodina = new Date().getFullYear()
+
+// console.log(trenutnaGodina)
+
 // let godinaRodjenja = 2010
 
 // let brojGodina = trenutnaGodina - godinaRodjenja
@@ -182,7 +192,7 @@
 //     paragraf.textContent = 'radni dan je'
 // }
 
-// 5. Na osnovu unetog broja poena u paragrafu ispitati koju ocenu profesor treba da upiše učeniku. Učenik je položio ispit nekom ocenom  ukoliko ima više od 50 poena, u    suprotnom treba ispisati da je pao ispit. 
+// 5. Na osnovu unetog broja poena u paragrafu ispitati koju ocenu profesor treba da upiše učeniku. Učenik je položio ispit nekom ocenom  ukoliko ima više od 50 poena, u suprotnom treba ispisati da je pao ispit. 
 //    Za više od 50 poena učenik dobija ocenu 6, 
 //    za više od 60 poena učenik dobija ocenu 7,
 //    za više od 70 poena učenik dobija ocenu 8, 
@@ -195,17 +205,17 @@
 
 // let brojPoena = 67
 
-// if(brojPoena <= 50){
+// if (brojPoena <= 50) {
 //     paragraf.textContent = 'ucenik je pao ispit'
-// }else if(brojPoena > 50 && brojPoena <= 60){
+// } else if (brojPoena <= 60) {
 //     paragraf.textContent = 'ucenik je dobio 6'
-// }else if(brojPoena > 60 && brojPoena <= 70){
+// } else if (brojPoena <= 70) {
 //     paragraf.textContent = 'ucenik je dobio 7'
-// }else if(brojPoena > 70 && brojPoena <= 80){
+// } else if (brojPoena <= 80) {
 //     paragraf.textContent = 'ucenik je dobio 8'
-// }else if(brojPoena > 80 && brojPoena <= 90){
+// } else if (brojPoena <= 90) {
 //     paragraf.textContent = 'ucenik je dobio 9'
-// }else if(brojPoena > 90 && brojPoena <= 100){
+// } else if (brojPoena <= 100) {
 //     paragraf.textContent = 'ucenik je dobio 10'
 // }
 
@@ -221,10 +231,10 @@
 
 // let trenutnoVreme = `${sati}:${minuti}:${sekunde}`
 
-// if(trenutnoVreme < 12){
+// if(sati < 12){
 //     paragraf.textContent = 'dobro jutro'
-// }else if(trenutnoVreme > 12 && trenutnoVreme < 18){
-//     paragraf.textContent = 'dobro dan'
+// }else if(sati < 18){
+//     paragraf.textContent = 'dobar dan'
 // }else{
 //     paragraf.textContent = 'dobro vece'
 // }
@@ -241,10 +251,81 @@
 
 // let trenutnoVreme = `${sati}:${minuti}:${sekunde}`
 
-
-
-// if(trenutnoVreme < '9' && trenutnoVreme > '17'){
+// if(sati < 9 && (sati >= 17 && minuti >= 0 && sekunde > 0)){
 //     paragraf.textContent = 'trenutno firma ne radi'
 // }else{
 //     paragraf.textContent = ' firma radi'
 // }
+
+// let niz = [1, 2, 3, 4, 5]
+
+// niz.splice(Math.floor((niz.length - 1) / 2), 1, 10)
+
+// console.log(niz)
+
+// let niz = [1, 20, 33, 4, 5]
+// let max = niz[0]
+
+// for(let i = 1; i < niz.length; i++) {
+//     if(niz[i] > max)
+//         max = niz[i]
+// }
+
+// console.log(max)
+// // SPREAD OPERATOR (ARRAY)
+// console.log(Math.max(...niz))
+
+// let noviNiz = [...niz, 10, 20, 30 ]
+
+// console.log(noviNiz)
+// // REST OPERATOR (ARRAY)
+// function maksimalnaVrednost(...brojevi) {
+//     let max = brojevi[0]
+//     for(let i = 1; i < brojevi.length; i++) {
+//         if(brojevi[i] > max)
+//             max = brojevi[i]
+//     }
+//     return max
+// }
+
+// console.log(maksimalnaVrednost(10, 30, 200, 22, 48, 405, 12))
+
+// SPREAD NAD OBJEKTOM
+
+// let osoba = {
+//     name: 'Marko',
+//     age: 30
+// }
+
+// let inzenjer = {
+//     ...osoba,
+//     name: 'Uros',
+//     zanimanje: 'programer'
+// }
+
+// console.log(inzenjer)
+
+// DESTRUCTURING ARRAY
+
+// let niz = [1, 2, 3]
+
+// const [num1, , , num2] = niz
+
+// console.log(num1, num2)
+
+// function ispisiImeOsobe({name, age}) {
+//     console.log(name)
+// }
+
+// ispisiImeOsobe(osoba)
+
+let osoba = {
+    name: 'Marko',
+    age: 30
+}
+
+let osoba1 = {...osoba}
+
+osoba1.name = 'Uros'
+
+console.log(osoba, osoba1)
