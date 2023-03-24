@@ -248,3 +248,9 @@
 // }else{
 //     paragraf.textContent = ' firma radi'
 // }
+
+let niz = [1,2,3,4]
+// niz.pop()
+niz.splice(0,1)
+
+console.log(niz);
