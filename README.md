@@ -176,3 +176,20 @@ Popodne je kada prođe 12:00 sati, ne računajući i to vreme.
 6. Za vreme preuzeto sa računara ispisati dobro jutro za vreme manje od 12 sati ujutru, dobar dan za vreme manje od 18 sati, u ostalim slučajevima ispisati dobro veče.
 7. Radno vreme jedne programerske firme je od 9h do 17h. Preuzeti vreme sa računara i ispitati da li u to vreme firma radi ili ne radi.
 
+#Domaci_11
+
+1. Za uneti broj ispitati da li je paran ili nije. 
+2. Za uneti broj ispisati da li je deljiv sa 3 ili ne.
+3. Za dva uneta broja, od većeg učitanog broja oduzeti manji i rezultat ispisati na ekranu.
+4. Za uneti broj ispitati da li je on manji od nule, veći od nule ili jednak nuli. 
+   Ukoliko je manji ili jednak nuli ispisati njegov prethodnik, a ukoliko je veći od nule ispisati njegov sledbenik.
+5. Za tri uneta broja ispisati koji od njih je najveći, koji od njih je srednji, a koji od njih je najmanji, korišćenjem if – else if strukture.
+6. Za učitani broj ispitati da li je ceo.
+7. Za tri uneta broja ispisati koji od njih je najveći, koji od njih je srednji, a koji od njih je najmanji, ovoga puta korišćenjem ugnježdenog grananja.
+8. Učitati dva cela broja i ispitati da li je veći od njih paran. 
+9. Uneti dva datuma i ispisati onaj koji je raniji. Datume unosimo tako što u posebnim promenljivama navedemo dan, mesec i godinu, za svaki od njih.
+10. Ispitati da li je trenutna godina prestupna. (godinu preuzeti iz vremena na Vašem računaru).Godina je prestupna ako je deljiva sa 4 i nije deljiva sa 100 ili ako je deljiva sa 400.
+11. U niz napuniti random vrednosti od 7 do 15 ali tako da nema duplikata i da se svi elementi iz raspona nalaze u nizu.
+12. Izbaciti iz niza sve duplikate. (zadatak je moguce resiti i kroz novi niz i modifikacijom datog niza)
+
+
