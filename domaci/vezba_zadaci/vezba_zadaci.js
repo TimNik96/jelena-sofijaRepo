@@ -356,6 +356,8 @@
 //     console.log('nije deljiv')
 // }
 
+// console.log(broj % 3 === 0 ? 'Deljiv' : 'Nije deljiv')
+
 // 3. Za dva uneta broja, od većeg učitanog broja oduzeti manji i rezultat ispisati na ekranu.
 
 // let broj1 = 15
@@ -374,13 +376,12 @@
 
 // let broj = 5
 // if(broj <= 0){
-//      rezultat = broj - 1
-//     console.log(rezultat)
+//     broj -= 1
+//     console.log(broj)
 // } else {
-//     rezultat = broj + 1
-//     console.log(rezultat)
+//     broj += 1
+//     console.log(broj)
 // }
-
 
 // 5. Za tri uneta broja ispisati koji od njih je najveći, koji od njih je srednji, a koji od njih je najmanji, korišćenjem if – else if strukture.
 
@@ -412,25 +413,26 @@
 //     console.log('broj3 je najmanji broj');
 // }
 
-
 // 6. Za učitani broj ispitati da li je ceo.
 
-// let broj = 137878.77
+// let broj = 137877.5
 
-// if(broj % 2 === 0 || broj % .5 === 0){
-//     console.log('broj je ceo')
-// }else{
-//     console.log('broj nije ceo');
-// }
+// console.log(broj / Math.floor(broj) === 1 ? 'Ceo' : 'Nije ceo');
 
 // 7. Za tri uneta broja ispisati koji od njih je najveći, koji od njih je srednji, a koji od njih je najmanji, ovoga puta korišćenjem ugnježdenog grananja.
-
-
 
 // 8. Učitati dva cela broja i ispitati da li je veći od njih paran.
 
 // let broj1 = 1000
 // let broj2 = 98
+
+// Jednostavnije resenje
+// let max = broj1
+
+// if(broj2 > max)
+//     max = broj2
+
+// console.log(max % 2 === 0 ? 'paran' : 'neparan')
 
 // if(broj1 > broj2){
 //     if(broj1 % 2 === 0){
@@ -476,9 +478,37 @@
 //     console.log('godina nije prestupna');
 // }
 
-// 11. U niz napuniti random vrednosti od 7 do 15 ali tako da nema duplikata i da se svi elementi iz raspona nalaze u nizu.
+// 11. U niz napuniti random vrednosti od 7 do 15 (bez 15) ali tako da nema duplikata i da se svi elementi iz raspona nalaze u nizu.
 
 // let niz = []
-// Math.floor(Math.random() * 15) + 7
-// console.log(Math.floor(Math.random() * 15) + 7)
+// brojElemenata = 15 - 7
+// while(true) {
+//     if(niz.length === brojElemenata)
+//         break
+
+//     let random = Math.floor(Math.random() * 8) + 7
+    
+//     if(niz.find(el => el === random))
+//         continue
+    
+//     niz.push(random)
+// }
+
+// console.log(niz)
+
 // 12. Izbaciti iz niza sve duplikate. (zadatak je moguce resiti i kroz novi niz i modifikacijom datog niza)
+
+// let niz = [1, 2, 3, 1, 14, 2, 7, 10, 1, 2, 5]
+
+// for(let i = 1; i < niz.length; i++) {
+//     for(let j = 0; j < i; j++) {
+//         if(niz[j] === niz[i]) {
+//             niz.splice(i, 1)
+//             i--
+//             break
+//         }
+
+//     }
+// }
+
+// console.log(niz)
