@@ -192,4 +192,11 @@ Popodne je kada prođe 12:00 sati, ne računajući i to vreme.
 11. U niz napuniti random vrednosti od 7 do 15 ali tako da nema duplikata i da se svi elementi iz raspona nalaze u nizu.
 12. Izbaciti iz niza sve duplikate. (zadatak je moguce resiti i kroz novi niz i modifikacijom datog niza)
 
+#Domaci_12
+
+1. Napisati kod koji iz inputa kupi broj i ispisuje broj sa ciframa u obrnutom redosledu u drugom inputu kao resenje. Koristiti dugme. (primer: 1234 => 4321)
+2. Napraviti par korisnika kao objekte u nizu i dodati polja po izboru. Zatim ih lepo ispisati na stranici u nekom divu. (Potruditi se malo oko stilizovanja)
+3. Korisnike iz prethodnog zadatka koristiti i ispisati samo one opcije cije ime pocinje na slovo koje se zada u inputu. Moze se koristiti dugme ili Enter.
+4. Napisati skriptu koja pravi x paragrafa. Svaki paran paragraf ima 30 reci lorem ipsum, a svaki treci ima zelenu boju pozadine.
+5. Napraviti igru kamen-papir-makaze u jednu pobedu. Postoji jedan input za unos zeljene opcije. U paragrafu ispod se na klik ispisuje pobednik, a u konzoli se ispisuje sta je racunar odabrao. Za opciju koju racunar treba da dobije koristiti random()
 
