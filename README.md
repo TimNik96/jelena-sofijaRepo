@@ -199,4 +199,26 @@ Popodne je kada prođe 12:00 sati, ne računajući i to vreme.
 3. Korisnike iz prethodnog zadatka koristiti i ispisati samo one opcije cije ime pocinje na slovo koje se zada u inputu. Moze se koristiti dugme ili Enter.
 4. Napisati skriptu koja pravi x paragrafa. Svaki paran paragraf ima 30 reci lorem ipsum, a svaki treci ima zelenu boju pozadine.
 5. Napraviti igru kamen-papir-makaze u jednu pobedu. Postoji jedan input za unos zeljene opcije. U paragrafu ispod se na klik ispisuje pobednik, a u konzoli se ispisuje sta je racunar odabrao. Za opciju koju racunar treba da dobije koristiti random()
+6. Ispisati brojeve od 1 do 20 
+7. Ispisati brojeve od 20 do 1 
+8. Ispisati parne brojeve od 1 do 20 (uraditi zadatak na dva nacina)
+9. Ispisati dvostruku vrednost brojeva od 5 do 15
+10. Odrediti sumu brojeva od 1 do n
+11. Odrediti sumu brojeva od n do m 
+12. Odrediti proizvod brojeva od n do m
+13. Odrediti sumu kvadrata brojeva od n do m
 
+#Domaci_13
+
+1. Preuzeti proizoljne tri slike sa istom ekstenzijom i imenovati ih 1, 2 i 3. 
+2. For petljom u HTML-u ispisati svaku od sličica uz pomoć brojača (iteratora).
+3. Odrediti proizvod svih brojeva deljivih sa 11 u intervalu od 20 do 100. *
+4. Prebrojati koliko ima brojeva deljivih sa 13 u intervalu od 5 do 150.
+5. Ispisati aritmetičku sredinu brojeva od n do m.
+6. Prebrojati koliko brojeva od n do m je pozitivno, a koliko njih je negativno. *
+7. Prebrojati koliko je brojeva od 5 do 50 koji su deljivi sa 3 ili sa 5. *
+8. Prebrojati i izračunati sumu brojeva od n do m kojima je poslednja cifra 4.
+9. Odrediti sumu brojeva od n do m koji nisu deljivi brojem a.
+10. Odrediti proizvod brojeva od n do m koji su deljivi brojem a.
+11. Odrediti sa koliko brojeva je deljiv uneti broj k.
+12. Odrediti da li je dati prirodan broj n prost. Broj je prost ako je deljiv samo sa jedan i sa samim sobom.
