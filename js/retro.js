@@ -343,13 +343,13 @@
 // }
 // console.log(`najbolje drugarice su ${obj.ime} ${obj.prezime} i ${obj1.ime} ${obj1.prezime}`);
 
-let broj = 1
-let broj1 = 2
-function zbir(broj,broj1){
-    let zbir = broj + broj1 
-    return zbir
-}
-console.log(zbir(broj,broj1));
+// let broj = 1
+// let broj1 = 2
+// function zbir(broj,broj1){
+//     let zbir = broj + broj1 
+//     return zbir
+// }
+// console.log(zbir(broj,broj1));
 
 
 

@@ -100,19 +100,19 @@
 
 // console.log(`ovo je moj drug ${obj.name} ${obj.surname}`)
 
-function imeFunkcije(parametri) {
-    //logika f-je
-    return vrednost
-}
+// function imeFunkcije(parametri) {
+//     //logika f-je
+//     return vrednost
+// }
 
-function zbir(num1, num2) {
-    return num1 + num2
-}
+// function zbir(num1, num2) {
+//     return num1 + num2
+// }
 
-let num1 = 10
-let num2 = 20
+// let num1 = 10
+// let num2 = 20
 
-let num3 = 30
-let num4 = 40
+// let num3 = 30
+// let num4 = 40
 
-console.log(zbir(num3, num4))
+// console.log(zbir(num3, num4))
