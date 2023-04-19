@@ -262,63 +262,66 @@
 
  // 3. Korisnike iz prethodnog zadatka koristiti i ispisati samo one opcije cije ime pocinje na slovo koje se zada u inputu. Moze se koristiti dugme ili Enter.
 
-  let korisnici = [
-        {
-            ime: 'Marko',
-            prezime: 'Markovic',
-            godine: 22
-        },
-        {
-            ime: 'Jovan',
-            prezime: 'Jovanovic',
-            godine: 32
-        },
-        {
-            ime: 'Sreten',
-            prezime: 'Lazarevic',
-            godine: 29
-        },
-        {
-            ime: 'Lazar',
-            prezime: 'Ivanovic',
-            godine: 37
-        }
-    ]
+//   let korisnici = [
+//         {
+//             ime: 'Marko',
+//             prezime: 'Markovic',
+//             godine: 22
+//         },
+//         {
+//             ime: 'Jovan',
+//             prezime: 'Jovanovic',
+//             godine: 32
+//         },
+//         {
+//             ime: 'Sreten',
+//             prezime: 'Lazarevic',
+//             godine: 29
+//         },
+//         {
+//             ime: 'Lazar',
+//             prezime: 'Ivanovic',
+//             godine: 37
+//         }
+//     ]
 
+//     const input = document.querySelector('#pocetnoSlovo')
+//     const btn = document.querySelector('button')
+//     const divIspis = document.querySelector('div')
 
-    const input = document.querySelector('#pocetnoSlovo')
-    const btn = document.querySelector('button')
-    const divIspis = document.querySelector('div')
+// const ispis = (korisnici) =>{
+//     divIspis.textContent = ''
+//     korisnici.forEach(user =>{
+//         const noviDiv = document.createElement('div')
 
-const ispis = (korisnici) =>{
-    korisnici.forEach(user =>{
+//         const pIme = document.createElement('p')
+//         pIme.textContent = user.ime
 
-        const noviDiv = document.createElement('div')
+//         const pPrezime = document.createElement('p')
+//         pPrezime.textContent = user.prezime
 
-        const pIme = document.createElement('p')
-        pIme.textContent = user.ime
+//         const pGodine = document.createElement('p')
+//         pGodine.textContent = user.godine
 
-        const pPrezime = document.createElement('p')
-        pPrezime.textContent = user.prezime
+//         noviDiv.append(pIme,pPrezime,pGodine)
+//         divIspis.appendChild(noviDiv)
+//     })
+// }
+// btn.addEventListener('click',()=>{
+//     if(input.value.trim() === ''){
+//         alert('mora se uneti simbol')
+//         return
+//     }
+//     // let result = []
+//     // for(let i = 0; i<korisnici.length; i++){
+//     //     if(input.value === korisnici[i].ime.charAt(0)){
+//     //         result.push(korisnici[i])
+//     //     }
+//     // }
+//     // ispis(result)
 
-        const pGodine = document.createElement('p')
-        pGodine.textContent = user.godine
-
-        noviDiv.append(pIme,pPrezime,pGodine)
-        divIspis.appendChild(noviDiv)
-    })
-}
-btn.addEventListener('click',()=>{
-    if(input.value.trim() === ''){
-        alert('mora se uneti simbol')
-        return
-    }
-    for(let i = 0; i<korisnici.length; i++){
-        if(input.value === korisnici[i].ime.charAt(0)){
-            ispis(korisnici)
-        }
-    }
-})
+//     korisnici.filter(el => el.ime.charAt(0) === input.value).length === 0 ? alert('Poruka') : ispis(korisnici.filter(el => el.ime.charAt(0) === input.value))
+// })
 
 //  4. Napisati skriptu koja pravi x paragrafa. Svaki paran paragraf ima 30 reci lorem ipsum, a svaki treci ima zelenu boju pozadine.
 // const div = document.querySelector('.div')
@@ -348,8 +351,16 @@ btn.addEventListener('click',()=>{
     //     makaze: 'makaze'
     // }
 
+    // let random = Math.floor(Math.random() * 3)
+
+    // switch(random) {
+    //     case 0:
+    //     case 1:
+    //     case 2:
+    // }
+
     // function rendom (igra){
-    //     const key = Object.keys(igra);
+    //     const key = Object.keys(igra)
     //     return key[Math.floor(Math.random() * key.length)]
     // }
     // console.log(rendom(igra));
@@ -360,15 +371,18 @@ btn.addEventListener('click',()=>{
     //         return
     //     }
 
-    //     if(select.value === 'papir' && rendom(igra))
-    //     paragraf.textContent = 'nereseno'
+    //     let racunar = rendom(igra)
+    //     let korisnik = select.value
 
-        // if(select.value === 'papir' && rendom(igra).textContent === 'kamen' || select.value === 'kamen' && rendom(igra).textContent === 'makaze' || select.value === 'makaze' && rendom(igra).textContent === 'papir'){
-        //     paragraf.textContent = 'pobednik je korisnik'
-        // }
-        // else{
-        //     paragraf.textContent = 'pobednik je komp'
-        // }
+    //     if(korisnik === 'papir' && racunar === 'papir')
+    //         paragraf.textContent = 'nereseno'
+
+    //     // if(select.value === 'papir' && rendom(igra).textContent === 'kamen' || select.value === 'kamen' && rendom(igra).textContent === 'makaze' || select.value === 'makaze' && rendom(igra).textContent === 'papir'){
+    //     //     paragraf.textContent = 'pobednik je korisnik'
+    //     // }
+    //     // else{
+    //     //     paragraf.textContent = 'pobednik je komp'
+    //     // }
     // }
     // btn.addEventListener('click',()=>{
     //     pobednik(select)
@@ -443,7 +457,14 @@ btn.addEventListener('click',()=>{
         // console.log(suma)
 
 // 1. Preuzeti proizoljne tri slike sa istom ekstenzijom i imenovati ih 1, 2 i 3. 
-// 2. For petljom u HTML-u ispisati svaku od sličica uz pomoć brojača (iteratora).
+//    For petljom u HTML-u ispisati svaku od sličica uz pomoć brojača (iteratora).
+
+    // for(let i = 1; i <= 3; i++) {
+    //     const img = document.createElement('img')
+    //     img.setAttribute('src', `./img/${i}.jpg`)
+    //     document.body.appendChild(img)
+    // }
+
 // 3. Odrediti proizvod svih brojeva deljivih sa 11 u intervalu od 20 do 100. *
 
     // let proizvod = 1
