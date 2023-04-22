@@ -262,63 +262,63 @@
 
  // 3. Korisnike iz prethodnog zadatka koristiti i ispisati samo one opcije cije ime pocinje na slovo koje se zada u inputu. Moze se koristiti dugme ili Enter.
 
-  let korisnici = [
-        {
-            ime: 'Marko',
-            prezime: 'Markovic',
-            godine: 22
-        },
-        {
-            ime: 'Jovan',
-            prezime: 'Jovanovic',
-            godine: 32
-        },
-        {
-            ime: 'Sreten',
-            prezime: 'Lazarevic',
-            godine: 29
-        },
-        {
-            ime: 'Lazar',
-            prezime: 'Ivanovic',
-            godine: 37
-        }
-    ]
+//   let korisnici = [
+//         {
+//             ime: 'Marko',
+//             prezime: 'Markovic',
+//             godine: 22
+//         },
+//         {
+//             ime: 'Jovan',
+//             prezime: 'Jovanovic',
+//             godine: 32
+//         },
+//         {
+//             ime: 'Sreten',
+//             prezime: 'Lazarevic',
+//             godine: 29
+//         },
+//         {
+//             ime: 'Lazar',
+//             prezime: 'Ivanovic',
+//             godine: 37
+//         }
+//     ]
 
 
-    const input = document.querySelector('#pocetnoSlovo')
-    const btn = document.querySelector('button')
-    const divIspis = document.querySelector('div')
+//     const input = document.querySelector('#pocetnoSlovo')
+//     const btn = document.querySelector('button')
+//     const divIspis = document.querySelector('div')
 
-const ispis = (korisnici) =>{
-    korisnici.forEach(user =>{
+// const ispis = (korisnici) =>{
+//     korisnici.forEach(user =>{
 
-        const noviDiv = document.createElement('div')
+//         const noviDiv = document.createElement('div')
 
-        const pIme = document.createElement('p')
-        pIme.textContent = user.ime
+//         const pIme = document.createElement('p')
+//         pIme.textContent = user.ime
 
-        const pPrezime = document.createElement('p')
-        pPrezime.textContent = user.prezime
+//         const pPrezime = document.createElement('p')
+//         pPrezime.textContent = user.prezime
 
-        const pGodine = document.createElement('p')
-        pGodine.textContent = user.godine
+//         const pGodine = document.createElement('p')
+//         pGodine.textContent = user.godine
 
-        noviDiv.append(pIme,pPrezime,pGodine)
-        divIspis.appendChild(noviDiv)
-    })
-}
-btn.addEventListener('click',()=>{
-    if(input.value.trim() === ''){
-        alert('mora se uneti simbol')
-        return
-    }
-    for(let i = 0; i<korisnici.length; i++){
-        if(input.value === korisnici[i].ime.charAt(0)){
-            ispis(korisnici)
-        }
-    }
-})
+//         noviDiv.append(pIme,pPrezime,pGodine)
+//         divIspis.appendChild(noviDiv)
+//     })
+// }
+// btn.addEventListener('click',()=>{
+//     if(input.value.trim() === ''){
+//         alert('mora se uneti simbol')
+//         return
+//     }
+//     for(let i = 0; i<korisnici.length; i++){
+//         if(input.value === korisnici[i].ime.charAt(0)){
+//             ispis(korisnici)
+//         }
+//     }
+// })
 
 //  4. Napisati skriptu koja pravi x paragrafa. Svaki paran paragraf ima 30 reci lorem ipsum, a svaki treci ima zelenu boju pozadine.
 // const div = document.querySelector('.div')
@@ -570,3 +570,57 @@ btn.addEventListener('click',()=>{
 //     return true
 // }
 // console.log(prostBroj(3))
+
+
+// 1. Ispisati brojeve od 1 do 20:
+//     -Svaki u istom redu
+//     -Svaki u novom redu
+
+// let i = 0
+// while(i<20){
+//     i++
+
+// }
+// console.log(i)
+
+// 2. Ispisati brojeve od 20 do 1.
+// let i = 20
+// while(i>=1){
+//     console.log(i);
+//     i--
+// }
+
+// 3. Ispisati parne brojeve od 1 do 20.
+
+// let i = 0
+// while(i<=20){
+//     i++
+//     if(i % 2 === 0){
+//         console.log(i);
+//     }
+// }
+
+// 4. Kreirati n paragrafa sa proizvoljnim tekstom i naizmenično ih obojiti u tri različite boje
+// let i = 0
+// while(i<=10){
+//     i++
+//     const paragraf = document.createElement('p')
+//     paragraf.textContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Quas ipsa atque sunt quia perspiciatis blanditiis nam sint commodi'
+//     if(i % 2 === 0){
+//         paragraf.style.color = 'red'
+//     } else if(i % 3 === 0){
+//         paragraf.style.color = 'blue'
+//     }else{
+//         paragraf.style.color = 'green'
+
+//     }
+//     document.body.append(paragraf)
+// }
+// 5. Kreirati n proizvoljnih slika i staviti im naizmenično dva različita okvira
+// 6. Odrediti sumu brojeva od 1 do 100
+// 7. Odrediti sumu brojeva od 1 do n
+// 8. Odrediti sumu brojeva od n do m
+// 9. Odrediti proizvod brojeva od n do m
+// 10. Odrediti sumu kvadrata parnih i sumu kubova neparnih brojeva od n do m
+// 11. Odrediti sa koliko brojeva je deljiv uneti broj k
+// 12. Odrediti da li je dati prirodan broj n prost. Broj je prost ako je deljiv samo sa jedan i sa samim sobom.
