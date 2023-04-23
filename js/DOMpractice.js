@@ -376,56 +376,56 @@
 // }
   // 5. Napraviti igru kamen-papir-makaze u jednu pobedu. Postoji jedan input za unos zeljene opcije. U paragrafu ispod se na klik ispisuje pobednik, a u konzoli se ispisuje sta je racunar odabrao. Za opciju koju racunar treba da dobije koristiti random()
 
-    const select = document.querySelector('#select')
-    const btn = document.querySelector('button')
-    const paragraf = document.querySelector('p')
+    // const select = document.querySelector('#select')
+    // const btn = document.querySelector('button')
+    // const paragraf = document.querySelector('p')
     
-    let igra = {
-        papir: 'papir',
-        kamen: 'kamen',
-        makaze: 'makaze'
-    }
+    // let igra = {
+    //     papir: 'papir',
+    //     kamen: 'kamen',
+    //     makaze: 'makaze'
+    // }
 
-    let random = Math.floor(Math.random() * 3)
+    // let random = Math.floor(Math.random() * 3)
 
-    switch(random) {
-        case 0:
-        case 1:
-        case 2:
-    }
+    // switch(random) {
+    //     case 0:
+    //     case 1:
+    //     case 2:
+    // }
 
-    function rendom (igra){
-        const key = Object.keys(igra)
-        return key[Math.floor(Math.random() * key.length)]
-    }
-    console.log(rendom(igra));
+    // function rendom (igra){
+    //     const key = Object.keys(igra)
+    //     return key[Math.floor(Math.random() * key.length)]
+    // }
+    // console.log(rendom(igra));
 
-    function pobednik(select){
-        if(select.value === 'izaberi'){
-            alert('mora se izabrati iz padajuceg menija')
-            return
-        }
+    // function pobednik(select){
+    //     if(select.value === 'izaberi'){
+    //         alert('mora se izabrati iz padajuceg menija')
+    //         return
+    //     }
 
-        let racunar = rendom(igra)
-        let korisnik = select.value
+    //     let racunar = rendom(igra)
+    //     let korisnik = select.value
 
-        if(korisnik === 'papir' && racunar === 'papir')
-            paragraf.textContent = 'nereseno'
-         if(korisnik === 'kamen' && racunar === 'kamen')
-            paragraf.textContent = 'nereseno'
-         if(korisnik === 'makaze' && racunar === 'makaze')
-            paragraf.textContent = 'nereseno'
+    //     if(korisnik === 'papir' && racunar === 'papir')
+    //         paragraf.textContent = 'nereseno'
+    //      if(korisnik === 'kamen' && racunar === 'kamen')
+    //         paragraf.textContent = 'nereseno'
+    //      if(korisnik === 'makaze' && racunar === 'makaze')
+    //         paragraf.textContent = 'nereseno'
 
-        if(korisnik === 'papir' && racunar === 'kamen' || korisnik === 'kamen' && racunar === 'makaze' || korisnik === 'makaze' && racunar === 'papir'){
-            paragraf.textContent = 'pobednik je korisnik'
-        }
-        else{
-            paragraf.textContent = 'pobednik je komp'
-        }
-    }
-    btn.addEventListener('click',()=>{
-        pobednik(select)
-    })
+    //     if(korisnik === 'papir' && racunar === 'kamen' || korisnik === 'kamen' && racunar === 'makaze' || korisnik === 'makaze' && racunar === 'papir'){
+    //         paragraf.textContent = 'pobednik je korisnik'
+    //     }
+    //     else{
+    //         paragraf.textContent = 'pobednik je komp'
+    //     }
+    // }
+    // btn.addEventListener('click',()=>{
+    //     pobednik(select)
+    // })
     
     
 //   6. Ispisati brojeve od 1 do 20 
