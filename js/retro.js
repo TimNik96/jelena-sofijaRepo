@@ -423,3 +423,71 @@
 // }
 
 // console.log(osoba.firstName, osoba.lastName, osoba.age, osoba.hobi[0])
+
+// Object and arr destructuring
+
+// let niz = [1, 2, 3]
+
+// const [, , br1] = niz
+
+// console.log(br, br1)
+
+// let osoba = {
+//     ime: 'Marko',
+//     prezime: 'Markovic'
+// }
+
+// function ispisiObj({ime, prezime}) {
+//     console.log(ime, prezime)
+// }
+
+// ispisiObj(osoba)
+
+// Object and arr spread
+
+// let niz = [1, 2, 3]
+
+// let niz2 = [...niz, 4, 5]
+
+// console.log(niz, niz2)
+
+// let obj = {
+//     name: 'Marko'
+// }
+
+// let obj2 = {
+//     ...obj,
+//     prezime: 'Markovic'
+// }
+
+// let obj3 = {
+//     ...obj2,
+//     name: 'Uros'
+// }
+
+// console.log(obj3)
+
+// Rest operator
+
+// Napisati funkciju max.
+
+// Math.max(30, 20, 15, 100)
+
+// function max(...vrednosti) {
+//     vrednosti.forEach(el => {
+//         if(el > max)
+//             max = el
+//     })
+// }
+
+let i = 0
+let brojac = 0
+while(i <= 20) {
+    if(i % 2 === 0 || i % 5 === 0) {
+        brojac++
+    }
+
+    i++
+}
+
+console.log(brojac)

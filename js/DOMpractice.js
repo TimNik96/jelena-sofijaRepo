@@ -285,6 +285,10 @@
 //         }
 //     ]
 
+//     const input = document.querySelector('#pocetnoSlovo')
+//     const btn = document.querySelector('button')
+//     const divIspis = document.querySelector('div')
+
 
 //     const input = document.querySelector('#pocetnoSlovo')
 //     const btn = document.querySelector('button')
@@ -318,6 +322,40 @@
 //             ispis(korisnici)
 //         }
 //     }
+
+// const ispis = (korisnici) =>{
+//     divIspis.textContent = ''
+//     korisnici.forEach(user =>{
+//         const noviDiv = document.createElement('div')
+
+//         const pIme = document.createElement('p')
+//         pIme.textContent = user.ime
+
+//         const pPrezime = document.createElement('p')
+//         pPrezime.textContent = user.prezime
+
+//         const pGodine = document.createElement('p')
+//         pGodine.textContent = user.godine
+
+//         noviDiv.append(pIme,pPrezime,pGodine)
+//         divIspis.appendChild(noviDiv)
+//     })
+// }
+// btn.addEventListener('click',()=>{
+//     if(input.value.trim() === ''){
+//         alert('mora se uneti simbol')
+//         return
+//     }
+//     // let result = []
+//     // for(let i = 0; i<korisnici.length; i++){
+//     //     if(input.value === korisnici[i].ime.charAt(0)){
+//     //         result.push(korisnici[i])
+//     //     }
+//     // }
+//     // ispis(result)
+
+//     korisnici.filter(el => el.ime.charAt(0) === input.value).length === 0 ? alert('Poruka') : ispis(korisnici.filter(el => el.ime.charAt(0) === input.value))
+
 // })
 
 //  4. Napisati skriptu koja pravi x paragrafa. Svaki paran paragraf ima 30 reci lorem ipsum, a svaki treci ima zelenu boju pozadine.
@@ -338,41 +376,56 @@
 // }
   // 5. Napraviti igru kamen-papir-makaze u jednu pobedu. Postoji jedan input za unos zeljene opcije. U paragrafu ispod se na klik ispisuje pobednik, a u konzoli se ispisuje sta je racunar odabrao. Za opciju koju racunar treba da dobije koristiti random()
 
-    // const select = document.querySelector('#select')
-    // const btn = document.querySelector('button')
-    // const paragraf = document.querySelector('p')
+    const select = document.querySelector('#select')
+    const btn = document.querySelector('button')
+    const paragraf = document.querySelector('p')
     
-    // let igra = {
-    //     papir: 'papir',
-    //     kamen: 'kamen',
-    //     makaze: 'makaze'
-    // }
+    let igra = {
+        papir: 'papir',
+        kamen: 'kamen',
+        makaze: 'makaze'
+    }
 
-    // function rendom (igra){
-    //     const key = Object.keys(igra);
-    //     return key[Math.floor(Math.random() * key.length)]
-    // }
-    // console.log(rendom(igra));
+    let random = Math.floor(Math.random() * 3)
 
-    // function pobednik(select){
-    //     if(select.value === 'izaberi'){
-    //         alert('mora se izabrati iz padajuceg menija')
-    //         return
-    //     }
+    switch(random) {
+        case 0:
+        case 1:
+        case 2:
+    }
 
-    //     if(select.value === 'papir' && rendom(igra))
-    //     paragraf.textContent = 'nereseno'
+    function rendom (igra){
+        const key = Object.keys(igra)
+        return key[Math.floor(Math.random() * key.length)]
+    }
+    console.log(rendom(igra));
 
-        // if(select.value === 'papir' && rendom(igra).textContent === 'kamen' || select.value === 'kamen' && rendom(igra).textContent === 'makaze' || select.value === 'makaze' && rendom(igra).textContent === 'papir'){
-        //     paragraf.textContent = 'pobednik je korisnik'
-        // }
-        // else{
-        //     paragraf.textContent = 'pobednik je komp'
-        // }
-    // }
-    // btn.addEventListener('click',()=>{
-    //     pobednik(select)
-    // })
+    function pobednik(select){
+        if(select.value === 'izaberi'){
+            alert('mora se izabrati iz padajuceg menija')
+            return
+        }
+
+        let racunar = rendom(igra)
+        let korisnik = select.value
+
+        if(korisnik === 'papir' && racunar === 'papir')
+            paragraf.textContent = 'nereseno'
+         if(korisnik === 'kamen' && racunar === 'kamen')
+            paragraf.textContent = 'nereseno'
+         if(korisnik === 'makaze' && racunar === 'makaze')
+            paragraf.textContent = 'nereseno'
+
+        if(korisnik === 'papir' && racunar === 'kamen' || korisnik === 'kamen' && racunar === 'makaze' || korisnik === 'makaze' && racunar === 'papir'){
+            paragraf.textContent = 'pobednik je korisnik'
+        }
+        else{
+            paragraf.textContent = 'pobednik je komp'
+        }
+    }
+    btn.addEventListener('click',()=>{
+        pobednik(select)
+    })
     
     
 //   6. Ispisati brojeve od 1 do 20 
@@ -443,7 +496,14 @@
         // console.log(suma)
 
 // 1. Preuzeti proizoljne tri slike sa istom ekstenzijom i imenovati ih 1, 2 i 3. 
-// 2. For petljom u HTML-u ispisati svaku od sličica uz pomoć brojača (iteratora).
+//    For petljom u HTML-u ispisati svaku od sličica uz pomoć brojača (iteratora).
+
+    // for(let i = 1; i <= 3; i++) {
+    //     const img = document.createElement('img')
+    //     img.setAttribute('src', `./img/${i}.jpg`)
+    //     document.body.appendChild(img)
+    // }
+
 // 3. Odrediti proizvod svih brojeva deljivih sa 11 u intervalu od 20 do 100. *
 
     // let proizvod = 1
@@ -617,10 +677,109 @@
 //     document.body.append(paragraf)
 // }
 // 5. Kreirati n proizvoljnih slika i staviti im naizmenično dva različita okvira
+
+// let i =1
+// while(i <= 3){
+//     const img = document.createElement('img')
+//     img.setAttribute('src', `./img/${i}.jpg`)
+//     if(i % 2 === 0){
+//         img.style.borderRadius = '50px'
+
+//     }
+//     document.body.appendChild(img)
+
+//     i++
+// }
+
 // 6. Odrediti sumu brojeva od 1 do 100
+
+// let i = 1
+// let zbir = 0
+
+// while(i<100){
+//     zbir +=i
+//     i++
+// }
+// console.log(zbir)
+
 // 7. Odrediti sumu brojeva od 1 do n
+// let i = 1
+// let n = 45
+// let zbir = 0
+// while(i<n){
+//     zbir += i
+//     i++
+// }
+// console.log(zbir)
+
 // 8. Odrediti sumu brojeva od n do m
+
+    // let n = 12
+    // let m = 20
+    // let suma = 0
+    // while(n<=m){
+    //     suma += n
+    //     n++
+    // }
+    // console.log(suma)
+
 // 9. Odrediti proizvod brojeva od n do m
+
+// let n = 5
+// let m = 7
+// let proizvod = 1
+
+// while(n<=m){
+//     proizvod *= n
+//     n++
+// }
+// console.log(proizvod)
+
 // 10. Odrediti sumu kvadrata parnih i sumu kubova neparnih brojeva od n do m
+
+    // let n = 2
+    // let m = 6
+    // let suma = 0
+    // let suma1 = 0
+
+    // while(n<=m){
+    //     if(n % 2 === 0){
+    //         suma+= Math.pow(n,2)
+    //         n++
+    //     }else if (n % 2 !==0){
+    //         suma1+= Math.pow(n,3)
+    //         n++
+    //     } 
+    //     }
+    //     console.log(suma)
+    //     console.log(suma1)
+        
+
+
 // 11. Odrediti sa koliko brojeva je deljiv uneti broj k
+    // let k = 20
+    // let i = 1
+    // let brojac = 0
+    // while(i <= k){
+    //     if(k % i === 0)
+    //         brojac++
+    //         i++
+            
+    // }
+    // console.log(brojac)
+
 // 12. Odrediti da li je dati prirodan broj n prost. Broj je prost ako je deljiv samo sa jedan i sa samim sobom.
+
+    // let n = 7
+    // let i = 2
+
+    // function prostBroj(broj){
+    //     while(i < n){
+    //         if(n % i === 0)
+    //             return false
+    //             i++
+    //         }
+    //         return true
+    // }
+    // console.log(prostBroj(n))
+    
