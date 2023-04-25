@@ -245,3 +245,23 @@ Popodne je kada prođe 12:00 sati, ne računajući i to vreme.
 1. Napraviti klasu Sastojak koja sadrzi polja naziv, kolicinu i cenu, a zatim napraviti metodu koja racuna njenu cenu.
 2. Napraviti klasu Recept koja prima sastojke za pripremu istog. (imace polja naziv, sastojci, nacinPripreme, tezinaPripreme, kao i metodu za ispis svih sastojaka i cenuRecepta)
 3. Ukoliko je broj deljiv sa 3, ispisati fizz; Ukoliko je broj deljiv sa 5, ispisati buzz; Ukoliko je broj deljiv sa 7, ispisati zazz; Ukoliko je deljiv sa kombinacijom, kombinovati i stringove. (prvih 100 brojeva)
+
+#Domaci_16
+
+1. Napisati funkciju pozdrav kojoj se prosleđuje ime i prezime, a funkcija ispisuje pozdrav. Na primer za uneto ime Jelena i prezime Matejić, funkcija ispisuje Zdravo Jelena Matejić. 
+2. Napisati funkciju zbir koja računa zbir dva realna broja. Šta bi trebalo izmeniti da bi se dobila razlika, proizvod ili količnik dva broja.
+3. Napisati funkciju neparan koja za uneti ceo broj n vraća tačno ukoliko je neparan ili netačno ukoliko nije neparan.
+4. Napisati funkciju maks2 koja vraća veći od dva prosleđena realna broja. Zatim napisati funkciju maks4 koja vraća najveći od četiri prosleđena realna broja.
+5. Napisati funkciju koja prikazuje sliku za prosledjenu adresu slike.
+6. Napisati funkciju koja za unetu boju na engleskom jeziku boji tekst paragrafa u tu boju.
+7. Napisati program koji sadrži funkciju sedmiDan koja za uneti broj n ispisuje n-ti dan u nedelji (npr. za 0 ispisuje “Nedelja”, za 1 se ispisuje „Ponedeljak“, za 2 se ispisuje „Utorak“, ... ,  a za 7 opet “Nedelja”).
+Pitanje: Kako bismo realizovali ovaj zadatak da se tražio n-ti mesec u godini?
+8. Napisati funkciju deljivSaTri koja se koristi u ispisivanju brojeva koji su deljivi sa tri u intervalu od n do m.
+    -Prebrojati koliko ima ovakvih brojeva od n do m.
+9. Napisati funkciju sumiraj koja određuje sumu brojeva od n do m. Brojeve n i m proslediti kao parametre funkciji.
+10. Napisati funkciju množi koja određuje proizvod brojeva od n do m. Brojeve n i m proslediti kao parametre funkciji.
+11. Napraviti funkciju koja vraća aritmetičku sredinu brojeva od n do m. Brojeve n i m proslediti kao parametre funkciji.
+12. Napisati funkciju koja vraća aritmetičku sredinu brojeva kojima je poslednja cifra 3 u intervalu od n do m. Brojeve n i m proslediti kao parametre funkciji.
+13. Napisati funkciju kojoj se prosleđuje ceo broj, a ona ispisuje tekst koji ima prosleđenu veličinu fonta.
+14. Napisati funkciju koja pet puta ispisuje istu rečenicu, a veličina fonta rečenice treba da bude jednaka vrednosti iteratora. 
+15. Dobili ste plaćenu programersku praksu u trajanju od n meseci. Prvog meseca, plata će biti a dinara, a ako budete vredno radili svakog narednog meseca ćete dobiti povišicu od d dinara. Brojeve n, a i d određujete sami. Napišite funkciju kojoj se prosleđuju brojevi n, a i d. Funkcija treba da vrati vrednost koliko ćete ukupno navca zaraditi, ukoliko svakog meseca budete dobijali povišicu. Testirati zadatak (pozvati funkciju i ispisati vrednost koju ona vraća).
