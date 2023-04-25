@@ -244,3 +244,4 @@ Popodne je kada prođe 12:00 sati, ne računajući i to vreme.
 
 1. Napraviti klasu Sastojak koja sadrzi polja naziv, kolicinu i cenu, a zatim napraviti metodu koja racuna njenu cenu.
 2. Napraviti klasu Recept koja prima sastojke za pripremu istog. (imace polja naziv, sastojci, nacinPripreme, tezinaPripreme, kao i metodu za ispis svih sastojaka i cenuRecepta)
+3. Ukoliko je broj deljiv sa 3, ispisati fizz; Ukoliko je broj deljiv sa 5, ispisati buzz; Ukoliko je broj deljiv sa 7, ispisati zazz; Ukoliko je deljiv sa kombinacijom, kombinovati i stringove. (prvih 100 brojeva)
