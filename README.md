@@ -240,5 +240,7 @@ Popodne je kada prođe 12:00 sati, ne računajući i to vreme.
 11. Odrediti sa koliko brojeva je deljiv uneti broj k
 12. Odrediti da li je dati prirodan broj n prost. Broj je prost ako je deljiv samo sa jedan i sa samim sobom.
 
+#Domaci_15
 
-
+1. Napraviti klasu Sastojak koja sadrzi polja naziv, kolicinu i cenu, a zatim napraviti metodu koja racuna njenu cenu.
+2. Napraviti klasu Recept koja prima sastojke za pripremu istog. (imace polja naziv, sastojci, nacinPripreme, tezinaPripreme, kao i metodu za ispis svih sastojaka i cenuRecepta)
