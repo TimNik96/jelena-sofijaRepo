@@ -265,3 +265,21 @@ Pitanje: Kako bismo realizovali ovaj zadatak da se tražio n-ti mesec u godini?
 13. Napisati funkciju kojoj se prosleđuje ceo broj, a ona ispisuje tekst koji ima prosleđenu veličinu fonta.
 14. Napisati funkciju koja pet puta ispisuje istu rečenicu, a veličina fonta rečenice treba da bude jednaka vrednosti iteratora. 
 15. Dobili ste plaćenu programersku praksu u trajanju od n meseci. Prvog meseca, plata će biti a dinara, a ako budete vredno radili svakog narednog meseca ćete dobiti povišicu od d dinara. Brojeve n, a i d određujete sami. Napišite funkciju kojoj se prosleđuju brojevi n, a i d. Funkcija treba da vrati vrednost koliko ćete ukupno navca zaraditi, ukoliko svakog meseca budete dobijali povišicu. Testirati zadatak (pozvati funkciju i ispisati vrednost koju ona vraća).
+
+#Domaci_17
+
+1. Ispisati sve elemente niza od 5 stringova.
+2. Odrediti zbir elemenata celobrojnog niza.
+3. Odrediti proizvod elemenata celobrojnog niza.
+4. Odrediti srednju vrednost elemenata celobrojnog niza.
+5. Odrediti maksimalnu vrednost u celobrojnom nizu.
+6. Odrediti minimalnu vrednost u celobrojnom nizu.
+7. Odrediti indeks maksimalnog elementa celobrojnog niza.
+8. Odrediti indeks minimalnog elementa celobrojnog niza.
+9. Odrediti broj elemenata celobrojnog niza koji su veći od srednje vrednosti.
+10. Izračunati zbir pozitivnih elemenata celobrojnog niza.
+11. Odrediti broj parnih elemenata u celobrojnom nizu.
+12. Odrediti broj parnih elemenata sa neparnim indeksom.
+13. Izračunati sumu elemenata niza sa parnim indeksom.
+14. Promeniti znak svakom elementu celobrojnog niza.
+15. Promeniti znak svakom neparnom elementu celobrojnog niza sa parnim indeksom.
