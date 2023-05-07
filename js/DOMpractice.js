@@ -781,7 +781,7 @@
 //             // prost = false
 //         i++
 //     }
-    
+
 //     // if (prost)
 //     //     console.log('Broj je prost')
 //     // else
@@ -792,7 +792,30 @@
 
 // console.log(prostBroj(n))
 
+// KLASE
+// #Domaci_15
+
+// 1. Napraviti klasu Sastojak koja sadrzi polja naziv, kolicinu i cenu, a zatim napraviti metodu koja racuna njenu cenu.
+
+// class Sastojci {
+//     constructor(naziv, kolicina, cena) {
+//         this.naziv = naziv
+//         this.kolicina = kolicina
+//         this.cena = cena
+//     }
+
+//     ukupnaCena() {
+//         return this.cena * this.kolicina
+//     }
+// }
+
+// const sastojci1 = new Sastojci('torta', 3, 1000)
+// console.log(sastojci1.ukupnaCena())
+
+// 2. Napraviti klasu Recept koja prima sastojke za pripremu istog. (imace polja naziv, sastojci, nacinPripreme, tezinaPripreme, kao i metodu za ispis svih sastojaka i cenuRecepta)
+
 // FIZZBUZZ
+// 3. Ukoliko je broj deljiv sa 3, ispisati fizz; Ukoliko je broj deljiv sa 5, ispisati buzz; Ukoliko je broj deljiv sa 7, ispisati zazz; Ukoliko je deljiv sa kombinacijom, kombinovati i stringove. (prvih 100 brojeva)
 
 // const fizzBuzz = (broj) => {
 //     let str = ''
@@ -809,3 +832,215 @@
 // for(let i = 10; i <= 15; i++) {
 //     console.log(fizzBuzz(i))
 // }
+
+// #Domaci_16
+
+// 1. Napisati funkciju pozdrav kojoj se prosleđuje ime i prezime, a funkcija ispisuje pozdrav.Na primer za uneto ime Jelena i prezime Matejić, funkcija ispisuje Zdravo Jelena Matejić. 
+
+// let ime = 'Jelena'
+// let prezime = 'Matejic'
+
+// function pozdrav (ime, prezime){
+//     return `Pozdrav ${ime} ${prezime}`
+// }
+// console.log(pozdrav(ime,prezime))
+
+// 2. Napisati funkciju zbir koja računa zbir dva realna broja.Šta bi trebalo izmeniti da bi se dobila razlika, proizvod ili količnik dva broja.
+
+    // function kalkulator(broj1, broj2, operacija) {
+    //         switch (operacija) {
+    //             case '+' : 
+    //                 return broj1 + broj2
+                    
+    //                 case '-':
+    //                     return broj1 - broj2
+                    
+    //                 case '*':
+    //                     return broj1 * broj2
+                    
+    //                 case '/':
+    //                     return broj1 / broj2
+            
+    //             default:
+    //                  return'nije dobra operacija'
+    //         }
+    // }
+    // let operacija  = '.'
+
+    // console.log(kalkulator(5,3,operacija))
+
+  
+// 3. Napisati funkciju neparan koja za uneti ceo broj n vraća tačno ukoliko je neparan ili netačno ukoliko nije neparan.
+
+// let n = 11
+
+// function neparan(broj){
+//    if (broj % 2 === 0){
+//        return true
+// }
+//     return false
+// }
+// console.log(neparan(n))
+
+// 4. Napisati funkciju maks2 koja vraća veći od dva prosleđena realna broja.Zatim napisati funkciju maks4 koja vraća najveći od četiri prosleđena realna broja.
+
+// let broj1 = 2
+// let broj2 = 10
+// let broj3 = 25
+// let broj4 = 65
+
+// function maks2(broj1,broj2){
+//     if(broj1 > broj2){
+//         return broj1
+//     }else
+//     return broj2
+// }
+// console.log(maks2(broj1,broj2))
+
+// function maks4(broj1,broj2,broj3,broj4){
+//     return (Math.max(broj1,broj2,broj3,broj4))
+// }
+// console.log(maks4(broj1,broj2,broj3,broj4))
+
+// 5. Napisati funkciju koja prikazuje sliku za prosledjenu adresu slike.
+
+// let img = 0
+//     function slika(sl){
+//         const img = document.createElement('img')
+//         img.setAttribute('src', './img/1.jpg')
+//         document.body.append(img)
+//     }
+//     slika(img)
+
+// 6. Napisati funkciju koja za unetu boju na engleskom jeziku boji tekst paragrafa u tu boju.
+
+    // const paragraf = document.createElement('p')
+    // paragraf.textContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, libero.'
+
+    // function bojaTeksta(boja) {
+    //     paragraf.style.color = boja
+    // }
+    // let boja = 'green'
+    // bojaTeksta(boja)
+    // document.body.append(paragraf)
+
+// 7. Napisati program koji sadrži funkciju sedmiDan koja za uneti broj n ispisuje n - ti dan u nedelji(npr.za 0 ispisuje “Nedelja”, za 1 se ispisuje „Ponedeljak“, za 2 se ispisuje „Utorak“, ... , a za 7 opet “Nedelja”).
+//     Pitanje: Kako bismo realizovali ovaj zadatak da se tražio n - ti mesec u godini ?
+
+    // function sedmiDan(dan){
+    //     switch (dan) {
+    //         case 0 :
+    //             return 'Nedelja'
+    //             case 7 :
+    //                 return 'Nedelja'
+
+    //             case 1:
+    //                 return 'Ponedeljak'
+                
+    //             case 2:
+    //                 return 'Utorak'
+                
+    //             case 3:
+    //                 return 'Sreda'
+                
+    //             case 4:
+    //                 return 'Cetvrtak'
+                
+    //             case 5:
+    //                 return 'Petak'
+
+    //             case 6:
+    //                 return 'Subota'
+                
+    //         default:
+    //             return 'nije dobar dan u nedelji'
+    //     }
+    // }
+    // let dan = 7
+    
+    // console.log(sedmiDan(dan))
+
+//         8. Napisati funkciju deljivSaTri koja se koristi u ispisivanju brojeva koji su deljivi sa tri u intervalu od n do m.
+//     - Prebrojati koliko ima ovakvih brojeva od n do m.
+
+    // function deljivSaTri(n,m){
+    //     for(let i = n; i <= m; i++){
+    //        if(i % 3 === 0){
+    //         return i
+    //     }
+    // }
+    // }
+    // console.log(deljivSaTri(3,12))
+
+
+        
+// 9. Napisati funkciju sumiraj koja određuje sumu brojeva od n do m.Brojeve n i m proslediti kao parametre funkciji.
+
+// let suma = 0
+// function sumiraj (n,m){
+//     for(let i = n; i <=m; i++){
+//             suma += i 
+//         }
+//         return suma
+//     }
+//     console.log(sumiraj(2,5))
+
+// 10. Napisati funkciju množi koja određuje proizvod brojeva od n do m.Brojeve n i m proslediti kao parametre funkciji.
+
+// let proizvod = 1
+// function mnozi(n, m) {
+//     for (let i = n; i <= m; i++) {
+//         proizvod *= i
+//     }
+//     return proizvod
+// }
+// console.log(mnozi(2, 5))
+
+// 11. Napraviti funkciju koja vraća aritmetičku sredinu brojeva od n do m.Brojeve n i m proslediti kao parametre funkciji.
+
+// let suma = 0
+// function aritmetizkaSredina(n, m) {
+//     for (let i = n; i <= m; i++) {
+//         suma += i
+//     }
+//     return suma / 2
+// }
+// console.log(aritmetizkaSredina(2, 4))
+
+// 12. Napisati funkciju koja vraća aritmetičku sredinu brojeva kojima je poslednja cifra 3 u intervalu od n do m.Brojeve n i m proslediti kao parametre funkciji.
+
+    // function aritmetickaSredina(n,m){
+    //         for(let i = n; i <= m; i++){
+    //             if(i === )
+    //         }
+    // }
+
+   
+// 13. Napisati funkciju kojoj se prosleđuje ceo broj, a ona ispisuje tekst koji ima prosleđenu veličinu fonta.
+// 14. Napisati funkciju koja pet puta ispisuje istu rečenicu, a veličina fonta rečenice treba da bude jednaka vrednosti iteratora.
+// 15. Dobili ste plaćenu programersku praksu u trajanju od n meseci.Prvog meseca, plata će biti a dinara, a ako budete vredno radili svakog narednog meseca ćete dobiti povišicu od d dinara.Brojeve n, a i d određujete sami.Napišite funkciju kojoj se prosleđuju brojevi n, a i d.Funkcija treba da vrati vrednost koliko ćete ukupno navca zaraditi, ukoliko svakog meseca budete dobijali povišicu.Testirati zadatak(pozvati funkciju i ispisati vrednost koju ona vraća).
+
+        // let n = 6
+        // let a = 40000
+        // let d = 5000
+        // let plata = 0
+
+        // function placenaPraksa(n,a,d){
+        //     for(let i = 1; i <= n; i++){
+        //        if(i == 1){
+        //            plata += a 
+        //        }else{
+        //         plata += a 
+        //         plata += d
+                
+        //        }
+        //     }
+        //     return plata
+        // }
+        // console.log(placenaPraksa(n,a,d))
+
+
+
+
+// let niz = [1,2,3,4,5,6]
+//     console.log(niz.filter(el => el % 2 === 0))
