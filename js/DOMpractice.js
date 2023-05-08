@@ -1009,11 +1009,18 @@
 
 // 12. Napisati funkciju koja vraća aritmetičku sredinu brojeva kojima je poslednja cifra 3 u intervalu od n do m.Brojeve n i m proslediti kao parametre funkciji.
 
-    // function aritmetickaSredina(n,m){
-    //         for(let i = n; i <= m; i++){
-    //             if(i === )
-    //         }
-    // }
+// let zbir = 0
+// let brojac = 0
+//     function aritmetickaSredina(n,m){
+//             for(let i = n; i <= m; i++){
+//                 if(i % 10 === 3){
+//                     zbir += i
+//                     brojac ++
+//                 }
+//             }
+//             return zbir / brojac
+//     }
+//     console.log(aritmetickaSredina(2,23))
 
    
 // 13. Napisati funkciju kojoj se prosleđuje ceo broj, a ona ispisuje tekst koji ima prosleđenu veličinu fonta.
@@ -1044,3 +1051,81 @@
 
 // let niz = [1,2,3,4,5,6]
 //     console.log(niz.filter(el => el % 2 === 0))
+
+
+// #Domaci_17
+
+// 1. Ispisati sve elemente niza od 5 stringova.
+
+    // let niz = ['marko', 'obdojka', 'nauka', 'broj', 'prezime']
+    // console.log(niz)
+
+// 2. Odrediti zbir elemenata celobrojnog niza.
+
+    // let niz = [1,3,6,4,6]
+    // let zbir = 0
+    // for(let i = 0; i<niz.length; i++){
+    //      zbir += niz[i]
+    //     }
+    //     console.log(zbir)
+
+// 3. Odrediti proizvod elemenata celobrojnog niza.
+
+    // let niz = [1,3,6,4,6]
+    // let proizvod = 1
+
+    // for(let i = 0; i<niz.length; i++){
+    //     proizvod *= niz[i]
+    // }
+    // console.log(proizvod)
+
+// 4. Odrediti srednju vrednost elemenata celobrojnog niza.
+
+// let niz = [1,3,6,4,6]
+//     let srednjaVrednost = 0
+
+//     for(let i = 0; i<niz.length; i++){
+//         srednjaVrednost += niz[i] / 2
+//     }
+//     console.log(srednjaVrednost)
+
+// 5. Odrediti maksimalnu vrednost u celobrojnom nizu.
+
+// let niz = [1,3,623,4,6,77]
+
+// console.log(Math.max(...niz))
+
+// 6. Odrediti minimalnu vrednost u celobrojnom nizu.
+
+// let niz = [1,3,6,4,6,77]
+// console.log(Math.min(...niz))
+
+// 7. Odrediti indeks maksimalnog elementa celobrojnog niza.
+
+// let niz = [1,3,6,4,6,77]
+// console.log(niz.charAt(Math.max))
+    
+
+// 8. Odrediti indeks minimalnog elementa celobrojnog niza.
+// 9. Odrediti broj elemenata celobrojnog niza koji su veći od srednje vrednosti.
+// let niz = [1,3,6]
+// let zbir = 0
+// let srednjavrednst
+// function srednjaVrednost(niz){
+//     for(let i = 0; i<= niz.length; i++){
+//         zbir += i
+//     }
+//     return zbir
+//     // srednjavrednst = zbir / 2
+//     // if(srednjaVrednost > niz[i]){
+//     //     return i
+//     // }
+// }
+// console.log(srednjaVrednost(niz));
+
+// 10. Izračunati zbir pozitivnih elemenata celobrojnog niza.
+// 11. Odrediti broj parnih elemenata u celobrojnom nizu.
+// 12. Odrediti broj parnih elemenata sa neparnim indeksom.
+// 13. Izračunati sumu elemenata niza sa parnim indeksom.
+// 14. Promeniti znak svakom elementu celobrojnog niza.
+// 15. Promeniti znak svakom neparnom elementu celobrojnog niza sa parnim indeksom.
