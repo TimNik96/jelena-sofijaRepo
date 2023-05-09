@@ -480,14 +480,71 @@
 //     })
 // }
 
-let i = 0
-let brojac = 0
-while(i <= 20) {
-    if(i % 2 === 0 || i % 5 === 0) {
-        brojac++
-    }
+// let i = 0
+// let brojac = 0
+// while(i <= 20) {
+//     if(i % 2 === 0 || i % 5 === 0) {
+//         brojac++
+//     }
 
-    i++
-}
+//     i++
+// }
 
-console.log(brojac)
+// console.log(brojac)
+
+// const matematickeOperacije = (operand1, operand2, operacija) => {
+//     switch (operacija) {
+//         case '+':
+//             return operand1 + operand2
+//         case '-':
+//             return operand1 - operand2
+//         case '*':
+//             return operand1 * operand2
+//         case '/':
+//             return operand1 / operand2
+//         default:
+//             return 'Nije uneta podrzana operacija'
+//     }
+// }
+
+// let operacija = '%'
+
+// console.log(matematickeOperacije(100, 200, operacija))
+
+// let niz = [
+//     {
+//         ime: 'Marko',
+//         prezime: 'N',
+//         hobi: ['fudbal', 'pikado']
+//     },
+//     {
+//         ime: 'Nenad',
+//         prezime: 'M',
+//         hobi: ['snuker', 'karte']
+//     },
+//     {
+//         ime: 'Milana',
+//         prezime: 'N',
+//         hobi: ['fudbal', 'kosarka']
+//     },
+//     {
+//         ime: 'Manja',
+//         prezime: 'N',
+//         hobi: ['kosarka', 'odbojka']
+//     }
+// ]
+
+// const filtrirajSport = (niz, sport) => {
+//     return niz.filter(el => el.hobi.find(el => el === sport))
+// }
+
+// const mapirajImena = (niz, sport) => {
+//     let arr = filtrirajSport(niz, sport)
+
+//     return arr.map(el => el.ime)
+// }
+
+// let sport = 'fudbal'
+
+// console.log(filtrirajSport(niz, sport))
+// console.log(mapirajImena(niz, sport))

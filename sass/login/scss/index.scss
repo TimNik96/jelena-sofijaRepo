@@ -1,0 +1,87 @@
+$primary-form: #fff;
+$secondary-form: #372000;
+$primary-font-size: 1.5rem; 
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../pictures/b91ef686bde789f0b4540468c07e5a0b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.myForm {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    animation-name: formColorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    padding: 5rem;
+
+    h2 {
+        font-size: 3rem;
+        color: $primary-form;
+    }
+
+    label {
+        font-size: $primary-font-size;
+        color: $primary-form;
+    }
+
+    &-username, &-password{ 
+        background-color: transparent;
+        color: $primary-form;
+        border: 2px solid $primary-form;
+        border-radius: 20px;
+        padding: .5rem;
+        font-size: $primary-font-size;
+        text-align: center;
+        transition: all .3s ease;
+    }    
+
+    &-username:focus, &-password:focus {
+        outline: none;
+        border-color: $secondary-form;
+    }
+
+    &-submit {
+        font-size: $primary-font-size;
+        color: $primary-form;
+        padding: 1rem 3rem;
+        margin-top: .5rem;
+        background-color: transparent;
+        border: 2px solid $primary-form;
+        border-radius: 20px;
+        transition: all .3s ease;
+    }
+
+    &-submit:hover {
+        color: $secondary-form;
+        border-color: $secondary-form;
+        cursor: pointer;
+    }
+
+    @keyframes formColorChange {
+        0% {
+            border: 3px solid $primary-form;
+        }
+
+        100% {
+            border: 3px solid $secondary-form;
+        }
+    }
+}

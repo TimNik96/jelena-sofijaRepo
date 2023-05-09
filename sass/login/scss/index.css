@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../pictures/b91ef686bde789f0b4540468c07e5a0b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.myForm {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2rem;
+  animation-name: formColorChange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 5rem;
+}
+.myForm h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+.myForm label {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.myForm-username, .myForm-password {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.myForm-username:focus, .myForm-password:focus {
+  outline: none;
+  border-color: #372000;
+}
+.myForm-submit {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem 3rem;
+  margin-top: 0.5rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.myForm-submit:hover {
+  color: #372000;
+  border-color: #372000;
+  cursor: pointer;
+}
+@keyframes formColorChange {
+  0% {
+    border: 3px solid #fff;
+  }
+  100% {
+    border: 3px solid #372000;
+  }
+}/*# sourceMappingURL=index.css.map */
