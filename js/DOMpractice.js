@@ -1099,20 +1099,20 @@
 
 // 5. Odrediti maksimalnu vrednost u celobrojnom nizu.
 
-const maxValue = (arr) => {
-    let max
-    arr.forEach((el, index) => {
-        if(index == 0) {
-            max = el
-            return
-        }
+// const maxValue = (arr) => {
+//     let max
+//     arr.forEach((el, index) => {
+//         if(index == 0) {
+//             max = el
+//             return
+//         }
 
-        if(el > max)
-            max = el
-    })
+//         if(el > max)
+//             max = el
+//     })
 
-    return max
-}
+//     return max
+// }
 
 // let niz = [1,3,623,4,6,77]
 // console.log(maxValue(niz))
@@ -1120,7 +1120,21 @@ const maxValue = (arr) => {
 
 // 6. Odrediti minimalnu vrednost u celobrojnom nizu.
 
-// let niz = [1,3,6,4,6,77]
+    // const minValue = (arr) =>{
+    //     let min
+    //     niz.forEach((el,index) =>{
+    //         if(index == 0){
+    //             min = el
+    //             return
+    //         }
+    //         if(el<min)
+    //         min = el
+    //     })
+    //     return min
+    // }
+
+    // let niz = [5,34,6,4,6,77]
+    //     console.log(minValue(niz));
 // console.log(Math.min(...niz))
 
 // 7. Odrediti indeks maksimalnog elementa celobrojnog niza.
@@ -1129,6 +1143,10 @@ const maxValue = (arr) => {
 // console.log(niz.findIndex(el => el == maxValue(niz)))
 
 // 8. Odrediti indeks minimalnog elementa celobrojnog niza.
+
+// let niz = [1,3,6,4,6,77]
+    // console.log(niz.findIndex(el => el == minValue(niz)));
+
 // 9. Odrediti broj elemenata celobrojnog niza koji su veći od srednje vrednosti.
 // let niz = [1,3,6]
 // function srednjaVrednost(niz){
@@ -1150,8 +1168,47 @@ const maxValue = (arr) => {
 // console.log(srednjaVrednost(niz));
 
 // 10. Izračunati zbir pozitivnih elemenata celobrojnog niza.
+
+    // let niz = [-1,2, 3,4,-5,-8,5]
+    // function zbirElemenata(niz){
+    //     let zbir = 0
+    //     for(let i=0; i <niz.length; i++){
+    //         if(niz[i] > 0){
+    //             zbir += niz[i]
+    //         }
+    //     }
+    //     return zbir
+    // }
+    // console.log(zbirElemenata(niz))
+
 // 11. Odrediti broj parnih elemenata u celobrojnom nizu.
+
+    // let niz = [1,4,5,78,21,32,12]
+    // function brojParnhElemenata(niz){
+    //     let brojac = 0
+    //     for(let i = 0; i <=niz.length; i++){
+    //         if(niz[i] % 2 === 0){
+    //             brojac ++
+    //         }
+    //     }
+    //     return brojac
+    // }
+    // console.log(brojParnhElemenata(niz))
+
 // 12. Odrediti broj parnih elemenata sa neparnim indeksom.
+
+    // let niz = [1,2,3,4,5,6]
+    // function parniIndeks(niz){
+    //     let brojac = 0
+    //     for(let i = 0; i <= niz.length; i++){
+    //         if(niz[i] % 2 === 0){
+    //             brojac ++
+    //         }
+    //     }
+    //     return brojac
+    // }
+    // console.log(parniIndeks(niz));
+
 // 13. Izračunati sumu elemenata niza sa parnim indeksom.
 // 14. Promeniti znak svakom elementu celobrojnog niza.
 // 15. Promeniti znak svakom neparnom elementu celobrojnog niza sa parnim indeksom.
