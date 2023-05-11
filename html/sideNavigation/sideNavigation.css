@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+}
+aside{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: -400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: gray;
+    font-size: 20px;
+    transition: all .4s ease;
+    z-index: 10;
+}
+aside div{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+aside svg{
+    width: 20px;
+    height: 20px;
+}
+aside svg:hover{
+    cursor: pointer;
+}
+aside a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    position: relative;
+    z-index: 1;
+}
