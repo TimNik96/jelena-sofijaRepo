@@ -548,3 +548,42 @@
 
 // console.log(filtrirajSport(niz, sport))
 // console.log(mapirajImena(niz, sport))
+
+// 1. Izbaciti zagrade iz stringa.
+
+// let str = 'Danas je lep dan.(Suncano je)'
+// let refaktorisanString = ''
+
+// for(let i = 0; i < str.length; i++) {
+//     refaktorisanString += (str.charAt(i) !== '(' && str.charAt(i) !== ')') ? str.charAt(i) : ''
+// }
+
+// console.log(refaktorisanString)
+
+// 2. Prebrojati otvorene i zatvorene zagrade u stringu. 
+
+// let str = '((())))(()())()()'
+// let brojac = 0
+
+// for(let i = 0; i < str.length; i++) {
+//     if(str.charAt(i) === '(')
+//         brojac++
+//     if(str.charAt(i) === ')')
+//         brojac--
+// }
+
+// if(brojac == 0)
+//     console.log('Sve je u redu')
+// else if(brojac > 0)
+//     console.log('Ima vise otvorenih zagrada.')
+// else 
+//     console.log('Ima vise zatvorenih zagrada.')
+
+// RASPON OD 1 - 10
+
+// console.log(Math.ceil(Math.random() * 10))
+
+// RASPON 17 - 19
+
+// console.log(Math.floor(Math.random() * 3) + 17)
+// Math.floor(Math.random() * (gornjaGranica - donjaGranica + 1)) + donjaGranica
