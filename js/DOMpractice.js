@@ -1200,9 +1200,10 @@
     // let niz = [1,2,3,4,5,6]
     // function parniIndeks(niz){
     //     let brojac = 0
-    //     for(let i = 0; i <= niz.length; i++){
-    //         if(niz[i] % 2 === 0){
-    //             brojac ++
+    //     for(let i = 0; i < niz.length; i++){
+    //         if(i % 2 !== 0){ // if(i % 2 !== 0 && niz[i] % 2 === 0)
+    //             if(niz[i] % 2 === 0)
+    //                 brojac ++
     //         }
     //     }
     //     return brojac
@@ -1210,5 +1211,36 @@
     // console.log(parniIndeks(niz));
 
 // 13. Izračunati sumu elemenata niza sa parnim indeksom.
+
+    // let niz = [1,2,3,4,5,6]
+    // let suma = 0
+
+    // for(let i = 0; i < niz.length; i+=2) {
+    //     suma += i
+    // }
+
+    // console.log(suma)
+
 // 14. Promeniti znak svakom elementu celobrojnog niza.
+
+    // let niz = [1,2,3,4,5,6]
+
+    // console.log(niz.map(el => -el))
+
+    //drugi nacin
+
+    // for(let i = 0; i < niz.length; i++) {
+    //     niz[i] = -niz[i]
+    // }
+
+    // console.log(niz)
+
 // 15. Promeniti znak svakom neparnom elementu celobrojnog niza sa parnim indeksom.
+
+    // let niz = [1,2,3,4,5,6]
+
+    // console.log(niz.map((el, index) => {
+    //     if(index % 2 === 0 && el % 2 !== 0)
+    //         return -el
+    //     return el
+    // }))
