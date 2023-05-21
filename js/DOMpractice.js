@@ -1197,18 +1197,9 @@
 
 // 12. Odrediti broj parnih elemenata sa neparnim indeksom.
 
-    // let niz = [1,2,3,4,5,6]
-    // function parniIndeks(niz){
-    //     let brojac = 0
-    //     for(let i = 0; i <= niz.length; i++){
-    //         if(niz[i] % 2 === 0){
-    //             brojac ++
-    //         }
-    //     }
-    //     return brojac
-    // }
-    // console.log(parniIndeks(niz));
+    
 
 // 13. Izračunati sumu elemenata niza sa parnim indeksom.
+
 // 14. Promeniti znak svakom elementu celobrojnog niza.
 // 15. Promeniti znak svakom neparnom elementu celobrojnog niza sa parnim indeksom.
