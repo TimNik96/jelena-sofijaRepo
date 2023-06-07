@@ -1197,6 +1197,10 @@
 
 // 12. Odrediti broj parnih elemenata sa neparnim indeksom.
 
+    
+
+// 13. Izračunati sumu elemenata niza sa parnim indeksom.
+
     // let niz = [1,2,3,4,5,6]
     // function parniIndeks(niz){
     //     let brojac = 0
