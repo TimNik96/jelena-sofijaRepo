@@ -13,6 +13,10 @@ https://grid.layoutit.com/
 https://cssgradient.io/
 https://www.youtube.com/watch?v=A7fF6czIxEo
 
+HTTP:
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+https://www.postman.com/downloads/
+
 TEORIJA HTML&CSS:
 
 https://www.w3schools.com/css/css_positioning.asp
