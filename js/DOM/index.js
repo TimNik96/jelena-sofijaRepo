@@ -73,3 +73,18 @@
 
 // body.appendChild(mojP)
 
+const p = document.querySelector('p')
+const btn = document.querySelector('button')
+
+function resenje (p) {
+    p = +p.textContent + 1
+    return p
+}
+// console.log(resenje(p));
+// console.log(+p.textContent + 1 + 1);
+
+
+
+btn.addEventListener('click',()=>{
+   p.textContent = resenje(p)
+})

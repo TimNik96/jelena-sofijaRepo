@@ -28,12 +28,10 @@
 //     return suma
 // }
 
-<<<<<<< HEAD
 btn.addEventListener('click', () => {
     inputResenje.value = saberiCifre(+inputMojBroj.value)
 }
 )
-=======
 // btn.addEventListener('keyup', () => {
 //     inputResenje.value = saberiCifre(+inputMojBroj.value)
 // })
@@ -92,4 +90,3 @@ inputBroj.addEventListener('keypress', (event) => {
             pResenje.textContent = 'Broj nije prost'
     }
 })
->>>>>>> 218456993d9043dd2e410929efc913e724830adf
