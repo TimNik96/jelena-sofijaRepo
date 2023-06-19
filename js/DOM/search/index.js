@@ -1,3 +1,6 @@
+const divIspis = document.querySelector('.post-container')
+const inputSearch = document.querySelector('#search')
+
 const postovi = [
     {
         postName: "Post 1",
@@ -16,32 +19,8 @@ const postovi = [
     }
 ]
 
-
-postovi.sort((a, b) => b.numLikes - a.numLikes)
-
-const divIspis = document.querySelector('.post-container')
-
-// const ispisPostova = (postovi) =>{
-    //     postovi.forEech(post =>{
-        
-        //         const noviDiv = document.createElement('div')
-        
-        //         const pPostName = document.createElement('p')
-        //         pPostName.textContent = post.postName
-        
-        //         const pNumLikes = document.createElement('p')
-//         pNumLikes.textContent = post.numLikes
-
-//         const img = document.createElement('img')
-//         img.value = post.img
-        
-//         noviDiv.append(pPostName,pNumLikes,img)
-//         divIspis.appendChild(noviDiv)
-
-//     })
-// }
-
 const ispisPostova = (postovi) => {
+    divIspis.textContent = ''
     postovi.forEach(post => {
 
         const div = document.createElement('div')
@@ -65,28 +44,25 @@ const ispisPostova = (postovi) => {
         
         const pPostName = document.createElement('p')
         pPostName.textContent = post.postName
-
-        function like (pNumLikes){
-            pNumLikes = +pNumLikes.textContent + 1
-            return pNumLikes
-        }
         
-        button.addEventListener('click', () => {
-            pNumLikes.textContent = like(pNumLikes)
-            // post.numLikes.sort((a,b)=> b.numLikes - a.numLikes)
-            // ispisPostova(postovi)
+        button.addEventListener('click', (event) => {
+            // console.log(event.target.parentElement.parentElement.children[2].textContent);
+            let post = postovi.find(el => el.postName === event.target.parentElement.parentElement.children[2].textContent);
+            post.numLikes += 1
+            postovi.splice(postovi.findIndex(el => el.postName === post.postName), 1, post)
+            postovi.sort((a, b) => b.numLikes - a.numLikes)
+            ispisPostova(postovi)
         })
 
         div.append(img,divLike,pPostName)
         divIspis.appendChild(div)
     })
 }
+
+postovi.sort((a, b) => b.numLikes - a.numLikes)
 ispisPostova(postovi)
 
-
-// ispisPostova(postovi)
-
-
-// console.log(postovi)
-
-// displayPost()
+inputSearch.addEventListener('keyup', () => {
+    let rezultatPretrage = postovi.filter(el => el.postName.includes(inputSearch.value))    
+    ispisPostova(rezultatPretrage)
+})
