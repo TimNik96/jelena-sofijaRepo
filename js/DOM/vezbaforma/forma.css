@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(slika.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10rem;
+    height: 100vh;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid white;
+    color: white;
+    height: 60vh;
+    width: 350px;
+    row-gap: 1rem;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+}
+form:hover h2{
+    top: 0;
+    transition: all .5s ease;
+}
+
+section h2{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    top: -80px;
+}
+section input{
+    border-radius: 50px;
+    padding: .4rem;
+    width: 70%;
+    background: transparent;
+    box-shadow: none;
+    border: 2px solid white;
+    color: white;
+}
+#username:hover, #password:hover{
+    background-color: gray;
+}
+section label{
+    color: white;
+    font-size: 22px;
+    margin: .6rem;
+    font-weight: bold;
+}
+#submit{
+    color: transparent;
+    padding: .5rem;
+    width: 40%;
+    font-size: 17px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: all .3s ease;
+}
+form:hover #submit{
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+.poruka{
+    color: red;
+    font-size: 15px;
+}
+.tekst{
+    color: white;
+    width: 30%;
+}
+.tekst h1{
+    font-size: 45px;
+}
+.tekst p{
+    margin: 1rem;
+    font-size: 20px;
+}
+.strelica{
+    display: flex;
+}
+.strelica svg{
+    fill: white;
+    height: 30px;
+    width: 30px;
+    padding: .3rem;
+    position: relative;
+    top: 1rem;
+}
+svg:hover{
+    background-color: gray;
+}
+.tekst .vreme{
+    font-size: 30px;
+}
