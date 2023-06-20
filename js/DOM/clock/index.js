@@ -4,6 +4,16 @@ function generateTime(htmlElement) {
     let sati = new Date().getHours()
     let minuti = new Date().getMinutes()
     let sekunde = new Date().getSeconds()
+
+    let dobaDana = ''
+
+    if(sati > 12){
+        sati = sati - 12
+        dobaDana = 'PM'
+    }else{
+        dobaDana = 'AM'
+    }
+
     
     if (sati < 10)
         sati = '0' + sati
@@ -12,7 +22,7 @@ function generateTime(htmlElement) {
     if (sekunde < 10)
         sekunde = '0' + sekunde
     
-    let vreme = `${sati}:${minuti}:${sekunde}`
+    let vreme = `${sati}:${minuti}:${sekunde} ${dobaDana}`
     htmlElement.textContent = vreme
 
     return setTimeout(() => {
