@@ -1,4 +1,4 @@
-/*rgb(41,51,84) boja teksta
+/* rgb(41,51,84) boja teksta
 rgb(241,245,253) gornji div
 rgb(249,250,255) donji div
 rgb(196,200,218) boja teksta siva 
@@ -6,4 +6,131 @@ rgb(154,163,202)
 rgb(14,213,193) boja za fliper
 rgb(227,232,241) boja kruga
 rgb(255,238,234) boja pozadine snizenje 
-rgb(255,194,180) boja teksta snizenje
+rgb(255,194,180) boja teksta snizenje */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+background-color: rgb(249,250,255);
+
+}
+.gornjDiv{
+    background-color:rgb(241,245,253) ;
+    height: 50vh;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px ;
+    border: 1px solid rgb(241,245,253);
+    text-align: center;
+    padding-top: 4rem;
+    position: relative;
+}
+.gornjDiv h4{
+    font-size: 30px;
+    padding-bottom: 1rem;
+    z-index: 5;
+}
+.veciKrug{
+    border: 1.2px solid rgb(227,232,241);
+    border-radius: 80px;
+    height: 150px;
+    width: 150px;
+    position: absolute; 
+    top: 2rem; 
+    right: 35rem;
+    z-index: 1;
+}
+.manjiKrug{
+    border: 1.2px solid rgb(227,232,241);
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    position: absolute; 
+    top: 1rem; 
+    right: 33rem;
+    z-index: 1;
+}
+.mainDiv{
+    border: 1px solid white;
+    border-radius:25px;
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    position: absolute; 
+    top: 15rem;
+    left: 27rem;
+}
+.divPageviews{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;  
+}
+.divCena{
+    display: flex;
+    column-gap: .7rem;
+}
+.divCena :first-child{
+    font-size: 25px;
+    font-weight: bold;
+}
+.divCena :last-child{
+    padding-top: .3rem;
+}
+.svg{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+.svg svg{
+    width: 25px;
+    height: 25px;
+}
+.obracun{
+    display: flex;
+    color: rgb(196,200,218);
+    justify-content: center;
+    column-gap: 1rem;
+    padding-top: 1rem;
+}
+.fliperPozadina{
+    width: 60px;
+    height: 23px;
+    background-color: rgb(227,232,241);
+    border-radius: 20px;
+    border: 1px solid rgb(227,232,241);
+    
+}
+.fliperKrug{
+    border-radius: 50%;
+    /* background-color: rgb(227,232,241); */
+    background-color: white;
+    height: 17px;
+    width: 17px;
+    position: relative;
+    left: .3rem;
+    top: .2rem;
+}
+.popust{
+    background-color: rgb(255,238,234);
+    color: rgb(255,194,180);
+    border-radius: 20px;
+    padding: .3rem .6rem;
+    font-weight: bold;
+}
+.lastSection{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+.lastSection svg{
+    fill: aqua;
+}
+.lastSection button{
+    border-radius: 30px;
+    padding: .5rem 1rem;
+    color: rgb(154,163,202);
+    background-color: rgb(24, 61, 95);
+    border: 1px solid rgb(24, 61, 95);
+    margin-top: 1rem;
+}

@@ -26,9 +26,19 @@ let korisnici = [
 
 
 function vreme(pVreme){
-    const sati = new Date().getHours()
-    const minuti = new Date().getMinutes()
-    const sekunde = new Date().getSeconds()
+    let sati = new Date().getHours()
+    let minuti = new Date().getMinutes()
+    let sekunde = new Date().getSeconds()
+
+
+    let dobaDana = ''
+
+    if(sati > 12){
+        sati = sati - 12
+        dobaDana = 'PM'
+    }else{
+        dobaDana = 'AM'
+    }
 
     if(sati < 10)
     sati = '0' + sati
@@ -36,9 +46,10 @@ function vreme(pVreme){
     minuti = '0' + minuti
     if(sekunde < 10)
     sekunde = '0' + sekunde
+
     
-    pVreme.innerHTML = `${sati}:${minuti}:${sekunde}`
-    return setTimeout(()=>{
+    pVreme.innerHTML = `${sati}:${minuti}:${sekunde} ${dobaDana}`
+     setTimeout(()=>{
         vreme(pVreme)
     },1000)
 }
@@ -110,10 +121,11 @@ let poruke = [
 let random = poruke[Math.floor(Math.random()*poruke.length)]
 
 
-// console.log(random);
 
 svg.addEventListener("click",()=>{
-     randomPoruka.innerHTML = random
+
+    randomPoruka.textContent = random
+    
 })
 
 
