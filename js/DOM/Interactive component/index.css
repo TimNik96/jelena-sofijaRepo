@@ -13,10 +13,12 @@ rgb(255,194,180) boja teksta snizenje */
     padding: 0;
 }
 body{
-background-color: rgb(249,250,255);
-
+    background-color: rgb(249,250,255);
 }
 .gornjDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color:rgb(241,245,253) ;
     height: 50vh;
     border-bottom-left-radius: 100px;
@@ -38,8 +40,8 @@ background-color: rgb(249,250,255);
     width: 150px;
     position: absolute; 
     top: 2rem; 
-    right: 35rem;
-    z-index: 1;
+    left: 50%;
+    z-index: 0;
 }
 .manjiKrug{
     border: 1.2px solid rgb(227,232,241);
@@ -48,7 +50,7 @@ background-color: rgb(249,250,255);
     width: 80px;
     position: absolute; 
     top: 1rem; 
-    right: 33rem;
+    left: 54%;
     z-index: 1;
 }
 .mainDiv{
@@ -57,11 +59,10 @@ background-color: rgb(249,250,255);
     height: 300px;
     width: 500px;
     background-color: white;
-    position: absolute; 
-    top: 15rem;
-    left: 27rem;
+    position: relative;
+    top: 50%;
 }
-.divPageviews{
+.divPageViews{
     display: flex;
     justify-content: space-between;
     padding: 2rem 3rem;  
@@ -79,8 +80,23 @@ background-color: rgb(249,250,255);
 }
 .svg{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     column-gap: 1rem;
+    padding: 0 0 1rem 0;
+}
+.svg button {
+    background-color: rgb(241,245,253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    transition: all .3s ease;
+}
+.svg button:hover {
+    transform: scale(1.1);
 }
 .svg svg{
     width: 25px;
@@ -90,26 +106,27 @@ background-color: rgb(249,250,255);
     display: flex;
     color: rgb(196,200,218);
     justify-content: center;
+    align-items: center;
     column-gap: 1rem;
     padding-top: 1rem;
 }
 .fliperPozadina{
     width: 60px;
     height: 23px;
+    padding: .2rem;
     background-color: rgb(227,232,241);
     border-radius: 20px;
     border: 1px solid rgb(227,232,241);
-    
 }
 .fliperKrug{
     border-radius: 50%;
-    /* background-color: rgb(227,232,241); */
     background-color: white;
-    height: 17px;
-    width: 17px;
+    height: 23px;
+    width: 23px;
     position: relative;
-    left: .3rem;
-    top: .2rem;
+    left: .1rem;
+    transition: all .3s ease;
+    cursor: pointer;
 }
 .popust{
     background-color: rgb(255,238,234);
@@ -121,7 +138,8 @@ background-color: rgb(249,250,255);
 .lastSection{
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    padding: 2rem 3rem;
+    text-align: left;
 }
 .lastSection svg{
     fill: aqua;
@@ -133,4 +151,10 @@ background-color: rgb(249,250,255);
     background-color: rgb(24, 61, 95);
     border: 1px solid rgb(24, 61, 95);
     margin-top: 1rem;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.lastSection button:hover {
+    transform: scale(1.05);
+    color: #fff;
 }
