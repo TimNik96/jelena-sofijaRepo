@@ -1,0 +1,309 @@
+/* rgb(7,12,32) tamnoplava
+rgb(78,225,223) svetloplava
+rgb(10,63,105) plava / svg
+rgb(62,232,22) tirkizplava */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:rgb(7,12,32);
+}
+.veciKrug{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(78,225,223);
+    border-radius: 20px;
+}
+.manjiKrug{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(78,225,223);
+    border-radius: 20px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0.6rem;
+    left: 1rem;
+}
+.divKrug{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    position: absolute;
+    top: 2rem;
+    left: 8rem;
+}
+.divKrug p{
+    color: white;
+    font-weight: bold;
+}
+@media screen and (max-width: 576px){
+    section .naslov{
+        margin-top: 6rem;
+        width: 60%;
+    }
+    section .naslov p{
+        font-size: 20px;
+    }
+}
+.naslov{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 30%;
+    margin: 10% auto;
+    row-gap: 2rem;
+}
+.naslov span{
+    color: rgb(78,225,223);
+}
+.naslov h1{
+    font-size: 40px;
+    text-align: center;
+}
+.naslov p{
+    font-weight: bold;
+    color: rgb(88,93,113);
+    text-align: center;
+    font-size: 12px;
+}
+.naslov svg{
+    background-color: transparent;
+    fill:rgb(78,225,223) ;
+    width: 20px;
+    height: 20px;
+}
+.sectionImage{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    color: white;
+    column-gap: 1rem;
+}
+.sectionImage p {
+    font-size: 11px;
+    width: 90%;
+    color: rgb(88,93,113);
+}
+.divImgTop div{
+    background-color: rgb(10,63,105);
+    border-radius: 20px;
+    width: 40%;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+}
+.divImgTop{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 20%;
+}
+.divImgTop h3{
+    font-size: 17px;
+}
+.divImgDown h3{
+    font-size: 17px;
+}
+.divImgDown div{
+    background-color: rgb(10,63,105);
+    border-radius: 20px;
+    width: 40%;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+}
+.divImgDown{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 20%;
+    margin-top: 2.5rem;
+}
+.sectionTree{
+    margin-top: 6rem;
+}
+.sectionTreeTitle{
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+.sectionTreeTitle h2{
+    font-size: 40px;
+}
+.sectionTreeTitle p{
+width: 30%;
+color: rgb(88,93,113);
+margin: auto;
+font-size: 15px;
+margin-top: 1rem;
+}
+.divLeftRight{
+    display: flex;
+    column-gap: 3rem;
+    justify-content: center;
+}
+.divLeft{
+    background-color: rgb(10,63,105);
+    width: 27%;
+    height: 300px;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    color: white;
+    margin-top: 1rem;
+}
+.krugKvadrat{
+    position: relative;
+}
+.krugKvadrat .krug{
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    border: 2px solid rgb(78,225,223);
+    position: absolute;
+    top: -2.4rem;
+    left: 1.3rem;
+}
+.krugKvadrat .kvadrat{
+    width: 23px;
+    height: 23px;
+    border: 2px solid rgb(78,225,223);
+    position: absolute;
+    top: -3.3rem;
+    left: 2rem;
+}
+
+.divCorectSvg{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.divCorectSvg .svgCorect{
+    font-size: 15px;
+}
+.divLeftParagraf{
+    font-size: 15px;
+    color: white;
+    padding: .7rem 0;
+}
+.divRightParagraf{
+    font-size: 15px;
+    color:  rgb(88,93,113);
+    padding: .7rem 0;
+}
+
+.svgCorect{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    color: white;
+    font-size: 15px;
+}
+.svgCorect svg{
+    fill:rgb(78,225,223) ;
+}
+.divRight{
+    background-color:  rgb(78,225,223);
+    width: 27%;
+    height: 330px;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    color: white;
+}
+.desnoTrougao{
+    position: relative;
+}
+.desnoTrougao .pravougaonik{
+    width: 40px;
+    height: 50px;
+    border: 2px solid rgb(10,63,105);
+    position: absolute;
+    top: -4rem;
+    left: 1rem;
+}
+.pravougaonik .kvadrat{
+    height: 15px;
+    width: 22px;
+    border: 2px solid rgb(10,63,105);
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+}
+/* .desnoTrougao .trougao{
+    width: 50px; 
+    height: 50px; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    background-color: transparent;
+    border-bottom: 25px solid red;
+} */
+.divRight h4{
+    color: black;
+}
+.divRight h2{
+    color: black;
+    font-size: 30px;
+}
+.divRight span{
+    font-size: 15px;
+    color: rgb(88,93,113);
+}
+.divRight svg{
+    fill: rgb(10,63,105);
+}
+.divRight .svgCorect{
+    color: rgb(88,93,113);
+}
+.finalSection{
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.finalSection h2{
+    color: white;
+    padding-bottom: 2rem;
+    font-size: 35px;
+}
+.forma{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+form input{
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    background-color: rgb(10,63,105);
+    color:rgb(88,93,113);
+    width: 20%;
+    border: none;
+}
+input:hover{
+    color: white;
+    cursor: pointer;
+}
+button{
+    border-radius: 20px;
+    background-color: rgb(78,225,223);
+    color:rgb(88,93,113);
+    padding: .5rem 1rem;
+    border: 1px solid  rgb(78,225,223);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+button:hover{
+    transform: scale(1.05);
+    background-color: rgb(10,63,105);
+    border: 1px solid rgb(10,63,105);
+    color:  rgb(78,225,223);
+}
+.finalSection .poruka{
+    color: red;
+    padding: 1.5rem;
+    font-size: 15px;
+}
