@@ -18,16 +18,12 @@ section form{
     border-radius: 10px;
     border: 2px solid white;
     color: white;
-    height: 60vh;
+    padding: 2rem 0 3rem 0;
     width: 350px;
     row-gap: 1rem;
     align-items: center;
     backdrop-filter: blur(2px);
     overflow: hidden;
-}
-form:hover h2{
-    top: 0;
-    transition: all .5s ease;
 }
 
 section h2{
@@ -35,7 +31,12 @@ section h2{
     text-align: center;
     font-size: 35px;
     position: relative;
-    top: -80px;
+    top: -90px;
+    transition: all .5s ease;
+}
+
+form:hover h2{
+    top: 0;
 }
 section input{
     border-radius: 50px;
@@ -45,6 +46,7 @@ section input{
     box-shadow: none;
     border: 2px solid white;
     color: white;
+    transition: all .5s ease;
 }
 #username:hover, #password:hover{
     background-color: gray;

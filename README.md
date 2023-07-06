@@ -287,3 +287,7 @@ Pitanje: Kako bismo realizovali ovaj zadatak da se tražio n-ti mesec u godini?
 13. Izračunati sumu elemenata niza sa parnim indeksom.
 14. Promeniti znak svakom elementu celobrojnog niza.
 15. Promeniti znak svakom neparnom elementu celobrojnog niza sa parnim indeksom.
+
+#Domaci_18
+
+https://flukeout.github.io/

@@ -22,14 +22,10 @@ let korisnici = [
     }
 ]
 
-
-
-
 function vreme(pVreme){
     let sati = new Date().getHours()
     let minuti = new Date().getMinutes()
     let sekunde = new Date().getSeconds()
-
 
     let dobaDana = ''
 
@@ -110,23 +106,15 @@ forma.addEventListener('submit', (el) =>{
     }
 })
 
-
 let poruke = [
     'abc',
     '123',
     'aaaaaaa'
 ]
 
-
-let random = poruke[Math.floor(Math.random()*poruke.length)]
-
-
-
 svg.addEventListener("click",()=>{
-
+    let random = poruke[Math.floor(Math.random()*poruke.length)]
     randomPoruka.textContent = random
-    
 })
-
 
 vreme(pVreme)

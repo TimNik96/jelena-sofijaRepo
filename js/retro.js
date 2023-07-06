@@ -587,3 +587,23 @@
 
 // console.log(Math.floor(Math.random() * 3) + 17)
 // Math.floor(Math.random() * (gornjaGranica - donjaGranica + 1)) + donjaGranica
+
+
+// let niz = []
+// const niz_1 = [2, 4, 6, 8]
+// niz = niz_1
+// niz_1.push(10)
+
+// console.log(niz, niz_1)
+
+const negate = (broj) => {
+    // if(broj < 0) {
+    //     broj = Math.abs(broj)
+    // } else {
+    //     broj = -broj
+    // }
+    // return broj
+    return -broj
+}
+
+console.log(negate(10));
