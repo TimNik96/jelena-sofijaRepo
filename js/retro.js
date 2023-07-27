@@ -11,7 +11,7 @@
 // -Array
 // -Function
 
-// TERMINOLOGIJA        
+// TERMINOLOGIJA
 // deklaracija (kreiranje promenljive i rezervisanje prostora u memoriji za skladistenje vrednosti; ukoliko ne dodelimo vrednost, onda je po default-u undefined)
 // inicijalizacija (dodela vrednosti)
 // inkrementacija (proces povecanja vrednosti za 1; unarni operator ++; prefiksni i postfiksni)
@@ -26,7 +26,7 @@
 // let broj = 10
 
 // var
-// let 
+// let
 // const
 
 // const arr = [1, 2, 3]
@@ -180,8 +180,8 @@
 //     return zbir
 // }
 
-// let broj = 1 
-// let broj1 = 2 
+// let broj = 1
+// let broj1 = 2
 
 // console.log(saberi())
 
@@ -245,7 +245,6 @@
 // if(pronadjenoSlovo === false)   // !pronadjenoSlovo
 //     console.log('Nema zadatog slova')
 
-
 // 4.
 // function elementUNizu(nekiNiz, element) {
 //     for(let i = 0; i < nekiNiz.length; i++) {
@@ -289,7 +288,6 @@
 // let broj = 73
 
 // console.log(prostBroj(broj))
-
 
 // 1. Ispisati poslednji element u nizu.
 
@@ -346,12 +344,10 @@
 // let broj = 1
 // let broj1 = 2
 // function zbir(broj,broj1){
-//     let zbir = broj + broj1 
+//     let zbir = broj + broj1
 //     return zbir
 // }
 // console.log(zbir(broj,broj1));
-
-
 
 // function imeFunkcije(parametri) {
 //     return value
@@ -395,7 +391,7 @@
 
 // let broj = 15
 // if(broj > 10) {
-//   console.log(true) 
+//   console.log(true)
 // } else {
 //   console.log(false)
 // }
@@ -560,7 +556,7 @@
 
 // console.log(refaktorisanString)
 
-// 2. Prebrojati otvorene i zatvorene zagrade u stringu. 
+// 2. Prebrojati otvorene i zatvorene zagrade u stringu.
 
 // let str = '((())))(()())()()'
 // let brojac = 0
@@ -576,7 +572,7 @@
 //     console.log('Sve je u redu')
 // else if(brojac > 0)
 //     console.log('Ima vise otvorenih zagrada.')
-// else 
+// else
 //     console.log('Ima vise zatvorenih zagrada.')
 
 // RASPON OD 1 - 10
@@ -588,7 +584,6 @@
 // console.log(Math.floor(Math.random() * 3) + 17)
 // Math.floor(Math.random() * (gornjaGranica - donjaGranica + 1)) + donjaGranica
 
-
 // let niz = []
 // const niz_1 = [2, 4, 6, 8]
 // niz = niz_1
@@ -596,14 +591,194 @@
 
 // console.log(niz, niz_1)
 
-const negate = (broj) => {
-    // if(broj < 0) {
-    //     broj = Math.abs(broj)
-    // } else {
-    //     broj = -broj
-    // }
-    // return broj
-    return -broj
-}
+// const negate = (broj) => {
+//     // if(broj < 0) {
+//     //     broj = Math.abs(broj)
+//     // } else {
+//     //     broj = -broj
+//     // }
+//     // return broj
+//     return -broj
+// }
 
-console.log(negate(10));
+// console.log(negate(10));
+
+// const top5 = (string) => {
+//   const nizKaraktera = []
+
+//   for (let i = 0; i < string.length; i++) {
+//     if (
+//       nizKaraktera.find((el) => el.karakter === string.charAt(i)) === undefined
+//     ) {
+//       const karakter = {
+//         karakter: string.charAt(i),
+//         brojPonavljanja: 1,
+//       }
+//       nizKaraktera.push(karakter)
+//     } else {
+//         nizKaraktera.find(el => el.karakter === string.charAt(i)).brojPonavljanja += 1
+//     }
+//   }
+
+//   nizKaraktera.sort((a, b) => b.brojPonavljanja - a.brojPonavljanja)
+
+//   const topFive = []
+
+//   for(let i = 0; i < 5; i++) {
+//     topFive.push(nizKaraktera[i])
+//   }
+
+//   return topFive
+// }
+
+// console.log(top5('Danas je predivan dan, pocrkasmo!'))
+
+// 1 1 1 1 1
+// 1 1 1 1 1
+// 1 1 1 1 1
+// 1 1 1 1 1
+// 1 1 1 1 1
+
+// let n = 5
+// let str = ''
+
+// for(let i = 0; i < n; i++) {
+//   str = ''
+//   // for(let j = 0; j < n; j++) {
+//   //   str += '1 '
+//   // } 
+//   str = '1 '.repeat(n)
+//   console.log(str) 
+// }
+
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+
+// let n = 5
+// let str = ''
+
+// for(let i = 0; i < n; i++) {
+//   str = ''
+//   for(let j = 0; j < n; j++) {
+//     if(j <= i)
+//       str += '* '
+//   }
+//   console.log(str)
+// }
+
+// * * * * *
+//   * * * *
+//     * * *
+//       * *
+//         *
+
+// let n = 5
+// let str = ''
+
+// for(let i = 0; i < n; i++) {
+//   str = ''
+//   for(let j = 0; j < n; j++) {
+//     if(j < i)
+//       str += '  '
+//     else 
+//       str += '* '
+//   }
+//   console.log(str)
+// }
+
+//         *
+//       * *
+//     * * *
+//   * * * *
+// * * * * *
+
+// let n = 5
+// let str = ''
+
+// for(let i = 1; i <= n; i++) {
+//   str = ''
+//   for(let j = 1; j <= n; j++) {
+//     if(j > n - i)
+//       str += '* '
+//     else 
+//       str += '  '
+//   }
+//   console.log(str)
+// }
+
+// 1 1 1 1 1
+// 1 2 2 2 2
+// 1 2 3 3 3
+// 1 2 3 4 4
+// 1 2 3 4 5
+
+// let n = 5
+// let str = ''
+
+// for(let i = 1; i <= n; i++) {
+//   str = ''
+//   for(let j = 1; j <= n; j++) {
+//     if(j <= i)
+//       str += ' ' + j
+//     else 
+//       str += ' ' + i
+//   }
+//   console.log(str)
+// }
+
+// * * * * *  * * * * *
+//         *  *
+//         *  * * * * *
+// *       *          *
+// * * * * *  * * * * *
+
+let n = 6
+let strJ = ''
+let strS = ''
+
+for(let i = 0; i < n; i++) {
+  strJ = ''
+  strS = ''
+
+  for(let j = 0; j < n; j++) {
+    if(i === 0 || i === n - 1) {
+      strJ = '* '.repeat(n)
+      break
+    }
+
+    if(i >= Math.floor(n / 3) * 2) {
+      if(j === 0 || j === n - 1)
+        strJ += '* '
+      else 
+        strJ += '  '
+    } else {
+      if(j === n - 1)
+        strJ += '* '
+      else 
+        strJ += '  '
+    }
+  }
+
+  for(let k = 0; k < n; k++) {
+    if(i === 0 || i === n - 1 || i + 1 === Math.floor(n / 2)) {
+      strS = '* '.repeat(n)
+      break
+    }
+    if(i < Math.floor(n / 2)) {
+      if(k === 0)
+        strS += '* '
+      else
+        strS += '  '
+    } else {
+      if(k === n - 1)
+        strS += '* '
+      else 
+        strS += '  '
+    }
+  }
+
+  console.log(strJ, strS)
+}
